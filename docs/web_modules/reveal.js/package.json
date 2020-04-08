@@ -22,7 +22,7 @@
   "_resolved": "https://registry.npmjs.org/reveal.js/-/reveal.js-3.9.2.tgz",
   "_shasum": "7f63d3dfec338b6c313dcabdf006e8cf80e0b358",
   "_spec": "reveal.js@^3.9.2",
-  "_where": "/Users/jean-francoisgarreau/Projects/sfeir-school-template/docs",
+  "_where": "/Users/gaetanbogaert/git/sfeir/sfeir-school-template/docs",
   "author": {
     "name": "Hakim El Hattab",
     "email": "hakim.elhattab@gmail.com",
