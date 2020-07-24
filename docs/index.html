@@ -22,14 +22,14 @@
     <!-- If the query includes 'print-pdf', use the PDF print sheet - from revealjs -->
     <script>
       document.write(
-        '<link rel="stylesheet" href="./libs/revealjs/print/' +
+        '<link rel="stylesheet" href="./web_modules/reveal.js/css/print/' +
           (window.location.search.match(/print-pdf/gi) ? 'pdf' : 'paper') +
           '.css" type="text/css" media="print">'
       );
     </script>
 
     <!--[if lt IE 9]>
-      <script src="reveal/lib/js/html5shiv.js"></script>
+      <script src="/web_modules/reveal.js/lib/js/html5shiv.js"></script>
     <![endif]-->
 
     <!-- ----------------------------------------------------

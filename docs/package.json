@@ -8,7 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "live-server --port=4242 --open=\"./index.html\" --watch=\"markdown,scripts/\"",
     "start": "parallelshell \"npm run serve\" \"npm run sass\"",
-    "prepare": "snowpack"
+    "copy-reveal": "cpx \"node_modules/reveal.js/**/*\" \"web_modules/reveal.js\" ",
+    "prepare": "rm -rf web_modules && parallelshell \"npm run copy-reveal\"   \"snowpack --optimize\""
   },
   "repository": {
     "type": "git",
@@ -41,8 +42,7 @@
     "webDependencies": [
       "sfeir-school-theme/dist/**/*",
       "lit-html",
-      "reveal.js/**/^(?!LICENSE)(.*)",
-      "highlight.js/style/**/*"
+      "highlight.js/styles/**/*"
     ]
   }
 }
