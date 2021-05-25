@@ -16,11 +16,13 @@ The text below is the template you could use for your readme
 
 # XXX
 
-A [SFEIR School](https://www.sfeir.com/formation/school/)
+<p align="center">
+ <img style="display:block" width="20%" height="20%" src="./docs/assets/images/sfeir-school-logo.png" alt="project logo">
+</p>
 
-![logo](https://www.sfeir.com/img/school/formations/xxx.png)
+<br/>
 
-[Planning, trainers and other details](https://www.sfeir.com/formation/school/xxx/)
+[Planning, trainers and other details](https://www.sfeir.com/fr/contenus-dexperts/sfeir-school)
 
 # Slides
 
