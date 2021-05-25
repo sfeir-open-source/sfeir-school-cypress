@@ -1,6 +1,6 @@
 # About
 
-Template repository for Sfeir School, this template could be use to start a school with revealJS and sfeir school theme
+Template repository for SFEIR School, this template could be use to start a school with revealJS and SFEIR School theme
 
 Don't forget to replace all xxx by your techno
 
@@ -14,10 +14,10 @@ Don't forget to replace all xxx by your techno
 
 The text below is the template you could use for your readme
 
-# XXX
+# SFEIR School XXX
 
 <p align="center">
- <img style="display:block" width="20%" height="20%" src="./docs/assets/images/sfeir-school-logo.png" alt="project logo">
+ <img style="display:block" width="20%" height="20%" src="./docs/assets/images/sfeir-school-logo.png" alt="SFEIR School logo">
 </p>
 
 <br/>
