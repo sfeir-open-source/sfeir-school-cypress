@@ -4,6 +4,7 @@
   "overrides": [
     {
       "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
+      "extends": "standard",
       "rules": {}
     }
   ]

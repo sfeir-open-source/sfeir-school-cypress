@@ -1,0 +1,22 @@
+.content {
+    @apply flex;
+    flex-direction: row;
+    > * {
+        @apply px-4;
+    }
+
+    .buttonWrapper {
+        @apply flex;
+
+       > .button {
+            @apply font-thin;
+            @apply text-3xl;
+            @apply font-bold;
+    
+            &:hover {
+                @apply text-blue-400;
+            }
+        }
+    }
+   
+}
