@@ -1,13 +1,50 @@
-import { getGreeting } from '../support/app.po';
-
 describe('react-solution', () => {
-  beforeEach(() => cy.visit('/'));
+  before(() => {
+    cy.fixture('books/top10.json')
+      .then(books => {
+        this.data = {
+          books
+        }
+      })
+  })
 
-  it('should display welcome message', () => {
-    // Custom command example, see `../support/commands.ts` file
-    cy.login('my-email@something.com', 'myPassword');
+  beforeEach(() => cy.visit('/'))
 
-    // Function helper example, see `../support/app.po.ts` file
-    getGreeting().contains('Welcome to react-solution!');
-  });
-});
+  it('should display Sfeir header', () => {
+    cy.get('header').contains('Sfeir-school: Cypress')
+  })
+
+  it('should display top 10 books', () => {
+    const titles = this.data.books.map(b => b.title)
+    cy.intercept('GET', '/books?query=top', { fixture: 'books/top10.json' })
+
+    cy.get('[data-cy=top-10]').within(() => {
+      cy.get('[data-cy*=book-item-]').each(($el, index) => {
+        cy.wrap($el).contains(titles[index])
+      })
+    })
+  })
+
+  it('should handle buttons to scroll', () => {
+    cy.intercept('GET', '/books?query=top', { fixture: 'books/top10.json' })
+
+    cy.get('[data-cy=top-10]').within(() => {
+      cy.get('[data-cy=previous]').should('not.exist')
+      cy.get('[data-cy=next]').click() // This test implies .should('exist') ; cypress will make the test fails otherwise
+
+      // So now we scrolled using button, the previous button should exist
+      cy.get('[data-cy=previous]').should('exist')
+      cy.get('[data-cy=next]').should('exist').click()
+
+      cy.get('[data-cy=next]').should('not.exist')
+      cy.get('[data-cy=previous]').should('exist').click()
+
+      cy.get('[data-cy=next]').should('exist')
+      cy.get('[data-cy=previous]').should('exist').click()
+
+      // SO now we scrolled back, the previous button should disapeared again
+      cy.get('[data-cy=previous]').should('not.exist')
+      cy.get('[data-cy=next]').should('exist')
+    })
+  })
+})
