@@ -1,5 +1,5 @@
 import styles from './app.module.scss'
-import Pages from '../components/pages/pages'
+import Pages from '../pages/pages'
 
 export function App () {
   return (

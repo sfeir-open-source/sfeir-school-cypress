@@ -71,7 +71,7 @@ export function List ({ name, items, ...props }: ListProps) {
         <div ref={ref} className="flex px-8 overflow-x-auto gap-16 flex-nowrap">
           {
             items
-              ? items.map(item => <Item book={item} />)
+              ? items.map(item => <Item key={item.id} book={item} />)
               : <span aria-label="Loading" />
           }
         </div>
@@ -79,6 +79,7 @@ export function List ({ name, items, ...props }: ListProps) {
         {hasNext && <button onClick={scrollNext} className={css.button} data-cy="next">&#x3009;</button>}
         </div>
       </div>
+      <hr/>
     </section>
   )
 }
