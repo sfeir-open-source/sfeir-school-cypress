@@ -9,27 +9,23 @@ export interface ListProps {
   items: Items
 }
 
+const PADDING = 120
+
 function useScroll (items: BookDTO[]|null) {
   const ref = useRef<HTMLDivElement|null>(null)
   const [hasPrevious, setHasPrevious] = useState<boolean>(false)
   const [hasNext, setHasNext] = useState<boolean>(false)
 
   useLayoutEffect(() => {
-    if (!items?.length) {
+    const element = ref.current
+
+    if (!(element && items?.length)) {
       return
     }
 
-    const element = ref.current
-    const firstChild = element?.firstElementChild
-    const lastChild = element?.lastElementChild
-    if (!(element && firstChild && lastChild)) {
-      return undefined
-    }
-
     const onScroll = () => {
-      const firstChildX = firstChild.getBoundingClientRect().x
-      setHasPrevious(firstChildX < 0)
-      setHasNext(lastChild.getBoundingClientRect().x > element.clientWidth)
+      setHasPrevious(element.scrollLeft > PADDING)
+      setHasNext(element.scrollLeft + element.offsetWidth - element.scrollWidth + PADDING < 0)
     }
 
     element.addEventListener('scroll', onScroll)
@@ -68,7 +64,7 @@ export function List ({ name, items, ...props }: ListProps) {
         <div className={css.buttonWrapper}>
           {hasPrevious && <button onClick={scrollPrevious} className={css.button} data-cy="previous">&#x3008;</button>}
         </div>
-        <div ref={ref} className="flex px-8 overflow-x-auto gap-16 flex-nowrap">
+        <div ref={ref} className="flex overflow-x-auto gap-12 flex-nowrap">
           {
             items
               ? items.map(item => <Item key={item.id} book={item} />)

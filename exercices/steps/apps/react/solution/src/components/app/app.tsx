@@ -1,12 +1,11 @@
-import styles from './app.module.scss'
+import './app.module.scss'
 import Pages from '../pages/pages'
+import Header from '../header/header'
 
 export function App () {
   return (
-    <div className={styles.app}>
-      <header className="sticky p-4 text-white bg-black">
-        <h1>Sfeir-school: Cypress</h1>
-      </header>
+    <div >
+      <Header />
       <main>
         <Pages />
       </main>
