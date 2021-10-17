@@ -1,6 +1,6 @@
 import './home.module.scss'
-import QueryBookList from '../books/query/query'
-import Genre from '../genre/genre'
+import QueryBookList from '../../books/query/query'
+import Genre from '../../genre/genre'
 
 /* eslint-disable-next-line */
 export interface HomeProps {}
