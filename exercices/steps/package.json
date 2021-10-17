@@ -9,6 +9,7 @@
   },
   "private": true,
   "dependencies": {
+    "@heroicons/react": "^1.0.4",
     "autoprefixer": "^10.3.7",
     "core-js": "^3.6.5",
     "postcss": "^8.3.9",
