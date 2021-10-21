@@ -64,7 +64,7 @@ export function List ({ name, items, ...props }: ListProps) {
         <div className={css.buttonWrapper}>
           {hasPrevious && <button onClick={scrollPrevious} className={css.button} data-cy="previous">&#x3008;</button>}
         </div>
-        <div ref={ref} className="flex overflow-x-auto gap-12 flex-nowrap">
+        <div ref={ref} className="flex overflow-x-auto gap-6 md:gap-12 flex-nowrap">
           {
             items
               ? items.map(item => <Item key={item.id} book={item} />)

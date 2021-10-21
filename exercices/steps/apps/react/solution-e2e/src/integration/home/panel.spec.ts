@@ -1,13 +1,4 @@
 describe('Cart panel', () => {
-  before(() => {
-    return cy.fixture('books/top10.json')
-      .then(books => {
-        this.data = {
-          books
-        }
-      })
-  })
-
   beforeEach(() => {
     cy.intercept('/books?query=top', { fixture: 'books/top10.json' }).as('top10')
     cy.intercept('/genres', { fixture: 'genres.json' }).as('genres')
@@ -58,5 +49,15 @@ describe('Cart panel', () => {
   it('should go to cart', () => {
     cy.get('[data-cy=cart-panel]').contains('Cart').click()
     cy.location('pathname').should('eq', '/cart')
+  })
+
+  context('mobile ', () => {
+    beforeEach(() => {
+      cy.viewport('iphone-8')
+    })
+
+    it('should not be present on mobile', () => {
+      cy.get('[data-cy=cart-panel]').should('not.be.visible')
+    })
   })
 })
