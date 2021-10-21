@@ -2,7 +2,8 @@
     @apply flex;
     flex-direction: row;
     > * {
-        @apply px-4;
+        @apply px-1;
+        @apply md:px-4;
     }
 
     .buttonWrapper {
@@ -10,7 +11,8 @@
 
        > .button {
             @apply font-thin;
-            @apply text-3xl;
+            @apply text-xl;
+            @apply md:text-3xl;
             @apply font-bold;
     
             &:hover {
