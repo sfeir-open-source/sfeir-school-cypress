@@ -1,4 +1,4 @@
-describe('react-solution', () => {
+describe('home page', () => {
   before(() => {
     return cy.fixture('books/top10.json')
       .then(books => {

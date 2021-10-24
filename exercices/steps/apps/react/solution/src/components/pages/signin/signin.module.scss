@@ -1,0 +1,14 @@
+.signIn {
+    @apply text-3xl text-center;
+}
+
+.input-wrapper {
+    @apply flex flex-col;
+
+    label {
+        @apply text-lg pb-1;
+    }
+    .input {
+        @apply p-4 border border-gray-500 rounded-md;
+    }
+}
