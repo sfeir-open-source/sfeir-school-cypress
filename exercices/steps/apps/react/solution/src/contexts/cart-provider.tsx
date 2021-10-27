@@ -1,6 +1,6 @@
 
 import { createContext, PropsWithChildren } from 'react'
-import useCart, { Cart } from './hooks/cart'
+import useCart, { Cart } from '../hooks/cart'
 
 export const CartContext = createContext<Cart>({} as Cart)
 

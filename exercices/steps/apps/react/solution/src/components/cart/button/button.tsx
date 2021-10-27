@@ -1,6 +1,6 @@
 import './button.module.scss'
 import { ShoppingCartIcon } from '@heroicons/react/solid'
-import { CartContext } from '../../../cartProvider'
+import { CartContext } from '../../../contexts/cart-provider'
 import { useContext } from 'react'
 import { Link } from 'react-router-dom'
 /* eslint-disable-next-line */

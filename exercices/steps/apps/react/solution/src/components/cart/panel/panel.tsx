@@ -1,7 +1,7 @@
 import { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { BookDTO } from '../../../api/book'
-import { CartContext } from '../../../cartProvider'
+import { CartContext } from '../../../contexts/cart-provider'
 import CartList from './list/list'
 import './panel.module.scss'
 
