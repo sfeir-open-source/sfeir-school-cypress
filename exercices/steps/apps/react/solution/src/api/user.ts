@@ -1,12 +1,19 @@
 import { AddressDTO } from '../components/user/address/address'
 
-const API = process.env.NX_API_URL_USER || 'http://localhost:8080'
+const API = process.env.NX_API_URL_USER || 'http://localhost:8080/api'
 
 export interface UserDTO {
   id: string;
   username: string,
   address: AddressDTO,
   cardNumber?: string
+}
+
+export class CredentialsError extends Error {
+  constructor (msg: string) {
+    super(msg)
+    Object.setPrototypeOf(this, CredentialsError.prototype)
+  }
 }
 
 export type SignInErrorDTO = string
@@ -25,6 +32,8 @@ export async function signin (username: string, password: string): Promise<Signi
     })
   }).then(res => res.ok
     ? res.json()
-    : res.json().then(r => r.message)
+    : res.json().then(({ message }) => {
+      throw new CredentialsError(message)
+    })
   )
 }

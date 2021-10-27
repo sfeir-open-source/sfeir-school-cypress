@@ -8,8 +8,7 @@ interface UserContextProps {
     user: User,
     signIn: (username: string, password: string) => Promise<void>,
     logout: () => void,
-    loading: boolean,
-    errorLabel: string|null
+    loading: boolean
 }
 
 export const UserContext = createContext<UserContextProps>({} as UserContextProps)
@@ -23,17 +22,11 @@ const STORAGE_EVENT_KEY = 'storage'
 function useUser ():UserContextProps {
   const [user, setUser] = useState<User>(null)
   const [loading, setLoading] = useState<boolean>(false)
-  const [errorLabel, setErrorLabel] = useState<string|null>(null)
 
   const signIn = useCallback((username: string, password: string) => {
     setLoading(true)
     return signInUser(username, password)
       .then((response) => {
-        if (typeof response === 'string') {
-          setErrorLabel(response)
-          throw new Error(response)
-        }
-
         window.localStorage.setItem(LOCAL_STORAGE_USER_KEY, JSON.stringify(response))
       }).finally(() => {
         setLoading(false)
@@ -59,8 +52,7 @@ function useUser ():UserContextProps {
     user,
     logout,
     signIn,
-    loading,
-    errorLabel
+    loading
   }
 }
 
