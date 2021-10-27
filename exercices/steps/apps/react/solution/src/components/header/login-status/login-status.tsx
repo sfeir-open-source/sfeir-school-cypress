@@ -19,7 +19,7 @@ export function LoginStatus (props: LoginStatusProps) {
   const login = useContext(UserContext)
 
   return (
-    login
+    login.user
       ? <button className={buttonClassName} data-cy="user-button" onClick={login?.logout}>
           <UserCircleIcon className={iconClassname}/>
           <span>{login.user?.username}</span>
