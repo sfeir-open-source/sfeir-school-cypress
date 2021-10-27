@@ -1,4 +1,4 @@
-const API = process.env.NX_API_URL_BOOKS || 'http://localhost:8080'
+const API = process.env.NX_API_URL_BOOKS || 'http://localhost:8080/api'
 
 export interface BookDTO {
     id: string;

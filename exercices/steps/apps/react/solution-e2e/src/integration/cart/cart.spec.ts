@@ -11,7 +11,7 @@ describe('cart page', () => {
   }
 
   it('should display empty cart', () => {
-    cy.intercept('/cart', {
+    cy.intercept('/api/cart', {
       statusCode: 200,
       body: {
         books: [],
@@ -26,7 +26,7 @@ describe('cart page', () => {
   })
 
   it('should handle cart payment', () => {
-    cy.intercept('/cart', {
+    cy.intercept('/api/cart', {
       statusCode: 200,
       body: {
         books: [{
@@ -41,7 +41,7 @@ describe('cart page', () => {
       }
     })
 
-    cy.intercept('POST', '/cart').as('payCard')
+    cy.intercept('POST', '/api/cart').as('payCard')
 
     cy.visit('/myCart')
 
