@@ -1,6 +1,6 @@
 import { useContext } from 'react'
 import { BookDTO } from '../../../api/book'
-import { CartContext } from '../../../cartProvider'
+import { CartContext } from '../../../contexts/cart-provider'
 import './item.module.scss'
 
 /* eslint-disable-next-line */

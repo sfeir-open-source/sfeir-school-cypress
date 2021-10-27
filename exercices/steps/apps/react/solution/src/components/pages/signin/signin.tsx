@@ -1,32 +1,21 @@
 import css from './signin.module.scss'
-import { useCallback, useState } from 'react'
+import { useCallback, useContext, useState } from 'react'
 import { useHistory } from 'react-router'
-import { signin as signInUser } from '../../../api/user'
+import { UserContext } from '../../../contexts/user-context'
 /* eslint-disable-next-line */
 export interface SigninProps {}
 
 export function Signin (props: SigninProps) {
   const history = useHistory()
 
+  const { signIn, loading, errorLabel } = useContext(UserContext)
+
   const [username, setUsername] = useState<string>('')
   const [password, setPassword] = useState<string>('')
-  const [loading, setLoading] = useState<boolean>(false)
-  const [errorLabel, setErrorLabel] = useState<string|null>(null)
 
-  const signIn = useCallback(() => {
-    setLoading(true)
-    signInUser(username, password)
-      .then((response) => {
-        if (typeof response === 'string') {
-          setErrorLabel(response)
-        } else {
-          window.localStorage.setItem('user', JSON.stringify(response))
-          history.replace('/')
-        }
-      }).finally(() => {
-        setLoading(false)
-      })
-  }, [username, password, history])
+  const handleSignIn = useCallback(() => {
+    signIn(username, password).then(() => history.replace('/'))
+  }, [username, password, signIn, history])
 
   return (
     <div className="h-screen bg-gray-200" style={{ paddingTop: '120px' }}>
@@ -71,7 +60,7 @@ export function Signin (props: SigninProps) {
           data-cy="login-button"
           className="w-full p-4 text-white bg-blue-600 border rounded-md hover:bg-blue-500"
           disabled={loading}
-          onClick={signIn}>
+          onClick={handleSignIn}>
             Signin
         </button>
       </div>
