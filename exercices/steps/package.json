@@ -3,13 +3,16 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "nx serve",
-    "build": "nx build",
-    "test": "nx test"
+    "start-nest-server": "nx run nest-server:serve --no-inspect",
+    "start-react-solution": "nx run react-solution:serve",
+    "start-react-solution-e2e": "nx run react-solution-e2e:e2e --watch"
   },
   "private": true,
   "dependencies": {
     "@heroicons/react": "^1.0.4",
+    "@nestjs/common": "^7.0.0",
+    "@nestjs/core": "^7.0.0",
+    "@nestjs/platform-express": "^7.0.0",
     "autoprefixer": "^10.3.7",
     "core-js": "^3.6.5",
     "postcss": "^8.3.9",
@@ -17,16 +20,21 @@
     "react-dom": "17.0.2",
     "react-query": "^3.26.0",
     "react-router-dom": "5.2.0",
+    "reflect-metadata": "^0.1.13",
     "regenerator-runtime": "0.13.7",
+    "rxjs": "~6.6.3",
     "tailwindcss": "^2.2.16",
     "tslib": "^2.0.0"
   },
   "devDependencies": {
+    "@nestjs/schematics": "^7.0.0",
+    "@nestjs/testing": "^7.0.0",
     "@nrwl/cli": "12.10.0",
     "@nrwl/cypress": "12.10.0",
     "@nrwl/eslint-plugin-nx": "12.10.0",
     "@nrwl/jest": "12.10.0",
     "@nrwl/linter": "12.10.0",
+    "@nrwl/nest": "^13.1.2",
     "@nrwl/node": "^12.10.0",
     "@nrwl/react": "^12.10.0",
     "@nrwl/tao": "12.10.0",
