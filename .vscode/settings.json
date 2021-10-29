@@ -1,0 +1,12 @@
+{
+  "eslint.workingDirectories": [
+    "exercices/steps"
+  ],
+  "prettier.configPath": "exercices/steps/.prettierrc",
+  "prettier.prettierPath": "exercices/steps/node_modules/prettier",
+  "cSpell.words": [
+    "heroicons",
+    "nestjs",
+    "nrwl"
+  ]
+}

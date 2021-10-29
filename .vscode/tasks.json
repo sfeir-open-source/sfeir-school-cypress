@@ -1,0 +1,29 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "npm",
+      "script": "start-nest-server",
+      "path": "exercices/steps/",
+      "problemMatcher": [],
+      "label": "npm: start-nest-server - exercices/steps",
+      "detail": "nx run nest-server:serve --no-inspect"
+    },
+    {
+      "type": "npm",
+      "script": "start-react-solution",
+      "path": "exercices/steps/",
+      "problemMatcher": [],
+      "label": "npm: start-react-solution - exercices/steps",
+      "detail": "nx run react-solution:serve"
+    },
+    {
+      "type": "npm",
+      "script": "start-react-solution-e2e",
+      "path": "exercices/steps/",
+      "problemMatcher": [],
+      "label": "npm: start-react-solution-e2e - exercices/steps",
+      "detail": "nx run react-solution-e2e:e2e --watch"
+    }
+  ]
+}
