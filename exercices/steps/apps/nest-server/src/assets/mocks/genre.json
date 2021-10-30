@@ -1,0 +1,22 @@
+[
+  {
+    "label": "Théatre",
+    "query": "drama"
+  },
+  {
+    "label": "Histoire",
+    "query": "history"
+  },
+  {
+    "label": "Littérature",
+    "query": "litterature"
+  },
+  {
+    "label": "Poésie",
+    "query": "poetry"
+  },
+  {
+    "label": "Science fiction",
+    "query": "sciencefiction"
+  }
+]

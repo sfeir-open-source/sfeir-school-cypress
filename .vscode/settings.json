@@ -6,7 +6,11 @@
   "prettier.prettierPath": "exercices/steps/node_modules/prettier",
   "cSpell.words": [
     "heroicons",
+    "litterature",
     "nestjs",
-    "nrwl"
+    "nrwl",
+    "sciencefiction",
+    "Théatre",
+    "Unprocessable"
   ]
 }
