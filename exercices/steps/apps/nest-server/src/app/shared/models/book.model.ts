@@ -9,3 +9,16 @@ interface IBook {
 }
 
 export type Book = Readonly<IBook>;
+
+export const BOOK_SCHEMA = {
+  type: 'object',
+  properties: {
+    id: { type: 'string' },
+    imageUrl: { type: 'string' },
+    date: { type: 'string' },
+    title: { type: 'string' },
+    author: { type: 'string' },
+    genre: { type: 'string' },
+    genreId: { type: 'string' },
+  },
+};
