@@ -1,0 +1,11 @@
+{
+  "login": "cypress.s@sfeir.com",
+  "password": "cypress_sfeir",
+  "address": {
+    "number": 32,
+    "street": "Bd Grande-Duchesse Charlotte",
+    "city": "Luxembourg",
+    "country": "Luxembourg",
+    "zipcode": "1330"
+  }
+}
