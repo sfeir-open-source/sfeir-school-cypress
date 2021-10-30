@@ -24,7 +24,9 @@
           {
             "code": 120
           }
-        ]
+        ],
+        "@typescript-eslint/no-empty-function": "off",
+        "@nrwl/nx/enforce-module-boundaries": "off"
       }
     },
     {
