@@ -5,13 +5,24 @@
 
 import { Logger } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
+import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 import { AppModule } from './app/app.module';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   const globalPrefix = 'api';
-  app.setGlobalPrefix(globalPrefix);
   const port = process.env.PORT || 3333;
+  app.setGlobalPrefix(globalPrefix);
+
+  /** Creation of swagger */
+  const swaggerConfiguration = new DocumentBuilder()
+    .setTitle('Sfeir School Cypress Nest Server')
+    .setDescription('Nest Server API Documentation')
+    .setVersion('1.0')
+    .build();
+  const swaggerDocument = SwaggerModule.createDocument(app, swaggerConfiguration);
+  SwaggerModule.setup('api/documentation', app, swaggerDocument);
+
   await app.listen(port, () => {
     Logger.log('Server is running on http://localhost:' + port + '/' + globalPrefix);
   });
