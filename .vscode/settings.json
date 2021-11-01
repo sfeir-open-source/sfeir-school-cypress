@@ -1,0 +1,18 @@
+{
+  "eslint.workingDirectories": [
+    "exercices/steps"
+  ],
+  "prettier.configPath": "exercices/steps/.prettierrc",
+  "prettier.prettierPath": "exercices/steps/node_modules/prettier",
+  "cSpell.words": [
+    "heroicons",
+    "litterature",
+    "nestjs",
+    "nrwl",
+    "sciencefiction",
+    "SFEIR",
+    "Théatre",
+    "Unprocessable",
+    "zipcode"
+  ]
+}

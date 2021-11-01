@@ -1,0 +1,47 @@
+{
+  "extends": [
+    "../../.eslintrc.json"
+  ],
+  "ignorePatterns": [
+    "!**/*"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "*.ts",
+        "*.tsx",
+        "*.js",
+        "*.jsx"
+      ],
+      "rules": {
+        "semi": [
+          "error",
+          "always"
+        ],
+        "no-useless-constructor": "off",
+        "max-len": [
+          "error",
+          {
+            "code": 120
+          }
+        ],
+        "@typescript-eslint/no-empty-function": "off",
+        "@nrwl/nx/enforce-module-boundaries": "off"
+      }
+    },
+    {
+      "files": [
+        "*.ts",
+        "*.tsx"
+      ],
+      "rules": {}
+    },
+    {
+      "files": [
+        "*.js",
+        "*.jsx"
+      ],
+      "rules": {}
+    }
+  ]
+}
