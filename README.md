@@ -83,9 +83,9 @@ npm run start-nest-server
 
 ## Visual studio code user
 
-If you use Vscode, this repo will automatically install the necessary extension if you accepte the proposal.
+If you use Vscode, this repo will automatically install the necessary extension if you accept the proposal.
 <br/>
-All the necessary task are already created and you can launch this task out of the boxe
+All the necessary tasks are already created and you can launch this task out of the boxe
 </br>
 
 ## Contributing
