@@ -45,7 +45,7 @@ cy.get('#button-bar button.primary')
 // ❌ Test cassé (Like ???)
 cy.get('#button-bar .primary')
 
-// 🤔 Ok, QUID  d'un design "carré" ? 
+// 🤔 QUID  d'un design "carré" ? 
 cy.get('#button-bar .rounded') 
 
 // ⚠️ Ok, mais le test impacte le code !
