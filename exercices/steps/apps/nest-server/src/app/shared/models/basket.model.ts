@@ -1,10 +1,10 @@
-interface IBasketItem {
+interface ICartItem {
   bookId: string;
   bookName: string;
   quantity: number;
 }
 
-export const BASKET_ITEM_SCHEMA = {
+export const CART_ITEM_SCHEMA = {
   type: 'object',
   properties: {
     bookId: { type: 'string' },
@@ -13,4 +13,4 @@ export const BASKET_ITEM_SCHEMA = {
   },
 };
 
-export type BasketItem = Readonly<IBasketItem>;
+export type CartItem = Readonly<ICartItem>;

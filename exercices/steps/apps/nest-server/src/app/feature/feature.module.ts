@@ -1,10 +1,10 @@
 import { Module } from '@nestjs/common';
-import { BasketModule } from './basket/basket.module';
 import { BooksModule } from './books/books.module';
+import { CartModule } from './cart/cart.module';
 import { UserModule } from './user/user.module';
 
 @Module({
-  imports: [BooksModule, UserModule, BasketModule],
-  exports: [BooksModule, UserModule, BasketModule],
+  imports: [BooksModule, UserModule, CartModule],
+  exports: [BooksModule, UserModule, CartModule],
 })
 export class FeatureModule {}
