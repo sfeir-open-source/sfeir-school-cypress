@@ -1,4 +1,4 @@
-# Browser
+# End-to-End
 <br/>
 
 <img src="./assets/images/cypress-explain-browser.svg"/>

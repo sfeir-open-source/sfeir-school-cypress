@@ -4,26 +4,28 @@
 Pour le moment : End-to-end
   * back-end nécessaire
 
-  * Indépendances des tests ? 
+  * Indépendances des tests ?   
     QUID des tests "stateful" ? (ex: ajout dans le panier)
 
 <br/>
+<br/>
 
 Les tests E2E, c'est __bien__ !   
-Il sont juste __difficile__ à mettre en place.
+Il sont juste __difficiles__ à mettre en place.
 
 ##==##
 
 # Un autre tradeoff ? 
 <br/>
 
-Intégration ? 
+Intégration ?
 
   * back-end inutile
 
-  * Indépendances des tests !
+  * Indépendances des tests !   
     Mock des états
 
+<br/>
 <br/>
 
 Les tests d'intégration, c'est __bien__ aussi !   

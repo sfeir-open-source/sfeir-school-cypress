@@ -34,7 +34,7 @@ Credits : [Official Cypress.io documentation](https://docs.cypress.io/api/comman
 
 # Intercept
 
-Intercept : fause requête
+Intercept : fause réponse
 
 
 ```js
@@ -72,6 +72,8 @@ Credits : [Official Cypress.io documentation](https://docs.cypress.io/api/comman
 
 cy.intercept('POST', '/signin', { status: 200 })
   .as("signIn")
+
+cy.get('[data-cy=signin-button']).click()
 
 // Vérifie que la requête est bien envoyé au moins une fois 
 cy.wait("@signIn")

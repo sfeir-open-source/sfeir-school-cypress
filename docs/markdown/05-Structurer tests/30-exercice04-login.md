@@ -1,6 +1,6 @@
 <!-- .slide: class="center" -->
 
-# Exercice 3 : Login
+# Exercice 4 : Login
 
  * Tester la page login
    * Un maximum de cas possibles
