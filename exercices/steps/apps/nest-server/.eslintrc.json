@@ -26,7 +26,8 @@
           }
         ],
         "@typescript-eslint/no-empty-function": "off",
-        "@nrwl/nx/enforce-module-boundaries": "off"
+        "@nrwl/nx/enforce-module-boundaries": "off",
+        "no-useless-catch": "off"
       }
     },
     {
