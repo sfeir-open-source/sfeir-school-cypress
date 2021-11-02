@@ -17,7 +17,7 @@
 
 Cypress propose des "marqueurs" pour les tests :
 
- * data-cy (Cypress-specific)
+ * data-cy (spécifique Cypress)
  * data-test
  * data-testid
 
@@ -25,6 +25,7 @@ Cypress propose des "marqueurs" pour les tests :
 ```js
 
 cy.get('[data-cy=button-bar]').find('[data-cy=play-button]')
+
 
 ```
 

@@ -6,13 +6,13 @@
     * Test d'un composant
     * Mock des dépendances internes (ex: Mock Fetch, Mock service)
 
- * End-to-End
+ * Intégration
    * Test de l'application
    * Mock des dépendances externes (ex: Mock Back-end)
 
- * Intégration
-   * Test de la solution intégrale
-   * Pas de mock (ex: Back réél, Graphql réél, BDD réelle)
+ * End-to-end
+   * Test de la solution entière
+   * Pas de mock (ex: Back réel, Graphql réel, BDD réelle)
 
 ##==##
 

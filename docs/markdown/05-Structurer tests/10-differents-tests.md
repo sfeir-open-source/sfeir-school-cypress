@@ -28,7 +28,7 @@ Si on casse 1 fonctionnalité:
 
  * 👍 Au moins 1 test plante 
 
- * 👌 1 seul test plante
+ * 👌 Exactement 1 test plante
 
 Plus rapide (à réparer), plus clair, moins frustrant.
 

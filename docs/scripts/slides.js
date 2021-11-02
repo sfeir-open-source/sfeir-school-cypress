@@ -54,6 +54,7 @@ function structurertests() {
     "05-Structurer tests/10-differents-tests.md",
     "05-Structurer tests/20-command.md",
     "05-Structurer tests/30-exercice04-login.md",
+    "05-Structurer tests/40-ouverture.md",
   ]
 }
 
