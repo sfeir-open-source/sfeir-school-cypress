@@ -45,6 +45,14 @@ function networking() {
     "04-Networking/60-ouverture.md",
   ]
 }
+function structurertests() {
+  return [
+    "05-Structurer tests/00-TITLE.md",
+    "05-Structurer tests/10-differents-tests.md",
+    "05-Structurer tests/20-command.md",
+    "05-Structurer tests/30-exercice04-login.md",
+  ]
+}
 
 function formation() {
   return [
@@ -53,6 +61,7 @@ function formation() {
     ...cypress(),
     ...goodtest(),
     ...networking(),
+    ...structurertests(),
   ].map(slidePath => {
     return { path: slidePath };
   });
