@@ -1,3 +1,4 @@
+import { BAD_REQUEST_SCHEMA, UNAUTHORIZED_SCHEMA } from '@nest-server/app/shared/models/error.model';
 import { User, USER_SCHEMA } from '@nest-server/app/shared/models/user.model';
 import { Body, Controller, HttpCode, Post, UnauthorizedException } from '@nestjs/common';
 import { ApiBadRequestResponse, ApiOkResponse, ApiTags, ApiUnauthorizedResponse } from '@nestjs/swagger';
@@ -15,19 +16,12 @@ export class UserController {
   @ApiBadRequestResponse({
     status: 400,
     description: 'Bad request',
-    schema: {
-      type: 'object',
-      properties: {
-        statusCode: { type: 'number' },
-        message: { type: 'array', items: { type: 'string' } },
-        error: { type: 'string' },
-      },
-    },
+    schema: BAD_REQUEST_SCHEMA,
   })
   @ApiUnauthorizedResponse({
     status: 401,
     description: 'Unauthorized',
-    schema: { type: 'object', properties: { statusCode: { type: 'number' }, message: { type: 'string' } } },
+    schema: UNAUTHORIZED_SCHEMA,
   })
   authenticate(@Body() user: UserDTO): Omit<User, 'password'> | UnauthorizedException {
     return this.userService.authenticate(user);
