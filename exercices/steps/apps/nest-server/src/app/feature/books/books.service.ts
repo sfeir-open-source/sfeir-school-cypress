@@ -9,6 +9,15 @@ import { Injectable, UnprocessableEntityException } from '@nestjs/common';
 
 @Injectable()
 export class BooksService {
+  getAll(ids: string[]): Book[] {
+    const keys = ids.reduce((map, id) => {
+      map[id] = true;
+      return map;
+    }, {});
+   
+   return listBooks.filter(b => !!keys[b.id]);
+  }
+
   constructor(private readonly paginatorService: PaginatorService) {}
 
   getBooks(genre: string[], page: number, limit: number): Paginator<Book> | UnprocessableEntityException {

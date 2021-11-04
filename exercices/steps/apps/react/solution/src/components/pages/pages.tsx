@@ -14,7 +14,7 @@ export function Pages (props: PagesProps) {
     <Switch>
       <Route exact path="/"><Home /></Route>
       <Route exact path="/signin"><Signin /></Route>
-      <Route exact path="/myCart"><Cart /></Route>
+      <Route exact path="/cart"><Cart /></Route>
       <Route exact path="/order"><Order /></Route>
     </Switch>
   )

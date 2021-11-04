@@ -1,4 +1,4 @@
-const API = process.env.NX_API_URL_BOOKS || 'http://localhost:8080/api'
+const API = process.env.NX_API_URL_BOOKS || 'http://localhost:3333/api'
 
 export interface BookDTO {
     id: string;
@@ -8,8 +8,14 @@ export interface BookDTO {
     imageUrl: string;
 }
 
-export async function findBooks (query: string): Promise<BookDTO[]> {
-  return fetch(`${API}/books?query=${query}`)
+export async function findBooks (genre: string): Promise<BookDTO[]> {
+  return fetch(`${API}/books?genre=${genre}&pageSize=10&page=1`, { mode: 'cors' })
+    .then(res => res.json())
+    .then(({ content }) => content)
+}
+
+export async function findTop10Books () : Promise<BookDTO[]> {
+  return fetch(`${API}/books/top10`)
     .then(res => res.json())
 }
 
@@ -19,6 +25,6 @@ export interface GenreDTO {
 }
 
 export async function findGenres (): Promise<GenreDTO[]> {
-  return fetch(`${API}/genres`)
+  return fetch(`${API}/books/genres`, { mode: 'cors' })
     .then(res => res.json())
 }

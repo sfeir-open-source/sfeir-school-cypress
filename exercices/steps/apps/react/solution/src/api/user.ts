@@ -1,6 +1,6 @@
 import { AddressDTO } from '../components/user/address/address'
 
-const API = process.env.NX_API_URL_USER || 'http://localhost:8080/api'
+const API = process.env.NX_API_URL_USER || 'http://localhost:3333/api'
 
 export interface UserDTO {
   id: string;

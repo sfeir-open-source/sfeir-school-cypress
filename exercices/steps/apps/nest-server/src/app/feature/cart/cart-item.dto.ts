@@ -1,19 +1,6 @@
-import { ApiProperty } from '@nestjs/swagger';
-import { IsNotEmpty, IsNumber, IsString } from 'class-validator';
+import { Book } from "@nest-server/app/shared/models/book.model";
 
 export class CartItemDTO {
-  @ApiProperty()
-  @IsNotEmpty()
-  @IsString()
-  bookId: string;
-
-  @ApiProperty()
-  @IsNotEmpty()
-  @IsString()
-  bookName: string;
-
-  @ApiProperty()
-  @IsNotEmpty()
-  @IsNumber()
-  quantity: number;
+    book: Book;
+    quantity: number;
 }

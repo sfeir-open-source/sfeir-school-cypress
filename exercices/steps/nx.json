@@ -14,12 +14,7 @@
     "default": {
       "runner": "@nrwl/workspace/tasks-runners/default",
       "options": {
-        "cacheableOperations": [
-          "build",
-          "lint",
-          "test",
-          "e2e"
-        ]
+        "cacheableOperations": ["build", "lint", "test", "e2e"]
       }
     }
   },
@@ -32,17 +27,15 @@
     ]
   },
   "projects": {
+    "nest-server": {
+      "tags": []
+    },
     "react-solution": {
       "tags": []
     },
     "react-solution-e2e": {
       "tags": [],
-      "implicitDependencies": [
-        "react-solution"
-      ]
-    },
-    "nest-server": {
-      "tags": []
+      "implicitDependencies": ["react-solution"]
     }
   }
 }
