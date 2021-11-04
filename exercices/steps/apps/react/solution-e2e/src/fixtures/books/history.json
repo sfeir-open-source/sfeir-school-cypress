@@ -1,74 +1,68 @@
-[
-  {
-    "id": "1256",
-    "imageUrl": "https://www.gutenberg.org/cache/epub/1256/pg1256.cover.medium.jpg",
-    "date": "1998-03-01",
-    "title": "Cyrano de Bergerac",
-    "author": "Rostand, Edmond",
-    "genre": "Histoire"
-  },
-  {
-    "id": "1910",
-    "imageUrl": "https://www.gutenberg.org/cache/epub/1910/pg1910.cover.medium.jpg",
-    "date": "1999-09-01",
-    "title": "La Tulipe Noire",
-    "author": "Dumas, Alexandre",
-    "genre": "Histoire"
-  },
-  {
-    "id": "5250",
-    "imageUrl": "https://www.gutenberg.org/cache/epub/5250/pg5250.cover.medium.jpg",
-    "date": "2004-03-01",
-    "title": "Nana",
-    "author": "Zola, Émile",
-    "genre": "Histoire"
-  },
-  {
-    "id": "5423",
-    "imageUrl": "https://www.gutenberg.org/cache/epub/5423/pg5423.cover.medium.jpg",
-    "date": "2004-04-01",
-    "title": "L'homme Qui Rit",
-    "author": "Hugo, Victor",
-    "genre": "Histoire"
-  },
-  {
-    "id": "6309",
-    "imageUrl": "https://www.gutenberg.org/cache/epub/6309/pg6309.cover.medium.jpg",
-    "date": "2004-08-01",
-    "title": "Ma Cousine Pot-Au-Feu",
-    "author": "Tinseau, Léon de",
-    "genre": "Histoire"
-  },
-  {
-    "id": "6691",
-    "imageUrl": "https://www.gutenberg.org/cache/epub/6691/pg6691.cover.medium.jpg",
-    "date": "2004-10-01",
-    "title": "Discours Civiques de Danton",
-    "author": "Danton, Georges Jacques, 1759-1794",
-    "genre": "Histoire"
-  },
-  {
-    "id": "6994",
-    "imageUrl": "https://www.gutenberg.org/cache/epub/6994/pg6994.cover.medium.jpg",
-    "date": "2004-11-01",
-    "title": "Han d'Islande",
-    "author": "Hugo, Victor",
-    "genre": "Histoire"
-  },
-  {
-    "id": "7442",
-    "imageUrl": "https://www.gutenberg.org/cache/epub/7442/pg7442.cover.medium.jpg",
-    "date": "2005-02-01",
-    "title": "Michel Strogoff: De Moscou a Irkoutsk",
-    "author": "Verne, Jules",
-    "genre": "Histoire"
-  },
-  {
-    "id": "7770",
-    "imageUrl": "https://www.gutenberg.org/cache/epub/7770/pg7770.cover.medium.jpg",
-    "date": "2005-03-01",
-    "title": "Les Quarante-Cinq — Tome 1",
-    "author": "Dumas, Alexandre, 1802-1870",
-    "genre": "Histoire"
-  }
-]
+{
+  "content": [
+    {
+      "id": "1910",
+      "imageUrl": "https://www.gutenberg.org/cache/epub/1910/pg1910.cover.medium.jpg",
+      "date": "1999-09-01",
+      "title": "La Tulipe Noire",
+      "author": "Dumas, Alexandre",
+      "genre": "Histoire"
+    },
+    {
+      "id": "5250",
+      "imageUrl": "https://www.gutenberg.org/cache/epub/5250/pg5250.cover.medium.jpg",
+      "date": "2004-03-01",
+      "title": "Nana",
+      "author": "Zola, Émile",
+      "genre": "Histoire"
+    },
+    {
+      "id": "5423",
+      "imageUrl": "https://www.gutenberg.org/cache/epub/5423/pg5423.cover.medium.jpg",
+      "date": "2004-04-01",
+      "title": "L'homme Qui Rit",
+      "author": "Hugo, Victor",
+      "genre": "Histoire"
+    },
+    {
+      "id": "6309",
+      "imageUrl": "https://www.gutenberg.org/cache/epub/6309/pg6309.cover.medium.jpg",
+      "date": "2004-08-01",
+      "title": "Ma Cousine Pot-Au-Feu",
+      "author": "Tinseau, Léon de",
+      "genre": "Histoire"
+    },
+    {
+      "id": "6691",
+      "imageUrl": "https://www.gutenberg.org/cache/epub/6691/pg6691.cover.medium.jpg",
+      "date": "2004-10-01",
+      "title": "Discours Civiques de Danton",
+      "author": "Danton, Georges Jacques, 1759-1794",
+      "genre": "Histoire"
+    },
+    {
+      "id": "6994",
+      "imageUrl": "https://www.gutenberg.org/cache/epub/6994/pg6994.cover.medium.jpg",
+      "date": "2004-11-01",
+      "title": "Han d'Islande",
+      "author": "Hugo, Victor",
+      "genre": "Histoire"
+    },
+    {
+      "id": "7442",
+      "imageUrl": "https://www.gutenberg.org/cache/epub/7442/pg7442.cover.medium.jpg",
+      "date": "2005-02-01",
+      "title": "Michel Strogoff: De Moscou a Irkoutsk",
+      "author": "Verne, Jules",
+      "genre": "Histoire"
+    },
+    {
+      "id": "7770",
+      "imageUrl": "https://www.gutenberg.org/cache/epub/7770/pg7770.cover.medium.jpg",
+      "date": "2005-03-01",
+      "title": "Les Quarante-Cinq — Tome 1",
+      "author": "Dumas, Alexandre, 1802-1870",
+      "genre": "Histoire"
+    }
+  ]
+}

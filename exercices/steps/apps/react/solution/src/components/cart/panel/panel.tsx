@@ -17,8 +17,8 @@ export function Panel ({ className }: PanelProps) {
     <div className={className} data-cy='cart-panel'>
       <Link to="/cart"><h2 className="pb-4 text-lg font-semibold">Cart</h2></Link>
 
-      {cart?.books.length
-        ? <CartList items={cart.books} />
+      {cart?.length
+        ? <CartList items={cart} />
         : <div data-cy="cart-panel-empty">Your cart is empty</div>}
 
     </div>

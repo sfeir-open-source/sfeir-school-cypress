@@ -1,19 +1,18 @@
-import { BookDTO } from '../../../../api/book'
+import { CartItemDTO } from '../../../../api/cart'
 import Item from '../item/item'
 
 import './list.module.scss'
 
-/* eslint-disable-next-line */
 export interface ListProps {
-  items: BookDTO[],
+  items: CartItemDTO[],
   className?: string
 }
 
-export function List ({ items, className }: ListProps) {
+export function List ({ items, className = '' }: ListProps) {
   return (
-    <div className={className}>
+    <div className={`flex flex-col gap-4 ${className}`}>
       {
-        items.map(item => <Item {...item} />)
+        items.map(item => <Item {...item.book} />)
       }
     </div>
   )

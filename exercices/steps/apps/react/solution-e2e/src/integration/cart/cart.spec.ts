@@ -19,7 +19,7 @@ describe('cart page', () => {
       }
     })
 
-    cy.visit('/myCart')
+    cy.visit('/cart')
 
     cy.get('[data-cy=cart-panel-empty]').should('exist')
     cy.get('[data-cy=pay-button]').should('not.exist')
@@ -28,22 +28,22 @@ describe('cart page', () => {
   it('should handle cart payment', () => {
     cy.intercept('/api/cart', {
       statusCode: 200,
-      body: {
-        books: [{
+      body: [{
+        book: {
           id: '799',
           imageUrl: 'https://www.gutenberg.org/cache/epub/799/pg799.cover.medium.jpg',
           date: '1997-01-01',
           title: 'De la Terre à la Lune',
           author: 'Verne, Jules',
           genre: 'Science-fiction'
-        }],
-        total: 0
-      }
+        },
+        quantity: 1
+      }]
     })
 
     cy.intercept('POST', '/api/cart').as('payCard')
 
-    cy.visit('/myCart')
+    cy.visit('/cart')
 
     cy.get('[data-cy=cart-panel-empty]').should('not.exist')
     cy.contains('De la Terre à la Lune').should('exist')

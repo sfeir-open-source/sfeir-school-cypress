@@ -52,7 +52,7 @@ export function Cart (props: CartProps) {
     payCart({} as UserPaymentDTO).then(() => history.push('/order'))
   }, [payCart, history])
 
-  const canOrder = !!cart?.books.length && creditCard.length > 0 && userForm.address.address.length > 0
+  const canOrder = !!cart?.length && creditCard.length > 0 && userForm.address.address.length > 0
 
   return (
     <div>
@@ -60,10 +60,10 @@ export function Cart (props: CartProps) {
 
       <div className="container p-8">
         {
-          cart?.books.length
+          cart?.length
             ? (
             <>
-              <CartList items={cart?.books || []} />
+              <CartList items={cart} />
               <div className="flex flex-row justify-between gap-16">
                 <Address address={userForm.address} onChange={onChangeAddress}/>
                 <CreditCard creditCard={creditCard} onChange={setCreditCard}/>
