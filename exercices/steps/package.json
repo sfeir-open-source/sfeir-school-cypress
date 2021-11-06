@@ -5,7 +5,8 @@
   "scripts": {
     "start-nest-server": "nx run nest-server:serve --no-inspect",
     "start-react-solution": "nx run react-solution:serve",
-    "start-react-solution-e2e": "nx run react-solution-e2e:e2e --watch"
+    "start-react-solution-e2e": "nx run react-solution-e2e:e2e --watch",
+    "test": "nx run react-solution-e2e:e2e"
   },
   "private": true,
   "dependencies": {

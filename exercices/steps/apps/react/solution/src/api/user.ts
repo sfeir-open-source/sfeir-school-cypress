@@ -22,6 +22,7 @@ export type SigninDTO = UserDTO | SignInErrorDTO
 export async function signin (username: string, password: string): Promise<SigninDTO> {
   return fetch(`${API}/signin`, {
     method: 'POST',
+    mode: 'cors',
     headers: {
       Accept: 'application/json',
       'Content-Type': 'application/json'
