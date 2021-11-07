@@ -1,5 +1,5 @@
-import Input from '../../input/input'
-import Panel from '../../panel/panel'
+import Input from '../../lib/input/input'
+import Panel from '../../lib/panel/panel'
 import './credit-card.module.scss'
 
 /* eslint-disable-next-line */

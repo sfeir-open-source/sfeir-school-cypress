@@ -4,7 +4,7 @@ import './pages.module.scss'
 import Signin from './signin/signin'
 import Cart from './cart/cart'
 import Order from './order/order'
-import Genre from '../pages/genre/genre'
+import Genre from './genre/genre'
 
 /* eslint-disable-next-line */
 export interface PagesProps {

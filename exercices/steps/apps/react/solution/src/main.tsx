@@ -3,7 +3,7 @@ import * as ReactDOM from 'react-dom'
 import { BrowserRouter } from 'react-router-dom'
 import CartProvider from './contexts/cart-provider'
 
-import App from './components/app/app'
+import App from './app/app'
 import UserProvider from './contexts/user-provider'
 import GenreProvider from './contexts/genre-provider'
 
