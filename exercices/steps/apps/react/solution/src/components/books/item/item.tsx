@@ -17,8 +17,8 @@ export function Item ({ book, className }: ItemProps) {
     <div className={`${className || ''} flex flex-col flex-shrink-0 w-32`} data-cy={`book-item-${book.id}`}>
       <img alt={title} src={imageUrl} className="w-32 h-48" />
       <div className="py-4 content">
-        <div className="h-6 text-sm truncate">{title}</div>
-        <div className="h-8 text-xs italic truncate">{author}</div>
+        <div data-cy="book-item-title" className="h-6 text-sm truncate">{title}</div>
+        <div data-cy="book-item-author" className="h-8 text-xs italic truncate">{author}</div>
         <button
           onClick={() => addToCart(book)}
           className="w-full p-1 text-sm text-white rounded-sm bg-primary-500"

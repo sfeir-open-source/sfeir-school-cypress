@@ -31,7 +31,7 @@ function useGenres (): GenreBooks {
           {
             id: genre.query,
             label: genre.label,
-            books
+            books: books.content
           })
         ))
     )
