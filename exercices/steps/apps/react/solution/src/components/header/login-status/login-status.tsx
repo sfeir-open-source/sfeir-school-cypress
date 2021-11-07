@@ -1,6 +1,6 @@
 import { LoginIcon, UserCircleIcon } from '@heroicons/react/solid'
 import { useContext } from 'react'
-import { UserContext } from '../../../contexts/user-context'
+import { UserContext } from '../../../contexts/user-provider'
 
 import './login-status.module.scss'
 

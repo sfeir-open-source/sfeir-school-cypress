@@ -19,6 +19,7 @@ export interface UserProps {
 
 const LOCAL_STORAGE_USER_KEY = 'user'
 const STORAGE_EVENT_KEY = 'storage'
+
 function useUser ():UserContextProps {
   const [user, setUser] = useState<User>(null)
   const [loading, setLoading] = useState<boolean>(false)

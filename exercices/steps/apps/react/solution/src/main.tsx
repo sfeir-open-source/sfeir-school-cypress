@@ -4,7 +4,7 @@ import { BrowserRouter } from 'react-router-dom'
 import CartProvider from './contexts/cart-provider'
 
 import App from './components/app/app'
-import UserProvider from './contexts/user-context'
+import UserProvider from './contexts/user-provider'
 import GenreProvider from './contexts/genre-provider'
 
 ReactDOM.render(
