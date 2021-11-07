@@ -1,5 +1,6 @@
-import { useEffect, useState } from 'react'
-import { BookDTO, findBooks, findGenres } from '../../api/book'
+import { useContext, useEffect, useState } from 'react'
+import { BookDTO, findBooks } from '../../api/book'
+import { GenresContext } from '../../contexts/genre-provider'
 import BookList from '../books/list/list'
 
 import './genre.module.scss'
@@ -16,24 +17,28 @@ interface GenreBook {
 type GenreBooks = GenreBook[] | null;
 
 function useGenres (): GenreBooks {
-  const [genres, setGenres] = useState<GenreBooks>(null)
+  const genres = useContext(GenresContext)
+  const [genreBooks, setGenreBooks] = useState<GenreBooks>(null)
 
   useEffect(() => {
-    findGenres()
-      .then((genres) => Promise.all(
-        genres.map(genre => findBooks(genre.query)
-          .then(books => (
-            {
-              id: genre.query,
-              label: genre.label,
-              books
-            })
-          ))
-      ))
-      .then(setGenres)
-  }, [])
+    if (!genres) {
+      return
+    }
 
-  return genres
+    Promise.all(
+      genres.map(genre => findBooks(genre.query)
+        .then(books => (
+          {
+            id: genre.query,
+            label: genre.label,
+            books
+          })
+        ))
+    )
+      .then(setGenreBooks)
+  }, [genres])
+
+  return genreBooks
 }
 
 export function Genre (props: GenreProps) {

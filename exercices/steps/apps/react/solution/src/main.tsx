@@ -5,13 +5,16 @@ import CartProvider from './contexts/cart-provider'
 
 import App from './components/app/app'
 import UserProvider from './contexts/user-context'
+import GenreProvider from './contexts/genre-provider'
 
 ReactDOM.render(
   <StrictMode>
     <BrowserRouter>
       <UserProvider>
         <CartProvider>
-          <App />
+          <GenreProvider>
+            <App />
+          </GenreProvider>
         </CartProvider>
       </UserProvider>
     </BrowserRouter>

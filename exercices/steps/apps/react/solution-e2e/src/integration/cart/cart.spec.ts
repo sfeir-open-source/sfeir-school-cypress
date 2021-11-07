@@ -10,6 +10,10 @@ describe('cart page', () => {
     cy.get('[data-cy=user-city-input]').type(userAddress.city)
   }
 
+  beforeEach(() => {
+    cy.interceptHomePage()
+  })
+
   it('should display empty cart', () => {
     cy.intercept('/api/cart', {
       statusCode: 200,
