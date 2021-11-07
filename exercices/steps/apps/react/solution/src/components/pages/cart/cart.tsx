@@ -5,7 +5,7 @@ import CartList from '../../cart/panel/list/list'
 import Header from '../../header/header'
 import { UserPaymentDTO } from '../../../api/cart'
 import Address, { AddressDTO, DEFAULT_ADDRESS } from '../../user/address/address'
-import { UserContext } from '../../../contexts/user-context'
+import { UserContext } from '../../../contexts/user-provider'
 import CreditCard from '../../user/credit-card/credit-card'
 import { useHistory } from 'react-router'
 
