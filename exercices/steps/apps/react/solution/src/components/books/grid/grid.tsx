@@ -1,5 +1,6 @@
 import { useContext, useMemo } from 'react'
 import { GenresContext } from '../../../contexts/genre-provider'
+import Header from '../../lib/header/header'
 import Item from '../item/item'
 import './grid.module.scss'
 import usePagination from './usePagination'
@@ -27,8 +28,8 @@ export function Grid ({ genreId, ...passThroughProps }: GridProps) {
 
   return (
     <section data-cy="genre-grid" {...passThroughProps}>
-      <h2 className="p-4 text-lg bold">{genreLabel}</h2>
-      <div data-cy="genre-grid-content" className="flex flex-wrap p-4 overflow-x-auto gap-12">
+      <Header label={genreLabel}/>
+      <div data-cy="genre-grid-content" className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {
           page?.books
             ? page?.books.map(item => <Item key={item.id} book={item} />)

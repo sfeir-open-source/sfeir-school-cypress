@@ -1,6 +1,6 @@
 import { useContext } from 'react'
 import { Link } from 'react-router-dom'
-import { GenresContext } from '../../contexts/genre-provider'
+import { GenresContext } from '../../../contexts/genre-provider'
 import './menu.module.scss'
 
 /* eslint-disable-next-line */

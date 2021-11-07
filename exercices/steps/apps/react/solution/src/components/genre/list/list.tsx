@@ -1,9 +1,9 @@
 import { useContext, useEffect, useState } from 'react'
-import { BookDTO, findBooks } from '../../api/book'
-import { GenresContext } from '../../contexts/genre-provider'
-import BookList from '../books/list/list'
+import { BookDTO, findBooks } from '../../../api/book'
+import { GenresContext } from '../../../contexts/genre-provider'
+import BookList from '../../books/list/list'
 
-import './genre.module.scss'
+import './list.module.scss'
 
 /* eslint-disable-next-line */
 export interface GenreProps {}

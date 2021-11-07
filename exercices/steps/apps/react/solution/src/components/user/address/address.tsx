@@ -1,6 +1,6 @@
 import './address.module.scss'
-import Input from '../../input/input'
-import Panel from '../../panel/panel'
+import Input from '../../lib/input/input'
+import Panel from '../../lib/panel/panel'
 
 export interface AddressDTO {
   address: string,

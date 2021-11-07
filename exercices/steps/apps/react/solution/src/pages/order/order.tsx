@@ -1,4 +1,4 @@
-import Header from '../../header/header'
+import Header from '../../components/header/header'
 import './order.module.scss'
 
 /* eslint-disable-next-line */
