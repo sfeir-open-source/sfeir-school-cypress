@@ -1,9 +1,9 @@
 <!-- .slide: class="center" -->
 
-# Our dreaming app
+# Notre application parfaite
 
 <br />
-Notre application parfait doit être : 
+Notre application parfaite doit être : 
 <br />
 
 * Performante
