@@ -3,7 +3,7 @@
 
 # Présentation
 
-![speaker](./assets/images/jge.jpg)
+![speaker](./assets/images/nfr.jpg)
 ![company](./assets/images/logo_sfeir_bleu_orange.png)
 
 ## Nicolas Frizarrin
