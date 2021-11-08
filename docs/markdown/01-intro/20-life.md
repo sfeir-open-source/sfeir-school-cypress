@@ -12,5 +12,5 @@ Nous avons un choix important à faire :
 
 * Test automatique : 
   * Fiable ? 
-  * Cher ? 
+  * Coûteux ? 
   * Rapide ? 
