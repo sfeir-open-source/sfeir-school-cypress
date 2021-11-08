@@ -36,7 +36,7 @@ Indépendance entre les tests :
 # Fiable ? 
 <br/>
 
- * Idempotant (toujours la même réponse)
+ * Idempotent (toujours la même réponse)
 
  * ✅ __uniquement__ si c'est OK
 
