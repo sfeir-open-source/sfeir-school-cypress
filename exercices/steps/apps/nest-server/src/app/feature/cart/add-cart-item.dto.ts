@@ -11,4 +11,9 @@ export class AddCartItemDTO {
   @IsNotEmpty()
   @IsNumber()
   quantity: number;
+
+  @ApiProperty()
+  @IsNotEmpty()
+  @IsNumber()
+  price: number;
 }

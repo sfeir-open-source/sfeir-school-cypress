@@ -1,22 +1,29 @@
+import { Book } from "./book.model";
+
 interface ICartItem {
   bookId: string;
-  bookName: string;
   quantity: number;
   price: number;
 }
 
 interface ICart {
-  books: ICartItem[],
-  totalPrice: number
+  [key: string]: ICartItem
 }
 
 export const CART_ITEM_SCHEMA = {
   type: 'object',
   properties: {
-    bookId: { type: 'string' },
+    book: { type: 'book' },
     bookName: { type: 'string' },
     quantity: { type: 'number' },
   },
 };
 
-export type CartItem = Readonly<ICartItem>;
+export type Cart = Readonly<ICart>
+export type CartItem = Readonly<ICartItem>
+
+export interface BookCartItem {
+  book: Book;
+  quantity: number;
+  price: number;
+}
