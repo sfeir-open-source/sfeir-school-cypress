@@ -34,7 +34,8 @@ describe('Cart panel', () => {
     cy.wait('@add-to-cart')
       .its('request.body').should('deep.equal', {
         bookId: '799',
-        quantity: 1
+        quantity: 1,
+        price: 0
       })
 
     cy.get('[data-cy=cart-panel]').find('[data-cy=cart-item-799]').should('be.visible')

@@ -4,7 +4,7 @@ describe('login', () => {
   })
 
   it('should handle issued login', () => {
-    cy.intercept('POST', '/api/signin', {
+    cy.intercept('POST', '/api/user/sign-in', {
       statusCode: 401,
       body: {
         message: 'Wrong user/password'
@@ -24,7 +24,7 @@ describe('login', () => {
   })
 
   it('should handle sucessful login', () => {
-    cy.intercept('POST', '/api/signin', {
+    cy.intercept('POST', '/api/user/sign-in', {
       statusCode: 200,
       body: {
         username: 'John Doe',
