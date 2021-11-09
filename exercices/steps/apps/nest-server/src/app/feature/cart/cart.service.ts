@@ -1,5 +1,5 @@
 import { ReaderFileService } from '@nest-server/app/core/providers/reader-file.service';
-import { Cart, CartItem } from '@nest-server/app/shared/models/basket.model';
+import { Cart, CartItem } from '@nest-server/app/shared/models/cart.model';
 import { Injectable } from '@nestjs/common';
 import { join } from 'path';
 
@@ -21,7 +21,7 @@ export class CartService {
 
     const newCart = {
       ...oldCart,
-      [item.bookId]: item.quantity
+      [item.bookId]: item
     };
 
     this.writeBasket(newCart);

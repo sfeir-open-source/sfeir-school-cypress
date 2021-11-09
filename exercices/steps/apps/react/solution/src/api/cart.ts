@@ -28,7 +28,8 @@ export function addToCart (book: BookDTO): Promise<CartDTO> {
     },
     body: JSON.stringify({
       bookId: book.id,
-      quantity: 1
+      quantity: 1,
+      price: 0
     })
   }).then(res => res.json())
 }
