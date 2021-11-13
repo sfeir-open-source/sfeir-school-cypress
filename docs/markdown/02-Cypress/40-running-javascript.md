@@ -1,12 +1,12 @@
 <!-- .slide: class="center" -->
 
-# Exécutant du javascript
+# Exécutant du JavaScript
 
-* On écrit (presque toujours) du javascript
+* On écrit (presque toujours) du JavaScript
   
-* Le Navigateur attend du javascript
+* Le Navigateur attend du JavaScript
 
-Cypress exécute du Javascript dans le navigateur
+Cypress exécute du JavaScript dans le navigateur
 <br/>
 
 <p class="fragment slide-in">

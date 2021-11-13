@@ -2,7 +2,7 @@
 
 # Un test runner
 
-```javascript
+```js
 describe('My First Test', () => {
   // Use it partially !
   before(() => {

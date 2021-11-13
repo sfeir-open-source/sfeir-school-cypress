@@ -4,6 +4,6 @@
 
  * Test runner
 
- * Exécutant du Javascript
+ * Exécutant du JavaScript
 
  * Dans (presque) tous les navigateurs
