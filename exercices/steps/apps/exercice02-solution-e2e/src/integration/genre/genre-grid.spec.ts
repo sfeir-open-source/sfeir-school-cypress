@@ -1,8 +1,4 @@
 describe('Science fiction page', () => {
-  beforeEach(() => {
-    cy.interceptHomePage()
-  })
-
   function byId (id: string) {
     return `[data-cy=book-item-${id}]`
   }

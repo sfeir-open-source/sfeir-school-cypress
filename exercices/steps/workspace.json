@@ -53,6 +53,58 @@
         }
       }
     },
+    "exercice02-e2e": {
+      "root": "apps/exercice02-e2e",
+      "sourceRoot": "apps/exercice02-e2e/src",
+      "projectType": "application",
+      "targets": {
+        "e2e": {
+          "executor": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/exercice02-e2e/cypress.json",
+            "devServerTarget": "react-solution:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "react-solution:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["apps/exercice02-e2e/**/*.{js,ts}"]
+          }
+        }
+      }
+    },
+    "exercice02-solution-e2e": {
+      "root": "apps/exercice02-solution-e2e",
+      "sourceRoot": "apps/exercice02-solution-e2e/src",
+      "projectType": "application",
+      "targets": {
+        "e2e": {
+          "executor": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/exercice02-solution-e2e/cypress.json",
+            "devServerTarget": "react-solution:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "react-solution:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["apps/exercice02-solution-e2e/**/*.{js,ts}"]
+          }
+        }
+      }
+    },
     "nest-server": {
       "root": "apps/nest-server",
       "sourceRoot": "apps/nest-server/src",
