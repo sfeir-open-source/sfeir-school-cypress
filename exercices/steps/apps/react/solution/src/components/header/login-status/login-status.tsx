@@ -1,5 +1,6 @@
 import { LoginIcon, UserCircleIcon } from '@heroicons/react/solid'
 import { useContext } from 'react'
+import { Link } from 'react-router-dom'
 import { UserContext } from '../../../contexts/user-provider'
 
 import './login-status.module.scss'
@@ -24,10 +25,10 @@ export function LoginStatus (props: LoginStatusProps) {
           <UserCircleIcon className={iconClassname}/>
           <span>{login.user?.username}</span>
         </button>
-      : <a href="/signin" className={buttonClassName} data-cy="login-button">
+      : <Link to="/signin" id="login-button" className={buttonClassName} data-cy="login-button">
           <LoginIcon className={iconClassname}/>
           <span>Login</span>
-        </a>
+        </Link>
   )
 }
 
