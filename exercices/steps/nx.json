@@ -27,6 +27,14 @@
     ]
   },
   "projects": {
+    "exercice01-e2e": {
+      "tags": [],
+      "implicitDependencies": ["react-solution"]
+    },
+    "exercice01-solution-e2e": {
+      "tags": [],
+      "implicitDependencies": ["react-solution"]
+    },
     "nest-server": {
       "tags": []
     },
