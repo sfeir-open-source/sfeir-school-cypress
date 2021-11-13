@@ -35,6 +35,14 @@
       "tags": [],
       "implicitDependencies": ["react-solution"]
     },
+    "exercice02-e2e": {
+      "tags": [],
+      "implicitDependencies": ["react-solution"]
+    },
+    "exercice02-solution-e2e": {
+      "tags": [],
+      "implicitDependencies": ["react-solution"]
+    },
     "nest-server": {
       "tags": []
     },
