@@ -8,7 +8,7 @@ export interface HomeProps {}
 export function Home (props: HomeProps) {
   return (
     <ThreeColumns>
-      <Top data-cy="top-10"/>
+      <Top />
       <GenreList />
     </ThreeColumns>
   )
