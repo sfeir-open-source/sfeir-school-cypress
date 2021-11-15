@@ -8,7 +8,7 @@
   * Résistants aux changements de styles
   * Pas d'impact sur le code
 
-* 🤔 Texte ( contains("mon-label") ) 
+* 🤔 Utiliser le texte ?
   * Parfois utile, parfois non 
 
 ##==##
@@ -20,6 +20,15 @@ Cypress propose des "marqueurs" pour les tests :
  * data-cy (spécifique Cypress)
  * data-test
  * data-testid
+
+```html
+
+<div data-cy="button-bar">
+  <button data-cy="play-button" class="btn btn-primary rounded">
+</div>
+
+
+```
 
 
 ```js
@@ -35,14 +44,19 @@ cy.get('[data-cy=button-bar]').find('[data-cy=play-button]')
 
 ## Dois-je tester un label ? 
 
+<br/>
+
 _Si ce label change, mon test doit-il passer rouge ?_
+
+<br/>
 
  * Oui ? => Contains
     * (exemple: donnée venant du back-end ?)
 
  * Non ? => Get by data-cy
     * (exemple: label d'un bouton ?)
-</p>
+
+<br/>
 
 __C'est une question subjective !__
 

@@ -8,9 +8,8 @@ function school() {
 function intro() {
   return [
     "01-intro/00-TITLE.md",
-    "01-intro/10-dream.md",
-    "01-intro/20-life.md",
-    "01-intro/30-testing.md",
+    "01-intro/10-why.md",
+    "01-intro/30-how.md",
   ]
 }
 function cypress() {
@@ -71,4 +70,3 @@ function formation() {
 export function usedSlides() {
   return formation();
 }
-
