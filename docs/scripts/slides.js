@@ -8,6 +8,7 @@ function school() {
     "00-school/speaker-nfr.md",
   ]
 }
+
 function intro() {
   return [
     "01-intro/00-TITLE.md",
@@ -15,6 +16,7 @@ function intro() {
     "01-intro/30-how.md",
   ]
 }
+
 function cypress() {
   return [
     "02-Cypress/00-TITLE.md",
@@ -26,6 +28,7 @@ function cypress() {
     "02-Cypress/60-exercice01-static.md",
   ]
 }
+
 function goodtest() {
   return [
     "03-Good test/00-TITLE.md",
@@ -35,6 +38,7 @@ function goodtest() {
     "03-Good test/40-exercice02-query.md",
   ]
 }
+
 function networking() {
   return [
     "04-Networking/00-TITLE.md",
@@ -47,13 +51,16 @@ function networking() {
     "04-Networking/60-ouverture.md",
   ]
 }
+
 function structurertests() {
   return [
     "05-Structurer tests/00-TITLE.md",
-    "05-Structurer tests/10-differents-tests.md",
     "05-Structurer tests/20-command.md",
-    "05-Structurer tests/30-exercice04-login.md",
-    "05-Structurer tests/40-ouverture.md",
+    "05-Structurer tests/30-exercice04-commands.md",
+    "05-Structurer tests/40-command-ouverture.md",
+    "05-Structurer tests/50-differents-tests.md",
+    "05-Structurer tests/60-exercice05-login.md",
+    "05-Structurer tests/70-ouverture.md",
   ]
 }
 

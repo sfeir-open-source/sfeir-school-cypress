@@ -1,20 +1,6 @@
-# Réinitialisation ? 
-<br/>
+<!-- .slide: class="center" -->
 
-Bonne pratique : tests __indépendants__ les uns des autres
-
-🤔 Réinitialiser le login ? 
-
-<br/>
-<div class="fragment slide-in">
-
-Cypress le <b>fait pour nous !</b> \o/
-
-</div>
-
-##==##
-
-# Commands
+# Commands: Ouverture
 <br/>
 
 🤔 Toute fonction n'est-elle pas une _Command_ ? 
@@ -27,4 +13,3 @@ Cypress le <b>fait pour nous !</b> \o/
 
  * Fonction dans fichier test : __c'est bien aussi !__ 
 </div>
-
