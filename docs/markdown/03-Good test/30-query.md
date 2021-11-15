@@ -30,6 +30,15 @@ Cypress propose des "marqueurs" pour les tests :
 
 ```
 
+```html
+
+<div data-cy="button-bar">
+  <button data-cy="play-button" class="btn btn-primary rounded">
+</div>
+
+
+```
+
 
 ```js
 
