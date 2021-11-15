@@ -4,15 +4,15 @@
 
  * Unitaire 
     * Test d'un composant
-    * Mock des dépendances internes (ex: Mock Fetch, Mock service)
+    * Mock dépendances __internes__
 
  * Intégration
    * Test de l'application
-   * Mock des dépendances externes (ex: Mock Back-end)
-
+   * Mock des dépendances __externes__
+  
  * End-to-end
    * Test de la solution entière
-   * Pas de mock (ex: Back réel, Graphql réel, BDD réelle)
+   * __Pas__ de mock
 
 ##==##
 

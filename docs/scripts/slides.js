@@ -40,12 +40,10 @@ function networking() {
   return [
     "04-Networking/00-TITLE.md",
     "04-Networking/10-differents-tests.md",
-    "04-Networking/20-e2e-integration.md",
-    "04-Networking/30-Networking.md",
-    "04-Networking/35-integration-networking.md",
-    "04-Networking/40-fixture.md",
-    "04-Networking/50-exercice03-intercept.md",
-    "04-Networking/60-ouverture.md",
+    "04-Networking/20-integration-networking.md",
+    "04-Networking/30-fixture.md",
+    "04-Networking/40-exercice03-intercept.md",
+    "04-Networking/50-ouverture.md",
   ]
 }
 
