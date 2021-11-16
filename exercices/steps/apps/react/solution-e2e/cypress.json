@@ -10,5 +10,10 @@
   "screenshotsFolder": "../../../dist/cypress/apps/react/solution-e2e/screenshots",
   "chromeWebSecurity": false,
   "viewportWidth": 1280,
-  "viewportHeight": 760
+  "viewportHeight": 760,
+  "env": {
+    "NX_API_URL_BOOKS": "http://localhost:3333/api",
+    "NX_API_URL_CART": "http://localhost:3333/api",
+    "NX_API_URL_USER": "http://localhost:3333/api"
+  }
 }

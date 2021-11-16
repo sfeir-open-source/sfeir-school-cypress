@@ -9,10 +9,8 @@ export interface Cart {
     payCart: (userPaymentDTO: UserPaymentDTO) => Promise<void>
 }
 
-const DEFAULT_CART: CartDTO = {
-  books: [],
-  total: 0
-}
+const DEFAULT_CART: CartDTO = []
+
 export default function useCart (): Cart {
   const [cart, setCart] = useState<CartDTO>(DEFAULT_CART)
 

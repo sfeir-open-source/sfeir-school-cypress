@@ -1,6 +1,6 @@
 import { AddressDTO } from '../components/user/address/address'
 
-const API = process.env.NX_API_URL_USER || 'http://localhost:8080/api'
+const API = process.env.NX_API_URL_USER || 'http://localhost:3333/api'
 
 export interface UserDTO {
   id: string;
@@ -19,15 +19,15 @@ export class CredentialsError extends Error {
 export type SignInErrorDTO = string
 export type SigninDTO = UserDTO | SignInErrorDTO
 
-export async function signin (username: string, password: string): Promise<SigninDTO> {
-  return fetch(`${API}/signin`, {
+export async function signin (login: string, password: string): Promise<SigninDTO> {
+  return fetch(`${API}/user/sign-in`, {
     method: 'POST',
     headers: {
       Accept: 'application/json',
       'Content-Type': 'application/json'
     },
     body: JSON.stringify({
-      username,
+      login,
       password
     })
   }).then(res => res.ok

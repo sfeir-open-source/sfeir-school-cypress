@@ -13,6 +13,7 @@ function useQuery (query: string) {
 
   useEffect(() => {
     findBooks(query)
+      .then(({ content }) => content)
       .then(setBooks)
   }, [query])
 

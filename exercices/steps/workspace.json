@@ -8,16 +8,12 @@
       "targets": {
         "build": {
           "executor": "@nrwl/node:build",
-          "outputs": [
-            "{options.outputPath}"
-          ],
+          "outputs": ["{options.outputPath}"],
           "options": {
             "outputPath": "dist/apps/nest-server",
             "main": "apps/nest-server/src/main.ts",
             "tsConfig": "apps/nest-server/tsconfig.app.json",
-            "assets": [
-              "apps/nest-server/src/assets"
-            ]
+            "assets": ["apps/nest-server/src/assets"]
           },
           "configurations": {
             "production": {
@@ -41,20 +37,14 @@
         },
         "lint": {
           "executor": "@nrwl/linter:eslint",
-          "outputs": [
-            "{options.outputFile}"
-          ],
+          "outputs": ["{options.outputFile}"],
           "options": {
-            "lintFilePatterns": [
-              "apps/nest-server/**/*.ts"
-            ]
+            "lintFilePatterns": ["apps/nest-server/**/*.ts"]
           }
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/nest-server"
-          ],
+          "outputs": ["coverage/apps/nest-server"],
           "options": {
             "jestConfig": "apps/nest-server/jest.config.js",
             "passWithNoTests": true
@@ -70,9 +60,7 @@
       "targets": {
         "build": {
           "executor": "@nrwl/web:build",
-          "outputs": [
-            "{options.outputPath}"
-          ],
+          "outputs": ["{options.outputPath}"],
           "options": {
             "outputPath": "dist/apps/react/solution",
             "index": "apps/react/solution/src/index.html",
@@ -80,13 +68,8 @@
             "main": "apps/react/solution/src/main.tsx",
             "polyfills": "apps/react/solution/src/polyfills.ts",
             "tsConfig": "apps/react/solution/tsconfig.app.json",
-            "assets": [
-              "apps/react/solution/src/favicon.ico",
-              "apps/react/solution/src/assets"
-            ],
-            "styles": [
-              "apps/react/solution/src/styles.scss"
-            ],
+            "assets": ["apps/react/solution/src/favicon.ico", "apps/react/solution/src/assets"],
+            "styles": ["apps/react/solution/src/styles.scss"],
             "scripts": [],
             "webpackConfig": "@nrwl/react/plugins/webpack"
           },
@@ -130,20 +113,14 @@
         },
         "lint": {
           "executor": "@nrwl/linter:eslint",
-          "outputs": [
-            "{options.outputFile}"
-          ],
+          "outputs": ["{options.outputFile}"],
           "options": {
-            "lintFilePatterns": [
-              "apps/react/solution/**/*.{ts,tsx,js,jsx}"
-            ]
+            "lintFilePatterns": ["apps/react/solution/**/*.{ts,tsx,js,jsx}"]
           }
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/react/solution"
-          ],
+          "outputs": ["coverage/apps/react/solution"],
           "options": {
             "jestConfig": "apps/react/solution/jest.config.js",
             "passWithNoTests": true
@@ -170,36 +147,12 @@
         },
         "lint": {
           "executor": "@nrwl/linter:eslint",
-          "outputs": [
-            "{options.outputFile}"
-          ],
+          "outputs": ["{options.outputFile}"],
           "options": {
-            "lintFilePatterns": [
-              "apps/react/solution-e2e/**/*.{js,ts}"
-            ]
+            "lintFilePatterns": ["apps/react/solution-e2e/**/*.{js,ts}"]
           }
         }
       }
     }
-  },
-  "cli": {
-    "defaultCollection": "@nrwl/react"
-  },
-  "generators": {
-    "@nrwl/react": {
-      "application": {
-        "style": "scss",
-        "linter": "eslint",
-        "babel": true
-      },
-      "component": {
-        "style": "scss"
-      },
-      "library": {
-        "style": "scss",
-        "linter": "eslint"
-      }
-    }
-  },
-  "defaultProject": "react-solution"
+  }
 }

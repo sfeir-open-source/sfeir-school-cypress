@@ -13,12 +13,12 @@ export function Button (props: ButtonProps) {
       <div className="flex items-center">
         <div className="relative">
           <ShoppingCartIcon className="w-8 h-8 mr-2 text-white"/>
-          {cart?.books?.length
+          {cart?.length
             ? (
             <div
               data-cy="cart-button-counter"
               className="absolute w-4 h-4 text-xs text-white bg-blue-500 rounded-full bottom-5 right-1">
-              {cart?.books.length}
+              {cart.length}
               </div>
               )
             : ''}

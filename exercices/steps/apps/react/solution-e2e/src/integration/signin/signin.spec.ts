@@ -1,24 +1,10 @@
 describe('login', () => {
   beforeEach(() => {
-    cy.intercept('/api/books?query=top', { fixture: 'books/top10.json' }).as('top10')
-    cy.intercept('/api/genres', { fixture: 'genres.json' }).as('genres')
-    cy.intercept('/api/books?query=drama', { fixture: 'books/drama.json' }).as('drama')
-    cy.intercept('/api/books?query=history', { fixture: 'books/history.json' }).as('history')
-    cy.intercept('/api/books?query=litterature', { fixture: 'books/litterature.json' }).as('litterature')
-    cy.intercept('/api/books?query=poetry', { fixture: 'books/poetry.json' }).as('poetry')
-    cy.intercept('/api/books?query=sciencefiction', { fixture: 'books/sciencefiction.json' }).as('scienfiction')
-
-    cy.intercept('/api/cart', {
-      statusCode: 200,
-      body: {
-        books: [],
-        total: 0
-      }
-    })
+    cy.interceptHomePage()
   })
 
   it('should handle issued login', () => {
-    cy.intercept('POST', '/api/signin', {
+    cy.intercept('POST', '/api/user/sign-in', {
       statusCode: 401,
       body: {
         message: 'Wrong user/password'
@@ -38,7 +24,7 @@ describe('login', () => {
   })
 
   it('should handle sucessful login', () => {
-    cy.intercept('POST', '/api/signin', {
+    cy.intercept('POST', '/api/user/sign-in', {
       statusCode: 200,
       body: {
         username: 'John Doe',
