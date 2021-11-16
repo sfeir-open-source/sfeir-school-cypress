@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?> <!-- Created with Vectornator for iOS (http://vectornator.io/) --><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg height="100%" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="100%" xmlns:vectornator="http://vectornator.io" version="1.1" viewBox="0 0 841.995 395.35">
+<metadata>
+<vectornator:setting key="DimensionsVisible" value="1"/>
+<vectornator:setting key="PencilOnly" value="0"/>
+<vectornator:setting key="SnapToPoints" value="0"/>
+<vectornator:setting key="OutlineMode" value="0"/>
+<vectornator:setting key="GuidesVisible" value="1"/>
+<vectornator:setting key="CMYKEnabledKey" value="0"/>
+<vectornator:setting key="SnapToEdges" value="0"/>
+<vectornator:setting key="RulersVisible" value="1"/>
+<vectornator:setting key="DisplayWhiteBackground" value="0"/>
+<vectornator:setting key="doHistoryDisabled" value="0"/>
+<vectornator:setting key="TimeLapseWatermarkDisabled" value="0"/>
+<vectornator:setting key="SnapToGuides" value="1"/>
+<vectornator:setting key="DynamicGuides" value="0"/>
+<vectornator:setting key="SnapToGrid" value="0"/>
+<vectornator:setting key="Units" value="Millimeters"/>
+<vectornator:setting key="IsolateActiveLayer" value="0"/>
+</metadata>
+<defs/>
+<g id="Layer 1" vectornator:layerName="Layer 1">
+<g opacity="1">
+<g>
+<path stroke-linecap="round" stroke-width="2" stroke="#141414" d="M109.074+16.6081C109.032+37.59+108.451+325.636+108.451+325.636" fill="none" stroke-linejoin="round"/>
+<path d="M109.071+18.3581L116.06+23.6223L109.088+9.60816L102.06+23.594L109.071+18.3581Z" fill="#141414"/>
+</g>
+</g>
+<g opacity="1">
+<g>
+<path stroke-linecap="round" stroke-width="2" stroke="#141414" d="M526.823+327.168C501.496+327.137+108.587+326.654+108.587+326.654" fill="none" stroke-linejoin="round"/>
+<path d="M525.073+327.166L519.814+334.16L533.823+327.177L519.832+320.16L525.073+327.166Z" fill="#141414"/>
+</g>
+</g>
+<text x="0" font-family="Helvetica" y="0" text-anchor="middle" vectornator:text="Couverture&#x20;de&#x20;test&#x20;de&#x20;la&#x20;solution&#xA;" fill="#000000" font-size="18" vectornator:width="268.119" opacity="1" transform="matrix(1 0 0 1 259.621 333.699)">
+<tspan x="129.577" y="17" textLength="259.154">
+Couverture de test de la solution
+</tspan>
+</text>
+<text x="0" font-family="Helvetica" y="0" text-anchor="middle" vectornator:text="Complexité&#x20;&#xA;(Temps)" fill="#000000" font-size="18" vectornator:width="96.6333" opacity="1" transform="matrix(1 0 0 1 7.42661 25.294)">
+<tspan x="47.5181" y="17" textLength="95.0361">
+Complexité
+</tspan>
+<tspan x="33.4995" y="38" textLength="66.999">
+(Temps)</tspan>
+</text>
+<path stroke="#141414" stroke-width="1" d="M110.566+326.589C110.566+326.589+473.963+350.695+498.356+40.9403" fill="none" stroke-linecap="round" opacity="1" stroke-linejoin="round" stroke-dasharray="9"/>
+<path d="M108.722+322.386C108.722+319.634+111.216+317.404+114.293+317.404C117.37+317.404+119.864+319.634+119.864+322.386C119.864+325.138+117.37+327.368+114.293+327.368C111.216+327.368+108.722+325.138+108.722+322.386Z" opacity="1" fill="#388e3c"/>
+<path d="M274.433+305.706C274.433+302.954+276.928+300.724+280.004+300.724C283.081+300.724+285.575+302.954+285.575+305.706C285.575+308.457+283.081+310.688+280.004+310.688C276.928+310.688+274.433+308.457+274.433+305.706Z" opacity="1" fill="#388e3c"/>
+<path d="M402.146+236.369C402.146+233.617+404.64+231.387+407.717+231.387C410.793+231.387+413.287+233.617+413.287+236.369C413.287+239.12+410.793+241.351+407.717+241.351C404.64+241.351+402.146+239.12+402.146+236.369Z" opacity="1" fill="#388e3c"/>
+<path d="M490.123+66.4429C490.123+63.6913+492.617+61.4607+495.694+61.4607C498.77+61.4607+501.265+63.6913+501.265+66.4429C501.265+69.1945+498.77+71.4251+495.694+71.4251C492.617+71.4251+490.123+69.1945+490.123+66.4429Z" opacity="1" fill="#388e3c"/>
+<text x="0" font-family="Helvetica" y="0" text-anchor="middle" vectornator:text="Ø" fill="#388e3c" font-size="18" vectornator:width="110.886" opacity="1" transform="matrix(1 0 0 1 109.497 296.126)">
+<tspan x="7.00049" y="17" textLength="14.001">
+Ø</tspan>
+</text>
+<text x="0" font-family="Helvetica" y="0" text-anchor="middle" vectornator:text="Unitaires" fill="#388e3c" font-size="18" vectornator:width="118.483" opacity="1" transform="matrix(1 0 0 1 242.74 270.088)">
+<tspan x="35.5122" y="17" textLength="71.0244">
+Unitaires</tspan>
+</text>
+<text x="0" font-family="Helvetica" y="0" text-anchor="middle" vectornator:text="Intégration" fill="#388e3c" font-size="18" vectornator:width="118.483" opacity="1" transform="matrix(1 0 0 1 311.307 222.425)">
+<tspan x="42.5303" y="17" textLength="85.0605">
+Intégration</tspan>
+</text>
+<text x="0" font-family="Helvetica" y="0" text-anchor="middle" vectornator:text="End-to-End" fill="#388e3c" font-size="18" vectornator:width="118.483" opacity="1" transform="matrix(1 0 0 1 391.061 57.0569)">
+<tspan x="45.5273" y="17" textLength="91.0547">
+End-to-End</tspan>
+</text>
+</g>
+</svg>
