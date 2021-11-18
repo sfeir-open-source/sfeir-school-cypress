@@ -59,6 +59,30 @@ function structurertests() {
   ]
 }
 
+function more() {
+  return [
+    "06-More/00-TITLE.md",
+    "06-More/10-more-functionalities.md",
+    "06-More/20-limitations.md",
+  ]
+}
+
+function tdd() {
+  return [
+    "07-tdd/00-TITLE.md",
+    "07-tdd/10-TDD-explained.md",
+    "07-tdd/20-exercice-06.md",
+  ]
+}
+
+function lessonlearnt() {
+  return [
+    "08-lesson-learnt/00-TITLE.md",
+    "08-lesson-learnt/10-lesson-learnt.md",
+    "08-lesson-learnt/20-end.md",
+  ]
+}
+
 function formation() {
   return [
     ...school(),
@@ -67,6 +91,9 @@ function formation() {
     ...goodtest(),
     ...networking(),
     ...structurertests(),
+    ...more(),
+    ...tdd(),
+    ...lessonlearnt(),
   ].map(slidePath => {
     return { path: slidePath };
   });

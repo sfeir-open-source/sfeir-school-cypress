@@ -31,7 +31,7 @@ cu.get('#my-button').click()
 
 ##==##
 
-# In your browser
+# Dans votre navigateur
 <br/>
 
 * tester les choses
