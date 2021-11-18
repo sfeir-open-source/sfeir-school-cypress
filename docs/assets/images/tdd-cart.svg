@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg height="100%" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="100%" xmlns:vectornator="http://vectornator.io" version="1.1" viewBox="0 0 375 667">
+<g id="phone" vectornator:layerName="phone">
+<path stroke="#000000" stroke-width="24" d="M10.2834+10.4617L364.916+10.4617L364.916+657.035L10.2834+657.035L10.2834+10.4617Z" fill="#111111" stroke-linecap="round" fill-opacity="0.913641" opacity="1" stroke-linejoin="round"/>
+<path d="M175+13.3635C175+16.6772+177.686+19.3635+181+19.3635C184.314+19.3635+187+16.6772+187+13.3635C187+10.0498+184.314+7.36352+181+7.36352C177.686+7.36352+175+10.0498+175+13.3635Z" opacity="1" fill="#f6f6f6"/>
+</g>
+<g id="Header" vectornator:layerName="Header">
+<path d="M21.6551+21.8854L353.088+21.8854L353.088+38.0626L21.6551+38.0626L21.6551+21.8854Z" opacity="1" fill="#c77800"/>
+<path d="M21.9879+37.9609L353.421+37.9609L353.421+87.1316L21.9879+87.1316L21.9879+37.9609Z" opacity="1" fill="#ffa726"/>
+<path d="M45.8018+71.5524C45.3625+71.9916+44.6503+71.9916+44.211+71.5524L37.4609+64.8023C37.0217+64.363+37.0217+63.6508+37.4609+63.2115L44.211+56.4614C44.6524+56.0351+45.3541+56.0412+45.7881+56.4751C46.222+56.9091+46.2281+57.6108+45.8018+58.0522L40.9721+62.8819L54.0065+62.8819C54.6278+62.8819+55.1315+63.3856+55.1315+64.0069C55.1315+64.6282+54.6278+65.1319+54.0065+65.1319L40.9721+65.1319L45.8018+69.9616C46.241+70.4009+46.241+71.1131+45.8018+71.5524Z" fill-rule="evenodd" fill="#000000" opacity="1"/>
+<text x="0" font-family="Helvetica" y="0" text-anchor="middle" vectornator:text="Sfeir&#x20;-&#x20;Cart" fill="#000000" font-size="18" vectornator:width="165.428" opacity="1" transform="matrix(1 0 0 1 96.8732 52.7146)">
+<tspan x="83.6139" y="17" textLength="87.0117">
+Sfeir - Cart</tspan>
+</text>
+<g opacity="1">
+<path d="M320+55.8399C320+54.4592+321.119+53.3399+322.5+53.3399C323.881+53.3399+325+54.4592+325+55.8399C325+57.2206+323.881+58.3399+322.5+58.3399C321.119+58.3399+320+57.2206+320+55.8399Z" opacity="1" fill="#000000"/>
+<path d="M320+63.94C320+62.5593+321.119+61.44+322.5+61.44C323.881+61.44+325+62.5593+325+63.94C325+65.3207+323.881+66.44+322.5+66.44C321.119+66.44+320+65.3207+320+63.94Z" opacity="1" fill="#000000"/>
+<path d="M320+71.8399C320+70.4592+321.119+69.3399+322.5+69.3399C323.881+69.3399+325+70.4592+325+71.8399C325+73.2206+323.881+74.3399+322.5+74.3399C321.119+74.3399+320+73.2206+320+71.8399Z" opacity="1" fill="#000000"/>
+</g>
+</g>
+<g id="Article A" vectornator:layerName="Article A">
+<path d="M33.6433+99.5436L345.085+99.5436C346.557+99.5436+347.751+101.13+347.751+103.088L347.751+170.667C347.751+172.625+346.557+174.211+345.085+174.211L33.6433+174.211C32.1708+174.211+30.977+172.625+30.977+170.667L30.977+103.088C30.977+101.13+32.1708+99.5436+33.6433+99.5436Z" opacity="1" fill="#e0e0e0"/>
+<g opacity="1">
+<path stroke="#000000" stroke-width="0.1" d="M313.549+111.645L334.434+111.645C336.305+111.645+337.821+113.162+337.821+115.032L337.821+136.27C337.821+138.141+336.305+139.658+334.434+139.658L313.549+139.658C311.678+139.658+310.161+138.141+310.161+136.27L310.161+115.032C310.161+113.162+311.678+111.645+313.549+111.645Z" fill="#ffa726" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+<text x="0" font-family="Helvetica" y="0" text-anchor="middle" vectornator:text="+" fill="#000000" font-size="18" vectornator:width="25.9909" opacity="1" transform="matrix(1 0 0 1 310.814 113.101)">
+<tspan x="13.8954" y="17" textLength="10.5117">
++</tspan>
+</text>
+</g>
+<g opacity="1">
+<path stroke="#000000" stroke-width="0.1" d="M263.985+111.621L284.87+111.621C286.741+111.621+288.257+113.137+288.257+115.008L288.257+136.246C288.257+138.117+286.741+139.633+284.87+139.633L263.985+139.633C262.114+139.633+260.597+138.117+260.597+136.246L260.597+115.008C260.597+113.137+262.114+111.621+263.985+111.621Z" fill="#ffa726" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+<text x="0" font-family="Helvetica" y="0" text-anchor="middle" vectornator:text="-" fill="#000000" font-size="18" vectornator:width="23.1089" opacity="1" transform="matrix(1 0 0 1 260.414 114.265)">
+<tspan x="12.4544" y="17" textLength="5.99414">
+-</tspan>
+</text>
+</g>
+<g opacity="1">
+<path stroke="#000000" stroke-width="0.1" d="M285.191+111.665L313.201+111.665L313.201+139.722L285.191+139.722L285.191+111.665Z" fill="#ffffff" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+<text stroke="#000000" stroke-width="0.1" x="0" font-family="Helvetica" y="0" fill="#000000" stroke-linecap="round" font-size="18" opacity="1" text-anchor="middle" transform="matrix(1 0 0 1 285.101 114.16)" stroke-linejoin="round" vectornator:width="28" vectornator:text="2">
+<tspan x="14.9" y="17" textLength="10.0107">
+2</tspan>
+</text>
+</g>
+<text x="0" font-family="Helvetica" y="0" text-anchor="end" vectornator:text="6.90&#x20;€" fill="#000000" font-size="18" vectornator:width="63.0464" opacity="1" transform="matrix(1 0 0 1 272.296 145.513)">
+<tspan x="64.8464" y="17" textLength="53.4287">
+6.90 €</tspan>
+</text>
+<text x="0" font-family="Helvetica" y="0" text-anchor="start" vectornator:text="3.45&#x20;€/u&#x20;" fill="#000000" font-size="12" vectornator:width="73.766" opacity="1" transform="matrix(1 0 0 1 119.121 146.078)">
+<tspan x="0" y="12" textLength="48.9609">
+3.45 €/u </tspan>
+</text>
+<text x="0" font-family="Helvetica" y="0" text-anchor="start" vectornator:text="Article&#x20;A&#x20;" fill="#000000" font-size="18" vectornator:width="181.729" opacity="1" transform="matrix(1 0 0 1 117.025 117.477)">
+<tspan x="0" y="17" textLength="70.3506">
+Article A </tspan>
+</text>
+<path stroke="#000000" stroke-width="2" d="M47.9459+110.105L97.2087+110.105C98.5169+110.105+99.5773+111.177+99.5773+112.5L99.5773+161.71C99.5773+163.032+98.5169+164.105+97.2087+164.105L47.9459+164.105C46.6377+164.105+45.5773+163.032+45.5773+161.71L45.5773+112.5C45.5773+111.177+46.6377+110.105+47.9459+110.105Z" fill="#aeaeae" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+</g>
+<g id="Article B" vectornator:layerName="Article B">
+<path d="M33.5446+186.863L344.986+186.863C346.459+186.863+347.652+188.449+347.652+190.407L347.652+257.986C347.652+259.944+346.459+261.53+344.986+261.53L33.5446+261.53C32.072+261.53+30.8783+259.944+30.8783+257.986L30.8783+190.407C30.8783+188.449+32.072+186.863+33.5446+186.863Z" opacity="1" fill="#e0e0e0"/>
+<g opacity="1">
+<path stroke="#000000" stroke-width="0.1" d="M313.45+198.964L334.335+198.964C336.206+198.964+337.722+200.481+337.722+202.352L337.722+223.589C337.722+225.46+336.206+226.977+334.335+226.977L313.45+226.977C311.579+226.977+310.062+225.46+310.062+223.589L310.062+202.352C310.062+200.481+311.579+198.964+313.45+198.964Z" fill="#ffa726" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+<text x="0" font-family="Helvetica" y="0" text-anchor="middle" vectornator:text="+" fill="#000000" font-size="18" vectornator:width="25.9909" opacity="1" transform="matrix(1 0 0 1 310.715 200.42)">
+<tspan x="13.8954" y="17" textLength="10.5117">
++</tspan>
+</text>
+</g>
+<g opacity="1">
+<path stroke="#000000" stroke-width="0.1" d="M263.886+198.94L284.771+198.94C286.642+198.94+288.159+200.456+288.159+202.327L288.159+223.565C288.159+225.436+286.642+226.952+284.771+226.952L263.886+226.952C262.015+226.952+260.499+225.436+260.499+223.565L260.499+202.327C260.499+200.456+262.015+198.94+263.886+198.94Z" fill="#ffa726" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+<text x="0" font-family="Helvetica" y="0" text-anchor="middle" vectornator:text="-" fill="#000000" font-size="18" vectornator:width="23.1089" opacity="1" transform="matrix(1 0 0 1 260.316 201.584)">
+<tspan x="12.4544" y="17" textLength="5.99414">
+-</tspan>
+</text>
+</g>
+<path stroke="#000000" stroke-width="0.1" d="M285.092+198.984L313.102+198.984L313.102+227.041L285.092+227.041L285.092+198.984Z" fill="#ffffff" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+<text stroke="#000000" stroke-width="0.1" x="0" font-family="Helvetica" y="0" fill="#000000" stroke-linecap="round" font-size="18" opacity="1" text-anchor="middle" transform="matrix(1 0 0 1 285.003 201.479)" stroke-linejoin="round" vectornator:width="28" vectornator:text="1">
+<tspan x="14.9" y="17" textLength="10.0107">
+1</tspan>
+</text>
+<text x="0" font-family="Helvetica" y="0" text-anchor="end" vectornator:text="1.99&#x20;€" fill="#000000" font-size="18" vectornator:width="63.0464" opacity="1" transform="matrix(1 0 0 1 272.198 232.833)">
+<tspan x="64.8464" y="17" textLength="53.4287">
+1.99 €</tspan>
+</text>
+<text x="0" font-family="Helvetica" y="0" text-anchor="start" vectornator:text="1.99&#x20;€/u&#x20;" fill="#000000" font-size="12" vectornator:width="73.766" opacity="1" transform="matrix(1 0 0 1 119.023 233.398)">
+<tspan x="0" y="12" textLength="48.9609">
+1.99 €/u </tspan>
+</text>
+<text x="0" font-family="Helvetica" y="0" text-anchor="start" vectornator:text="Article&#x20;B" fill="#000000" font-size="18" vectornator:width="106.14" opacity="1" transform="matrix(1 0 0 1 116.926 204.797)">
+<tspan x="0" y="17" textLength="67.0166">
+Article B</tspan>
+</text>
+<path stroke="#000000" stroke-width="2" d="M47.8472+197.424L97.11+197.424C98.4182+197.424+99.4786+198.496+99.4786+199.819L99.4786+249.029C99.4786+250.352+98.4182+251.424+97.11+251.424L47.8472+251.424C46.539+251.424+45.4786+250.352+45.4786+249.029L45.4786+199.819C45.4786+198.496+46.539+197.424+47.8472+197.424Z" fill="#aeaeae" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+<path d="M35.133+278.781L343.304+278.781C344.579+278.781+345.613+279.844+345.613+281.156L345.613+425.453C345.613+426.765+344.579+427.829+343.304+427.829L35.133+427.829C33.8578+427.829+32.824+426.765+32.824+425.453L32.824+281.156C32.824+279.844+33.8578+278.781+35.133+278.781Z" opacity="1" fill="#e0e0e0"/>
+<text x="0" font-family="Helvetica" y="0" text-anchor="middle" vectornator:text="Adresse" fill="#000000" font-size="18" vectornator:width="144.413" opacity="1" transform="matrix(1 0 0 1 44.4617 288.145)">
+<tspan x="33.0161" y="17" textLength="66.0322">
+Adresse</tspan>
+</text>
+<path stroke="#000000" stroke-width="1" d="M48.0906+322.305L329.06+322.305C330.335+322.305+331.369+323.338+331.369+324.614L331.369+342.694C331.369+343.97+330.335+345.003+329.06+345.003L48.0906+345.003C46.8153+345.003+45.7815+343.97+45.7815+342.694L45.7815+324.614C45.7815+323.338+46.8153+322.305+48.0906+322.305Z" fill="#ffffff" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+<text x="0" font-family="Helvetica" y="0" text-anchor="middle" vectornator:text="Mon&#x20;adresse&#x20;rentrée&#x20;à&#x20;la&#x20;main" fill="#000000" font-size="14" vectornator:width="252.324" opacity="1" transform="matrix(1 0 0 1 54.4943 325.022)">
+<tspan x="94.9375" y="14" textLength="189.875">
+Mon adresse rentrée à la main</tspan>
+</text>
+<path stroke="#000000" stroke-width="1" d="M48.1513+392.609L131.808+392.609C132.188+392.609+132.496+393.643+132.496+394.918L132.496+412.999C132.496+414.274+132.188+415.308+131.808+415.308L48.1513+415.308C47.7716+415.308+47.4638+414.274+47.4638+412.999L47.4638+394.918C47.4638+393.643+47.7716+392.609+48.1513+392.609Z" fill="#ffffff" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+<text x="0" font-family="Helvetica" y="0" text-anchor="middle" vectornator:text="L-2090" fill="#000000" font-size="14" vectornator:width="57.5327" opacity="1" transform="matrix(1 0 0 1 56.1766 395.926)">
+<tspan x="21.7964" y="14" textLength="43.5928">
+L-2090</tspan>
+</text>
+<path stroke="#000000" stroke-width="1" d="M145.21+392.777L326.236+392.777C327.057+392.777+327.723+393.811+327.723+395.086L327.723+413.167C327.723+414.442+327.057+415.476+326.236+415.476L145.21+415.476C144.389+415.476+143.723+414.442+143.723+413.167L143.723+395.086C143.723+393.811+144.389+392.777+145.21+392.777Z" fill="#ffffff" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+<text x="0" font-family="Helvetica" y="0" text-anchor="middle" vectornator:text="Luxembourg" fill="#000000" font-size="14" vectornator:width="164.959" opacity="1" transform="matrix(1 0 0 1 154.082 395.705)">
+<tspan x="38.9136" y="14" textLength="77.8271">
+Luxembourg</tspan>
+</text>
+<path stroke="#000000" stroke-width="1" d="M47.109+357.279L328.078+357.279C329.354+357.279+330.387+358.313+330.387+359.588L330.387+377.669C330.387+378.944+329.354+379.978+328.078+379.978L47.109+379.978C45.8337+379.978+44.7999+378.944+44.7999+377.669L44.7999+359.588C44.7999+358.313+45.8337+357.279+47.109+357.279Z" fill="#ffffff" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+<text x="0" font-family="Helvetica" y="0" text-anchor="middle" vectornator:text="Appartement&#x20;1234" fill="#000000" font-size="14" vectornator:width="252.324" opacity="1" transform="matrix(1 0 0 1 53.5127 359.997)">
+<tspan x="57.5962" y="14" textLength="115.192">
+Appartement 1234</tspan>
+</text>
+<path d="M32.9061+442.224L341.077+442.224C342.352+442.224+343.386+443.036+343.386+444.038L343.386+554.245C343.386+555.247+342.352+556.059+341.077+556.059L32.9061+556.059C31.6308+556.059+30.597+555.247+30.597+554.245L30.597+444.038C30.597+443.036+31.6308+442.224+32.9061+442.224Z" opacity="1" fill="#e0e0e0"/>
+<text x="0" font-family="Helvetica" y="0" text-anchor="middle" vectornator:text="Carte&#x20;de&#x20;crédit" fill="#000000" font-size="18" vectornator:width="144.413" opacity="1" transform="matrix(1 0 0 1 42.2348 451.588)">
+<tspan x="59.0273" y="17" textLength="118.055">
+Carte de crédit</tspan>
+</text>
+<path stroke="#000000" stroke-width="1" d="M45.8636+485.748L326.833+485.748C328.108+485.748+329.142+486.781+329.142+488.057L329.142+506.137C329.142+507.413+328.108+508.446+326.833+508.446L45.8636+508.446C44.5884+508.446+43.5546+507.413+43.5546+506.137L43.5546+488.057C43.5546+486.781+44.5884+485.748+45.8636+485.748Z" fill="#ffffff" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+<text x="0" font-family="Helvetica" y="0" text-anchor="middle" vectornator:text="1234-1234-1234-1234" fill="#000000" font-size="14" vectornator:width="252.324" opacity="1" transform="matrix(1 0 0 1 52.2673 488.465)">
+<tspan x="69.2822" y="14" textLength="138.564">
+1234-1234-1234-1234</tspan>
+</text>
+<path stroke="#000000" stroke-width="1" d="M43.2819+520.722L129.553+520.722C129.945+520.722+130.262+521.756+130.262+523.031L130.262+541.112C130.262+542.387+129.945+543.421+129.553+543.421L43.2819+543.421C42.8904+543.421+42.5729+542.387+42.5729+541.112L42.5729+523.031C42.5729+521.756+42.8904+520.722+43.2819+520.722Z" fill="#ffffff" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+<text x="0" font-family="Helvetica" y="0" text-anchor="middle" vectornator:text="86528" fill="#000000" font-size="14" vectornator:width="78.3619" opacity="1" transform="matrix(1 0 0 1 45.3734 522.374)">
+<tspan x="19.4653" y="14" textLength="38.9307">
+86528</tspan>
+</text>
+<path stroke="#000000" stroke-width="1" d="M143.377+520.281L324.402+520.281C325.223+520.281+325.89+521.314+325.89+522.59L325.89+540.67C325.89+541.945+325.223+542.979+324.402+542.979L143.377+542.979C142.555+542.979+141.889+541.945+141.889+540.67L141.889+522.59C141.889+521.314+142.555+520.281+143.377+520.281Z" fill="#ffffff" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+<text x="0" font-family="Helvetica" y="0" text-anchor="middle" vectornator:text="02-02-2022" fill="#000000" font-size="14" vectornator:width="170.63" opacity="1" transform="matrix(1 0 0 1 146.577 522.274)">
+<tspan x="35.8066" y="14" textLength="71.6133">
+02-02-2022</tspan>
+</text>
+<g opacity="1">
+<path stroke="#000000" stroke-width="1" d="M35.9216+573.021L339.013+573.021C340.288+573.021+341.322+574.261+341.322+575.791L341.322+602.169C341.322+603.699+340.288+604.939+339.013+604.939L35.9216+604.939C34.6464+604.939+33.6126+603.699+33.6126+602.169L33.6126+575.791C33.6126+574.261+34.6464+573.021+35.9216+573.021Z" fill="#ffa726" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+<text x="0" font-family="Helvetica" y="0" text-anchor="middle" vectornator:text="Terminer&#x20;la&#x20;commande&#x20;et&#x20;payer" fill="#000000" font-size="16" vectornator:width="306.074" opacity="1" transform="matrix(1 0 0 1 33.6043 580.295)">
+<tspan x="153.837" y="16" textLength="226.758">
+Terminer la commande et payer</tspan>
+</text>
+</g>
+</g>
+</svg>
