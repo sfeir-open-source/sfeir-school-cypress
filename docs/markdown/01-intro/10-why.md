@@ -45,11 +45,11 @@ Notre application parfaite doit être :
 
 ## Rapide (?), mais
 
-* peu fiable 
+* Peu fiable 
 
 * De plus en plus difficile
 
-* chaque bug coûte cher
+* Chaque bug coûte cher
 
 ##==##
 <!-- .slide: class="two-column-layout" -->
