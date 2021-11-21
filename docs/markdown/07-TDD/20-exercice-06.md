@@ -3,7 +3,7 @@
 
  * Améliorer le panier (adresse, carte de crédit pré-enregistrée)
 
- * Afficher du total de commande
+ * Afficher le total de la commande
 
  * Rajouter un coupon de réduction (ex: 10% pour le coupon "Sfeir")
 
