@@ -13,7 +13,7 @@ function intro() {
   return [
     "01-intro/00-TITLE.md",
     "01-intro/10-why.md",
-    "01-intro/30-how.md",
+    "01-intro/20-how.md",
   ]
 }
 
