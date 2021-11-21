@@ -1,6 +1,6 @@
 # Structurer ses tests
 
- * Par fonctionalité ? 
+ * Par fonctionnalité ? 
 
  * Par page ? 
 

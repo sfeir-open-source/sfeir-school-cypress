@@ -1,7 +1,7 @@
 # Viewport
 <br/>
 
-## Test différentes tailles
+## Tester différentes tailles
 <br/>
 
 * Par défaut: cypress.json
@@ -42,7 +42,7 @@ cy.get('.sidebar').scrollTo('bottom')
 
 ```
 
-Credits: [official documentation](https://docs.cypress.io/api/commands/scrollto)
+Crédits: [official documentation](https://docs.cypress.io/api/commands/scrollto)
 
 ##==##
 
