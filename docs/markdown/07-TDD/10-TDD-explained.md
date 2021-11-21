@@ -7,7 +7,7 @@ Pour chaque fonctionnalité:
 
   2. Tester à la main
 
-  3.  Test automatiquement (Cypress)
+  3. Tester automatiquement (Cypress)
 
 
 🤔 __La bonne solution ?__ 
