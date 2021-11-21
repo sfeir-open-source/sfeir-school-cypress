@@ -5,7 +5,7 @@
 </style>
 
 <!-- .slide: class="two-column-layout" -->
-# A good test !
+# Un bon test !
 <br/>
 
 <img src="./assets/images/spotify-button-up.svg" class="mockup"/>
@@ -24,7 +24,7 @@ cy.get('button[1]')
 ##==##
 
 <!-- .slide: class="two-column-layout" -->
-# A good test ???
+# Un bon test ???
 <br/>
 
 <img src="./assets/images/spotify-play-only.svg" class="mockup"/>
@@ -45,7 +45,7 @@ cy.get('#button-bar button.primary')
 ##==##
 
 <!-- .slide: class="two-column-layout" -->
-# A good test ???
+# Un bon test ???
 <br/>
 
 <img src="./assets/images/spotify-favourites.svg" class="mockup"/>
@@ -70,7 +70,7 @@ __Il me faudrait un moyen d'identifier ce bouton juste pour le test !__
 ##==##
 
 <!-- .slide: class="two-column-layout" -->
-# A good test ???
+# Un bon test ???
 <br/>
 
 <img src="./assets/images/spotify-favourites.svg" class="mockup"/>
@@ -98,7 +98,7 @@ cy.get('#bottom-nav').within(() => {
 ##==##
 
 <!-- .slide: class="two-column-layout" -->
-# A good test ???
+# Un bon test ???
 <br/>
 
 <img src="./assets/images/spotify-library.svg" class="mockup"/>
