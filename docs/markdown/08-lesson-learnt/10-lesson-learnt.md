@@ -25,7 +25,7 @@
 
 <br/> 
 
- * Selecteur via data-cy
+ * Sélecteur via data-cy
 
  * Test des labels
 
