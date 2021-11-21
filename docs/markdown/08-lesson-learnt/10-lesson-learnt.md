@@ -29,7 +29,7 @@
 
  * Test des labels
 
- * beaucoup d'assertions
+ * Beaucoup d'assertions
 
 ##==##
 
