@@ -47,7 +47,7 @@ Il faut recommencer:
 
  2. Vider la DB
 
- 3. Retaper tous les champs
+ 3. Re-taper tous les champs
 
 <p class="fragment slide-in">
     <b>😒 Et encore, et encore, et encore ...</b>
