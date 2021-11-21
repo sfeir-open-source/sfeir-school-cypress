@@ -37,4 +37,4 @@ Credits: [official documentation](https://docs.cypress.io/guides/references/trad
 
  * Projet / utilisateurs ...
  
- * Intégration (github, slack, jira...) 
+ * Intégration (github, slack, jira ...) 
