@@ -51,7 +51,6 @@ Il faut recommencer:
 
 <p class="fragment slide-in">
     <b>😒 Et encore, et encore, et encore ...</b>
-
 </p>
 
 
