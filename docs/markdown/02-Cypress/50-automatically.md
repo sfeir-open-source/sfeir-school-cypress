@@ -1,13 +1,12 @@
-<!-- .slide: class="with-code" -->
 
 # Dans le navigateur 
 <br/>
 
-* Atteindre un page : 
+* Atteindre une page : 
 
 ```js
 
-cy.visit('/home') // use preconfigurated URL (ex: http://localhost:8080)
+cy.visit('/home') // use preconfigurated URL (ex: http://localhost:8080) 
 
 
 ```
@@ -16,7 +15,7 @@ cy.visit('/home') // use preconfigurated URL (ex: http://localhost:8080)
 
 ```js
 
-cy.get('header > div[0])
+cy.get('header > div[0]')
 
 
 ```
@@ -32,13 +31,12 @@ cu.get('#my-button').click()
 
 ##==##
 
-# In your browser
+# Dans votre navigateur
 <br/>
 
 * tester les choses
 
-```js
-
+<pre><code class="hljs" data-line-numbers="2-4|6-10|12-14|15">
 cy.get('button')
     .contains('buy it!') // Check text
     .should('be.disabled') // Check status
@@ -54,5 +52,15 @@ cy.get('.error-label')
 
 cy.location('pathname').should('eq', '/cart')
 
+</code></pre>
 
-```
+##==##
+
+# RTFM
+<br/>
+
+Tout est dans [la doc](https://docs.cypress.io/) :)
+
+<br/>
+
+https://docs.cypress.io/

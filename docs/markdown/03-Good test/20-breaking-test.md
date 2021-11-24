@@ -1,10 +1,18 @@
+<style>
+    .mockup {
+        height: 80vh;
+    }
+</style>
+
 <!-- .slide: class="two-column-layout" -->
+# Un bon test !
+<br/>
 
-# A good test !
-
-<img src="./assets/images/spotify-button-up.svg" className="mockup-50%"/>
+<img src="./assets/images/spotify-button-up.svg" class="mockup"/>
 
 ##--##
+
+<br/>
 
 ```js
 
@@ -16,11 +24,14 @@ cy.get('button[1]')
 ##==##
 
 <!-- .slide: class="two-column-layout" -->
-# A good test ???
+# Un bon test ???
+<br/>
 
-<img src="./assets/images/spotify-play-only.svg" className="mockup-50%"/>
+<img src="./assets/images/spotify-play-only.svg" class="mockup"/>
 
 ##--##
+
+<br/>
 
 ```js
 // ❌ Test cassé (bouton "précédent" ???)
@@ -34,14 +45,15 @@ cy.get('#button-bar button.primary')
 ##==##
 
 <!-- .slide: class="two-column-layout" -->
-# A good test ???
+# Un bon test ???
+<br/>
 
-<img src="./assets/images/spotify-favourites.svg" className="mockup-50%"/>
+<img src="./assets/images/spotify-favourites.svg" class="mockup"/>
 
 ##--##
+<br/>
 
 ```js
-
 // ❌ Test cassé (Like ???)
 cy.get('#button-bar .primary')
 
@@ -58,14 +70,16 @@ __Il me faudrait un moyen d'identifier ce bouton juste pour le test !__
 ##==##
 
 <!-- .slide: class="two-column-layout" -->
-# A good test ???
+# Un bon test ???
+<br/>
 
-<img src="./assets/images/spotify-favourites.svg" className="mockup-50%"/>
+<img src="./assets/images/spotify-favourites.svg" class="mockup"/>
 
 ##--##
 
-```js
+<br/>
 
+```js
 cy.get('#song-list').within(() => {
     // 🤔 Rechercher par texte ? 
     // 🤔 Est-ce vraiment bien ? 
@@ -84,14 +98,16 @@ cy.get('#bottom-nav').within(() => {
 ##==##
 
 <!-- .slide: class="two-column-layout" -->
-# A good test ???
+# Un bon test ???
+<br/>
 
-<img src="./assets/images/spotify-library.svg" className="mockup-50%"/>
+<img src="./assets/images/spotify-library.svg" class="mockup"/>
 
 ##--##
 
-```js
+<br/>
 
+```js
 cy.get('#song-list').within(() => {
     // 🤔 Rechercher par texte ? 
     // ✅ Toujours Ok pour le moment !  

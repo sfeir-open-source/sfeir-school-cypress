@@ -5,14 +5,15 @@ function school() {
     "00-school/speaker-nfr.md",
   ]
 }
+
 function intro() {
   return [
     "01-intro/00-TITLE.md",
-    "01-intro/10-dream.md",
-    "01-intro/20-life.md",
-    "01-intro/30-testing.md",
+    "01-intro/10-why.md",
+    "01-intro/20-how.md",
   ]
 }
+
 function cypress() {
   return [
     "02-Cypress/00-TITLE.md",
@@ -24,6 +25,7 @@ function cypress() {
     "02-Cypress/60-exercice01-static.md",
   ]
 }
+
 function goodtest() {
   return [
     "03-Good test/00-TITLE.md",
@@ -33,25 +35,51 @@ function goodtest() {
     "03-Good test/40-exercice02-query.md",
   ]
 }
+
 function networking() {
   return [
     "04-Networking/00-TITLE.md",
     "04-Networking/10-differents-tests.md",
-    "04-Networking/20-e2e-integration.md",
-    "04-Networking/30-Networking.md",
-    "04-Networking/35-integration-networking.md",
-    "04-Networking/40-fixture.md",
-    "04-Networking/50-exercice03-intercept.md",
-    "04-Networking/60-ouverture.md",
+    "04-Networking/20-integration-networking.md",
+    "04-Networking/30-fixture.md",
+    "04-Networking/40-exercice03-intercept.md",
+    "04-Networking/50-ouverture.md",
   ]
 }
+
 function structurertests() {
   return [
     "05-Structurer tests/00-TITLE.md",
-    "05-Structurer tests/10-differents-tests.md",
     "05-Structurer tests/20-command.md",
-    "05-Structurer tests/30-exercice04-login.md",
-    "05-Structurer tests/40-ouverture.md",
+    "05-Structurer tests/30-exercice04-commands.md",
+    "05-Structurer tests/40-command-ouverture.md",
+    "05-Structurer tests/50-differents-tests.md",
+    "05-Structurer tests/60-exercice05-login.md",
+    "05-Structurer tests/70-ouverture.md",
+  ]
+}
+
+function more() {
+  return [
+    "06-More/00-TITLE.md",
+    "06-More/10-more-functionalities.md",
+    "06-More/20-limitations.md",
+  ]
+}
+
+function tdd() {
+  return [
+    "07-tdd/00-TITLE.md",
+    "07-tdd/10-TDD-explained.md",
+    "07-tdd/20-exercice-06.md",
+  ]
+}
+
+function lessonlearnt() {
+  return [
+    "08-lesson-learnt/00-TITLE.md",
+    "08-lesson-learnt/10-lesson-learnt.md",
+    "08-lesson-learnt/20-end.md",
   ]
 }
 
@@ -63,6 +91,9 @@ function formation() {
     ...goodtest(),
     ...networking(),
     ...structurertests(),
+    ...more(),
+    ...tdd(),
+    ...lessonlearnt(),
   ].map(slidePath => {
     return { path: slidePath };
   });
@@ -71,4 +102,3 @@ function formation() {
 export function usedSlides() {
   return formation();
 }
-

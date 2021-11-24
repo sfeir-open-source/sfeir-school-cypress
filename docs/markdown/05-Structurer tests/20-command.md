@@ -1,17 +1,6 @@
-# Un bon test #2
-
-Test == Code
-➔ Bonnes pratiques !
-
- * Code clair 
-  
- * Pas de duplication
-
-##==##
-
 # Structurer ses tests
 
- * Par fonctionalité ? 
+ * Par fonctionnalité ? 
 
  * Par page ? 
 
@@ -22,6 +11,17 @@ __Celà dépend de vous__ (et/ou du projet)
  * Faites un choix
 
  * Changez au besoin
+
+##==##
+
+# Un bon test #2
+
+Test == Code
+➔ Bonnes pratiques !
+
+ * Code clair 
+  
+ * Pas de duplication
 
 ##==##
 
@@ -62,4 +62,3 @@ beforeEach(() => {
 
 
 ```
-
