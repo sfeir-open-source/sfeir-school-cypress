@@ -4,6 +4,16 @@
   "license": "MIT",
   "scripts": {
     "start-nest-server": "nx run nest-server:serve --no-inspect",
+    "start-exercice01-e2e": "nx run exercice01-e2e:e2e --watch",
+    "start-exercice01-solution-e2e": "nx run exercice01-solution-e2e:e2e --watch",
+    "start-exercice02-e2e": "nx run exercice02-e2e:e2e --watch",
+    "start-exercice02-solution-e2e": "nx run exercice02-solution-e2e:e2e --watch",
+    "start-exercice03-e2e": "nx run exercice03-e2e:e2e --watch",
+    "start-exercice03-solution-e2e": "nx run exercice04-solution-e2e:e2e --watch",
+    "start-exercice04-e2e": "nx run exercice04-e2e:e2e --watch",
+    "start-exercice04-solution-e2e": "nx run exercice04-solution-e2e:e2e --watch",
+    "start-exercice05-e2e": "nx run exercice05-e2e:e2e --watch",
+    "start-exercice05-solution-e2e": "nx run exercice05-solution-e2e:e2e --watch",
     "start-react-solution": "nx run react-solution:serve",
     "start-react-solution-e2e": "nx run react-solution-e2e:e2e --watch",
     "test": "nx run react-solution-e2e:e2e"

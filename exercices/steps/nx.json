@@ -27,6 +27,46 @@
     ]
   },
   "projects": {
+    "exercice01-e2e": {
+      "tags": [],
+      "implicitDependencies": ["react-solution"]
+    },
+    "exercice01-solution-e2e": {
+      "tags": [],
+      "implicitDependencies": ["react-solution"]
+    },
+    "exercice02-e2e": {
+      "tags": [],
+      "implicitDependencies": ["react-solution"]
+    },
+    "exercice02-solution-e2e": {
+      "tags": [],
+      "implicitDependencies": ["react-solution"]
+    },
+    "exercice03-e2e": {
+      "tags": [],
+      "implicitDependencies": ["react-solution"]
+    },
+    "exercice03-solution-e2e": {
+      "tags": [],
+      "implicitDependencies": ["react-solution"]
+    },
+    "exercice04-e2e": {
+      "tags": [],
+      "implicitDependencies": ["react-solution"]
+    },
+    "exercice04-solution-e2e": {
+      "tags": [],
+      "implicitDependencies": ["react-solution"]
+    },
+    "exercice05-e2e": {
+      "tags": [],
+      "implicitDependencies": ["react-solution"]
+    },
+    "exercice05-solution-e2e": {
+      "tags": [],
+      "implicitDependencies": ["react-solution"]
+    },
     "nest-server": {
       "tags": []
     },
