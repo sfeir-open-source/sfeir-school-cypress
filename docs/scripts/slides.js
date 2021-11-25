@@ -69,9 +69,9 @@ function more() {
 
 function tdd() {
   return [
-    "07-tdd/00-TITLE.md",
-    "07-tdd/10-TDD-explained.md",
-    "07-tdd/20-exercice-06.md",
+    "07-TDD/00-TITLE.md",
+    "07-TDD/10-TDD-explained.md",
+    "07-TDD/20-exercice-06.md",
   ]
 }
 
