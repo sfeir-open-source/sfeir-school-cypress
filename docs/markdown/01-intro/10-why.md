@@ -3,7 +3,7 @@
 # Notre application parfaite
 <br/>
 
-<img style="height:60vh" src="./../../assets/images/good-fast-cheap-perfect.svg"/>
+<img style="height:60vh" src="assets/images/good-fast-cheap-real.svg"/>
 
 ##--##
 <br/>
