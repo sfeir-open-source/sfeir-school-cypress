@@ -4,14 +4,13 @@ import { BooksService } from '../books/books.service';
 
 @Injectable()
 export class CartMapperService {
-    constructor(private readonly booksService: BooksService) {}
+  constructor(private readonly booksService: BooksService) {}
 
-    async toCartItems(cart: Cart): Promise<BookCartItem[]> {
-        return this.booksService.getAll(Object.keys(cart))
-            .map(book => ({
-                book,
-                quantity: cart[book.id].quantity,
-                price: cart[book.id].price
-            }));
-    }
+  async toCartItems(cart: Cart): Promise<BookCartItem[]> {
+    return this.booksService.getAll(Object.keys(cart)).map(book => ({
+      book,
+      quantity: cart[book.id].quantity,
+      price: cart[book.id].price,
+    }));
+  }
 }

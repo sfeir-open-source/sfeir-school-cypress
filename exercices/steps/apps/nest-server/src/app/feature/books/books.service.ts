@@ -14,8 +14,8 @@ export class BooksService {
       map[id] = true;
       return map;
     }, {});
-   
-   return listBooks.filter(b => !!keys[b.id]);
+
+    return listBooks.filter(b => !!keys[b.id]);
   }
 
   constructor(private readonly paginatorService: PaginatorService) {}

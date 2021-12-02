@@ -1,4 +1,4 @@
-import { Book } from "./book.model";
+import { Book } from './book.model';
 
 interface ICartItem {
   bookId: string;
@@ -7,7 +7,7 @@ interface ICartItem {
 }
 
 interface ICart {
-  [key: string]: ICartItem
+  [key: string]: ICartItem;
 }
 
 export const CART_ITEM_SCHEMA = {
@@ -19,8 +19,8 @@ export const CART_ITEM_SCHEMA = {
   },
 };
 
-export type Cart = Readonly<ICart>
-export type CartItem = Readonly<ICartItem>
+export type Cart = Readonly<ICart>;
+export type CartItem = Readonly<ICartItem>;
 
 export interface BookCartItem {
   book: Book;
