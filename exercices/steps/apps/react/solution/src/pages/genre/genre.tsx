@@ -1,16 +1,16 @@
-import Grid from '../../components/books/grid/grid'
-import ThreeColumns from '../three-columns/three-columns'
+import Grid from '../../components/books/grid/grid';
+import ThreeColumns from '../three-columns/three-columns';
 
 export interface GenreProps {
-  genreId: string
+  genreId: string;
 }
 
-export function Genre ({ genreId }: GenreProps) {
+export function Genre({ genreId }: GenreProps) {
   return (
-  <ThreeColumns>
-    <Grid genreId={genreId} />
-  </ThreeColumns>
-  )
+    <ThreeColumns>
+      <Grid genreId={genreId} />
+    </ThreeColumns>
+  );
 }
 
-export default Genre
+export default Genre;

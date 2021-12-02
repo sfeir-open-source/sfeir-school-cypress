@@ -1,28 +1,28 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react';
 
-export default function useScrollListener (onScrollBottom : (() => Promise<void>) | null) {
-  const [workInProgress, setWorkInProgress] = useState<boolean>(false)
+export default function useScrollListener(onScrollBottom: (() => Promise<void>) | null) {
+  const [workInProgress, setWorkInProgress] = useState<boolean>(false);
 
   useEffect(() => {
     const listener = () => {
       if (workInProgress || !onScrollBottom) {
-        return
+        return;
       }
 
-      if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-        setWorkInProgress(true)
+      if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+        setWorkInProgress(true);
 
         onScrollBottom().finally(() => {
-          setWorkInProgress(false)
-        })
+          setWorkInProgress(false);
+        });
       }
-    }
+    };
 
-    listener()
+    listener();
 
-    window.addEventListener('scroll', listener)
+    window.addEventListener('scroll', listener);
     return () => {
-      window.removeEventListener('scroll', listener)
-    }
-  }, [onScrollBottom, workInProgress])
+      window.removeEventListener('scroll', listener);
+    };
+  }, [onScrollBottom, workInProgress]);
 }

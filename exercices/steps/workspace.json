@@ -25,7 +25,9 @@
             "lintFilePatterns": ["apps/exercice01-e2e/**/*.{js,ts}"]
           }
         }
-      }
+      },
+      "tags": [],
+      "implicitDependencies": ["react-solution"]
     },
     "exercice01-solution-e2e": {
       "root": "apps/exercice01-solution-e2e",
@@ -51,7 +53,9 @@
             "lintFilePatterns": ["apps/exercice01-solution-e2e/**/*.{js,ts}"]
           }
         }
-      }
+      },
+      "tags": [],
+      "implicitDependencies": ["react-solution"]
     },
     "exercice02-e2e": {
       "root": "apps/exercice02-e2e",
@@ -77,7 +81,9 @@
             "lintFilePatterns": ["apps/exercice02-e2e/**/*.{js,ts}"]
           }
         }
-      }
+      },
+      "tags": [],
+      "implicitDependencies": ["react-solution"]
     },
     "exercice02-solution-e2e": {
       "root": "apps/exercice02-solution-e2e",
@@ -103,7 +109,9 @@
             "lintFilePatterns": ["apps/exercice02-solution-e2e/**/*.{js,ts}"]
           }
         }
-      }
+      },
+      "tags": [],
+      "implicitDependencies": ["react-solution"]
     },
     "exercice03-e2e": {
       "root": "apps/exercice03-e2e",
@@ -129,7 +137,9 @@
             "lintFilePatterns": ["apps/exercice03-e2e/**/*.{js,ts}"]
           }
         }
-      }
+      },
+      "tags": [],
+      "implicitDependencies": ["react-solution"]
     },
     "exercice03-solution-e2e": {
       "root": "apps/exercice03-solution-e2e",
@@ -155,7 +165,9 @@
             "lintFilePatterns": ["apps/exercice03-solution-e2e/**/*.{js,ts}"]
           }
         }
-      }
+      },
+      "tags": [],
+      "implicitDependencies": ["react-solution"]
     },
     "exercice04-e2e": {
       "root": "apps/exercice04-e2e",
@@ -181,7 +193,9 @@
             "lintFilePatterns": ["apps/exercice04-e2e/**/*.{js,ts}"]
           }
         }
-      }
+      },
+      "tags": [],
+      "implicitDependencies": ["react-solution"]
     },
     "exercice04-solution-e2e": {
       "root": "apps/exercice04-solution-e2e",
@@ -207,7 +221,9 @@
             "lintFilePatterns": ["apps/exercice04-solution-e2e/**/*.{js,ts}"]
           }
         }
-      }
+      },
+      "tags": [],
+      "implicitDependencies": ["react-solution"]
     },
     "exercice05-e2e": {
       "root": "apps/exercice05-e2e",
@@ -233,7 +249,9 @@
             "lintFilePatterns": ["apps/exercice05-e2e/**/*.{js,ts}"]
           }
         }
-      }
+      },
+      "tags": [],
+      "implicitDependencies": ["react-solution"]
     },
     "exercice05-solution-e2e": {
       "root": "apps/exercice05-solution-e2e",
@@ -259,7 +277,9 @@
             "lintFilePatterns": ["apps/exercice05-solution-e2e/**/*.{js,ts}"]
           }
         }
-      }
+      },
+      "tags": [],
+      "implicitDependencies": ["react-solution"]
     },
     "nest-server": {
       "root": "apps/nest-server",
@@ -386,7 +406,8 @@
             "passWithNoTests": true
           }
         }
-      }
+      },
+      "tags": []
     },
     "react-solution-e2e": {
       "root": "apps/react/solution-e2e",
@@ -412,7 +433,9 @@
             "lintFilePatterns": ["apps/react/solution-e2e/**/*.{js,ts}"]
           }
         }
-      }
+      },
+      "tags": [],
+      "implicitDependencies": ["react-solution"]
     }
   }
 }

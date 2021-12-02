@@ -16,12 +16,12 @@ export class CartService {
     return parsedData;
   }
 
-  async writeItem(item: CartItem) : Promise<Cart> {
+  async writeItem(item: CartItem): Promise<Cart> {
     const oldCart = await this.readBasket();
 
     const newCart = {
       ...oldCart,
-      [item.bookId]: item
+      [item.bookId]: item,
     };
 
     this.writeBasket(newCart);
@@ -30,7 +30,7 @@ export class CartService {
   }
 
   async writeBasket(data: Cart): Promise<Cart> {
-      await this.readerFileService.writeFile(join(__dirname, 'assets/mocks', 'cart.json'), JSON.stringify(data));
-      return data;
+    await this.readerFileService.writeFile(join(__dirname, 'assets/mocks', 'cart.json'), JSON.stringify(data));
+    return data;
   }
 }

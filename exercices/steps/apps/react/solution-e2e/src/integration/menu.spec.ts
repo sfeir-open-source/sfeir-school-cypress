@@ -1,46 +1,45 @@
 describe('Menu', () => {
   beforeEach(() => {
-    cy.interceptHomePage()
-  })
+    cy.interceptHomePage();
+  });
 
   it('should display all genres', () => {
-    cy.visit('/')
+    cy.visit('/');
 
     cy.get('[data-cy=menu]').within(() => {
       const genres = [
         {
           label: 'Histoire',
-          query: 'history'
+          query: 'history',
         },
         {
           label: 'Littérature',
-          query: 'litterature'
+          query: 'litterature',
         },
         {
           label: 'Poésie',
-          query: 'poetry'
+          query: 'poetry',
         },
         {
           label: 'Science fiction',
-          query: 'sciencefiction'
+          query: 'sciencefiction',
         },
         {
           label: 'Théatre',
-          query: 'drama'
-        }
-      ]
+          query: 'drama',
+        },
+      ];
 
       cy.get('[data-cy^=menu-genre-]')
         .should('have.length', genres.length)
-        .then((elements) => {
+        .then(elements => {
           // Be careful : this is a Jquery element
-          elements.map((i, element) => cy.wrap(element).should('have.text', genres[i].label))
-        })
-    })
+          elements.map((i, element) => cy.wrap(element).should('have.text', genres[i].label));
+        });
+    });
 
-    cy.get('[data-cy=menu-genre-sciencefiction]')
-      .click()
+    cy.get('[data-cy=menu-genre-sciencefiction]').click();
 
-    cy.location('pathname').should('eq', '/genre/sciencefiction')
-  })
-})
+    cy.location('pathname').should('eq', '/genre/sciencefiction');
+  });
+});

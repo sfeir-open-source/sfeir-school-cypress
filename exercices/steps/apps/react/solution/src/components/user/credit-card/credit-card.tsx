@@ -1,14 +1,14 @@
-import Input from '../../lib/input/input'
-import Panel from '../../lib/panel/panel'
-import './credit-card.module.scss'
+import Input from '../../lib/input/input';
+import Panel from '../../lib/panel/panel';
+import './credit-card.module.scss';
 
 /* eslint-disable-next-line */
 export interface CreditCardProps {
-  creditCard : string,
-  onChange: (creditCard: string) => void
+  creditCard: string;
+  onChange: (creditCard: string) => void;
 }
 
-export function CreditCard ({ creditCard, onChange }: CreditCardProps) {
+export function CreditCard({ creditCard, onChange }: CreditCardProps) {
   return (
     <Panel label="Payment">
       <Input
@@ -17,9 +17,10 @@ export function CreditCard ({ creditCard, onChange }: CreditCardProps) {
         name="credit-card"
         placeholder="****-****-****-****"
         value={creditCard}
-        onChange={onChange} />
+        onChange={onChange}
+      />
     </Panel>
-  )
+  );
 }
 
-export default CreditCard
+export default CreditCard;

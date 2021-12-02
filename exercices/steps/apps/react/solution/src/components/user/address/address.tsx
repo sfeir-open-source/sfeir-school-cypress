@@ -1,43 +1,44 @@
-import './address.module.scss'
-import Input from '../../lib/input/input'
-import Panel from '../../lib/panel/panel'
+import './address.module.scss';
+import Input from '../../lib/input/input';
+import Panel from '../../lib/panel/panel';
 
 export interface AddressDTO {
-  address: string,
-  additionalAddress: string,
-  postalCode: string,
-  city: string
+  address: string;
+  additionalAddress: string;
+  postalCode: string;
+  city: string;
 }
 
 export const DEFAULT_ADDRESS: AddressDTO = {
   address: '',
   additionalAddress: '',
   postalCode: '',
-  city: ''
-}
+  city: '',
+};
 /* eslint-disable-next-line */
 export interface AddressProps {
-  address: AddressDTO,
-  onChange : (address: AddressDTO) => void
+  address: AddressDTO;
+  onChange: (address: AddressDTO) => void;
 }
 
-export function Address ({ address, onChange }: AddressProps) {
+export function Address({ address, onChange }: AddressProps) {
   const handleChange = (value: string, name: string) => {
     onChange({
       ...address,
-      [name]: value
-    })
-  }
+      [name]: value,
+    });
+  };
 
   return (
-   <Panel label="Adress">
+    <Panel label="Adress">
       <Input
         data-cy="user-address-input"
         label="Address"
         name="address"
         placeholder="297 Elizabeth St"
         value={address.address}
-        onChange={handleChange} />
+        onChange={handleChange}
+      />
 
       <Input
         label="Additional adress (optional)"
@@ -45,7 +46,8 @@ export function Address ({ address, onChange }: AddressProps) {
         name="additionalAddress"
         placeholder="1st floor"
         value={address.additionalAddress}
-        onChange={handleChange} />
+        onChange={handleChange}
+      />
 
       <Input
         label="Postal code"
@@ -53,7 +55,8 @@ export function Address ({ address, onChange }: AddressProps) {
         name="postalCode"
         placeholder="10012"
         value={address.postalCode}
-        onChange={handleChange} />
+        onChange={handleChange}
+      />
 
       <Input
         label="City"
@@ -61,9 +64,10 @@ export function Address ({ address, onChange }: AddressProps) {
         name="city"
         placeholder="New York"
         value={address.city}
-        onChange={handleChange} />
+        onChange={handleChange}
+      />
     </Panel>
-  )
+  );
 }
 
-export default Address
+export default Address;
