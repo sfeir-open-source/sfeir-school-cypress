@@ -24,7 +24,7 @@ cy.get('header > div[0]')
 
 ```js
 
-cu.get('#my-button').click()
+cy.get('#my-button').click()
 
 
 ```

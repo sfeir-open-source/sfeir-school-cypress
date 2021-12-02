@@ -5,7 +5,7 @@
 
 Essayer de vérifier 
 
- * le text du Header
+ * le texte du Header
   
  * Le bouton "login" est activé (cliquable)
   
