@@ -41,7 +41,7 @@ function useScroll(items: BookDTO[] | null) {
     if (!element) {
       return;
     }
-    element.scrollBy({ left: nbViewport * element.offsetWidth, behavior: 'smooth' });
+    element.scrollBy({ left: nbViewport * element.offsetWidth });
   }, []);
 
   const scrollPrevious = useCallback(() => {
@@ -68,7 +68,7 @@ export function List({ name, items, ...props }: ListProps) {
             </button>
           )}
         </div>
-        <div ref={ref} className="flex overflow-x-auto gap-6 md:gap-12 flex-nowrap">
+        <div ref={ref} data-cy="scrollable-list" className="flex overflow-x-auto gap-6 md:gap-12 flex-nowrap">
           {items ? items.map(item => <Item key={item.id} book={item} />) : <span aria-label="Loading" />}
         </div>
         <div className={css.buttonWrapper}>
