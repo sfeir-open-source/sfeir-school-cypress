@@ -23,7 +23,7 @@ find("section[1] > div[7] > button[2]")
   .triggerHtmlEvent("click");
 await render();
 
-find("header > div[class='.btn btn-primary']")
+find("header > button[class='btn btn-primary']")
   .triggerHtmlEvent("click");
 await render();
 
