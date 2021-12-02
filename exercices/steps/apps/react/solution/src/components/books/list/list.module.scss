@@ -1,24 +1,23 @@
 .content {
+  @apply flex;
+  flex-direction: row;
+  > * {
+    @apply px-1;
+    @apply md:px-4;
+  }
+
+  .buttonWrapper {
     @apply flex;
-    flex-direction: row;
-    > * {
-        @apply px-1;
-        @apply md:px-4;
-    }
 
-    .buttonWrapper {
-        @apply flex;
+    > .button {
+      @apply font-thin;
+      @apply text-xl;
+      @apply md:text-3xl;
+      @apply font-bold;
 
-       > .button {
-            @apply font-thin;
-            @apply text-xl;
-            @apply md:text-3xl;
-            @apply font-bold;
-    
-            &:hover {
-                @apply text-blue-400;
-            }
-        }
+      &:hover {
+        @apply text-blue-400;
+      }
     }
-   
+  }
 }

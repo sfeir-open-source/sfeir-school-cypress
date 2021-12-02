@@ -1,12 +1,12 @@
 describe('cart button', () => {
   beforeEach(() => {
-    cy.interceptHomePage()
-  })
+    cy.interceptHomePage();
+  });
 
   it('should go to cart page', () => {
-    cy.visit('/')
+    cy.visit('/');
 
-    cy.get('[data-cy=cart-button]').click()
-    cy.location('pathname').should('eq', '/cart')
-  })
-})
+    cy.get('[data-cy=cart-button]').click();
+    cy.location('pathname').should('eq', '/cart');
+  });
+});

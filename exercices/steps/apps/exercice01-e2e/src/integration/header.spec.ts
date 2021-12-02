@@ -5,6 +5,6 @@ describe('Header', () => {
 
   it('should be change by our clever students', () => {
     // eslint-disable-next-line no-unused-expressions
-    expect("Learning").to.be.null
-  })
-})
+    expect('Learning').to.be.null;
+  });
+});

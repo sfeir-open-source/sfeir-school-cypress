@@ -24,9 +24,7 @@ export class BasketController {
   @ApiOkResponse({ status: 200, description: 'The user basket', schema: { type: 'array', items: CART_ITEM_SCHEMA } })
   @HttpCode(200)
   @ApiBody({ type: AddCartItemDTO })
-  async addToBasket(
-    @Body() cartItem: AddCartItemDTO
-  ): Promise<BookCartItem[]> {
+  async addToBasket(@Body() cartItem: AddCartItemDTO): Promise<BookCartItem[]> {
     const cart = await this.cartService.writeItem(cartItem);
     return this.cartMapperService.toCartItems(cart);
   }

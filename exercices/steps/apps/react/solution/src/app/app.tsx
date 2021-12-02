@@ -1,14 +1,14 @@
-import './app.module.scss'
-import Pages from '../pages/pages'
+import './app.module.scss';
+import Pages from '../pages/pages';
 
-export function App () {
+export function App() {
   return (
-    <div >
+    <div>
       <main>
         <Pages />
       </main>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
