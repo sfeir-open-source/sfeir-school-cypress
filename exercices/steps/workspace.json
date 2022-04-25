@@ -1,6 +1,27 @@
 {
   "version": 2,
   "projects": {
+    "exercice00-e2e": {
+      "root": "apps/exercice00-e2e",
+      "sourceRoot": "apps/exercice00-e2e/src",
+      "projectType": "application",
+      "targets": {
+        "e2e": {
+          "executor": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/exercice00-e2e/cypress.json"
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["apps/exercice00-e2e/**/*.{js,ts}"]
+          }
+        }
+      },
+      "tags": []
+    },
     "exercice01-e2e": {
       "root": "apps/exercice01-e2e",
       "sourceRoot": "apps/exercice01-e2e/src",
