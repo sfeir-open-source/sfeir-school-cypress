@@ -1,4 +1,6 @@
 on: [push, pull_request]
+env:
+  CYPRESS_CACHE_FOLDER: cypress/cache
 
 jobs:
   e2e-testing:
@@ -10,7 +12,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/cache@v3
         with:
-          path: /home/runner/.cache/Cypress
+          path: cypress/cache
           key: cypress-binary-${{ hashFiles('**/package-lock.json') }}
       - uses: actions/setup-node@v2.4.1
         with:
