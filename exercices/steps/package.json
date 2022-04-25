@@ -4,6 +4,7 @@
   "license": "MIT",
   "scripts": {
     "start-nest-server": "nx run nest-server:serve --no-inspect",
+    "start-exercice00-e2e": "nx run exercice00-e2e:e2e --watch",
     "start-exercice01-e2e": "nx run exercice01-e2e:e2e --watch",
     "start-exercice01-solution-e2e": "nx run exercice01-solution-e2e:e2e --watch",
     "start-exercice02-e2e": "nx run exercice02-e2e:e2e --watch",
@@ -65,7 +66,7 @@
     "@typescript-eslint/eslint-plugin": "~4.31.1",
     "@typescript-eslint/parser": "~4.31.1",
     "babel-jest": "27.2.3",
-    "cypress": "^9.1.0",
+    "cypress": "^9.6.0",
     "eslint": "7.22.0",
     "eslint-config-prettier": "8.1.0",
     "eslint-plugin-cypress": "^2.10.3",
