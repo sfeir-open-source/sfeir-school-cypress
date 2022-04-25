@@ -1,0 +1,20 @@
+on: [push, pull_request]
+
+jobs:
+  e2e-testing:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: exercices/steps
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2.4.1
+        with:
+          node-version: '14'
+          cache: 'npm'
+          cache-dependency-path: package-lock.json
+      - run: npm ci
+      - run: npx cypress cache path
+      - name: run exercice 01 e2e testing
+        run: nx run exercice01-solution-e2e:e2e
+
