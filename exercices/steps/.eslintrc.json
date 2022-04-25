@@ -8,6 +8,7 @@
       "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
       "extends": ["standard"],
       "rules": {
+        "no-unused-expressions": "off",
         "@nrwl/nx/enforce-module-boundaries": [
           "error",
           {
