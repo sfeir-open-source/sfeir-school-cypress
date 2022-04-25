@@ -8,13 +8,52 @@ jobs:
         working-directory: exercices/steps
     steps:
       - uses: actions/checkout@v2
+      - uses: actions/cache@v3
+        with:
+          path: /home/runner/.cache/Cypress
+          key: cypress-binary-${{ hashFiles('**/package-lock.json') }}
       - uses: actions/setup-node@v2.4.1
         with:
           node-version: '14'
           cache: 'npm'
-          cache-dependency-path: package-lock.json
+          cache-dependency-path: 'exercices/steps/package-lock.json'
       - run: npm ci
-      - run: npx cypress cache path
       - name: run exercice 01 e2e testing
-        run: nx run exercice01-solution-e2e:e2e
+        uses: cypress-io/github-action@v2
+        with:
+          command: npx nx run exercice01-solution-e2e:e2e
+          start: npx nx run nest-server:serve
+          working-directory: exercices/steps
+          install: false
+      - name: run exercice 02 e2e testing
+        uses: cypress-io/github-action@v2
+        with:
+          command: npx nx run exercice02-solution-e2e:e2e
+          start: npx nx run nest-server:serve
+          working-directory: exercices/steps
+          install: false
+      - name: run exercice 03 e2e testing
+        uses: cypress-io/github-action@v2
+        with:
+          command: npx nx run exercice03-solution-e2e:e2e
+          start: npx nx run nest-server:serve
+          working-directory: exercices/steps
+          install: false
+      - name: run exercice 04 e2e testing
+        uses: cypress-io/github-action@v2
+        with:
+          command: npx nx run exercice04-solution-e2e:e2e
+          start: npx nx run nest-server:serve
+          working-directory: exercices/steps
+          install: false
+      - name: run exercice 05 e2e testing
+        uses: cypress-io/github-action@v2
+        with:
+          command: npx nx run exercice05-solution-e2e:e2e
+          start: npx nx run nest-server:serve
+          working-directory: exercices/steps
+          install: false
+
+
+
 
