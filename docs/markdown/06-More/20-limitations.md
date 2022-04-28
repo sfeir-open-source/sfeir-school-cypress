@@ -16,11 +16,11 @@ Credits: [official documentation](https://docs.cypress.io/guides/references/trad
 # Dans la roadmap
 <br/>
 
- * cy.hover() ? 
+ * cy.hover() ?  cypress-real-events
 
- * cy.tab() ? (accessibilité)
+ * cy.tab() ? (accessibilité) cypress-plugin-tab (experimental)
 
- * Support des évenements mobile ? 
+ * Support des évenements mobile ? cypress-real-events
 
 
 ##==##
@@ -38,3 +38,10 @@ Credits: [official documentation](https://docs.cypress.io/guides/references/trad
  * Projet / utilisateurs ...
  
  * Intégration (github, slack, jira ...) 
+
+
+##==##
+
+# Sorry Cypress
+
+## Self hosted alternative

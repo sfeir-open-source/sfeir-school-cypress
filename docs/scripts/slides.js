@@ -4,8 +4,8 @@ import { SfeirThemeInitializer } from '../web_modules/sfeir-school-theme/sfeir-s
 function school() {
   return [
     "00-school/00-TITLE.md",
-    "00-school/speaker-jge.md",
-    "00-school/speaker-nfr.md",
+    // "00-school/speaker-jge.md",
+    // "00-school/speaker-nfr.md",
     "00-school/speaker-ggr.md",
   ]
 }
@@ -21,12 +21,14 @@ function intro() {
 function cypress() {
   return [
     "02-Cypress/00-TITLE.md",
-    "02-Cypress/10-application.md",
-    "02-Cypress/20-cypress.md",
-    "02-Cypress/30-test-runner.md",
-    "02-Cypress/40-running-javascript.md",
-    "02-Cypress/50-automatically.md",
-    "02-Cypress/60-exercice01-static.md",
+    "02-Cypress/10-cypress.md",
+    "02-Cypress/20-installation.md",
+    "02-Cypress/30-nx.md",
+    "02-Cypress/40-exercice00.md",
+    "02-Cypress/50-test-runner.md",
+    "02-Cypress/60-running-javascript.md",
+    "02-Cypress/70-automatically.md",
+    "02-Cypress/80-exercice01-static.md"
   ]
 }
 
