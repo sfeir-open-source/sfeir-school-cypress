@@ -17,9 +17,9 @@
 
 Cypress propose des "marqueurs" pour les tests :
 
- * data-cy (spécifique Cypress)
+ * data-cy (recommandation Cypress)
  * data-test
- * data-testid
+ * data-testid (recommandation Testing Library)
 
 ```html
 
@@ -37,7 +37,6 @@ cy.get('[data-cy=button-bar]').find('[data-cy=play-button]')
 
 
 ```
-
 
 ##==##
 <!-- .slide: class="two-column-layout" -->
@@ -63,3 +62,29 @@ __C'est une question subjective !__
 ##--##
 
 <img src="./assets/images/spotify-library.svg" style='position:absolute; right: 120px'/>
+
+
+##==##
+
+## Test Runner UI
+
+<br/>
+
+<img src="./assets/images/open-selector-ui.gif" style="width:100%;"/>
+
+##==##
+
+## Cypress Studio
+
+<br/>
+
+cypress.json
+
+````json
+{
+  "experimentalStudio": true
+}
+````
+
+<br/>
+

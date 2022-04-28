@@ -25,6 +25,39 @@ cy.get('header > div[0]')
 ```js
 
 cy.get('#my-button').click()
+cy.get('#my-input').type('foo')
+
+
+```
+
+##==##
+
+## Assertions
+
+* Contenu :
+
+```js
+
+cy.get('.sticky .title').contains('Sfeir-school: Cypress');
+
+cy.get('#user-name').should('have.text', 'Joe Smith')
+
+```
+
+* Visibilité
+
+```js
+
+cy.get('button#form-submit').should('be.visible')
+
+
+```
+
+* Longueur
+
+```js
+
+cy.get('li.selected').should('have.length', 3)
 
 
 ```

@@ -8,10 +8,6 @@
 
 <!-- .slide: class="school-presentation" -->
 
-<div class="wifi">
-    <span class="key">wifi:</span><span>SSID</span><br>
-    <span class="key">mdp:</span><span>PWD_WIFI</span>
-</div>
 
 ##==##
 
@@ -23,7 +19,3 @@ Quand est-ce qu'on mange ?<br>
 Tour de table ...
 </p>
 <br><br>
-
-**Feuille de présence (obligatoire)** <!-- .element: class="center" -->
-
-https://bit.ly/sfeir-xxx <!-- .element: class="center" -->

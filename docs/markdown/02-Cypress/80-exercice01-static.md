@@ -3,7 +3,7 @@
 # Exercice 1 : contenu statique
 <br/>
 
-Essayer de vérifier 
+Vérifier :
 
  * le texte du Header
   

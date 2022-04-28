@@ -10,11 +10,9 @@ describe('home page', () => {
     cy.interceptHomePage();
   });
 
-  /*
-   *
-   * TODO : Add some test for Top10
-   *
-   */
+  it('should display top 10 books if user is logged in', () => {
+    expect('Learning').to.be.null;
+  });
 
   it('should display all genres', () => {
     cy.visit('/');
