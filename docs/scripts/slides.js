@@ -4,8 +4,8 @@ import { SfeirThemeInitializer } from '../web_modules/sfeir-school-theme/sfeir-s
 function school() {
   return [
     "00-school/00-TITLE.md",
-    "00-school/speaker-jge.md",
-    "00-school/speaker-nfr.md",
+    // "00-school/speaker-jge.md",
+    // "00-school/speaker-nfr.md",
     "00-school/speaker-ggr.md",
   ]
 }
