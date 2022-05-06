@@ -53,7 +53,7 @@ Cypress.Commands.add('interceptBooksByGenre', () => {
       const { genre, page, pageSize }: any = req.query;
 
       if (!(genre && page && pageSize)) {
-        // Make the test fails
+        // Make the test fail
         throw new Error('Unable to stub books request');
       }
 

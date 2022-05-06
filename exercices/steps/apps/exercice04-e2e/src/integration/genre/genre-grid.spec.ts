@@ -23,7 +23,7 @@ describe('Science fiction page', () => {
         const { genre, page, pageSize }: any = req.query;
 
         if (!(genre && page && pageSize)) {
-          // Make the test fails
+          // Make the test fail
           throw new Error('Unable to stub books request');
         }
 
@@ -66,7 +66,7 @@ describe('Science fiction page', () => {
     testBook('5097', 'Vingt mille Lieues Sous Les Mers — Complete', 'Verne, Jules');
   });
 
-  it('should navigates between genres', () => {
+  it('should navigate between genres', () => {
     cy.visit('/genre/sciencefiction');
     cy.get('[data-cy=genre-grid]').contains('Science fiction');
     testBook('799', 'De la Terre à la Lune', 'Verne, Jules');
