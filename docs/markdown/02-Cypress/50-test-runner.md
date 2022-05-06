@@ -4,7 +4,7 @@
 
 ```js
 describe('My First Test', () => {
-  // Use it partially !
+  // Use it with parsimony !
   before(() => {
     this.user = 'John Doe'
   })
@@ -25,10 +25,10 @@ describe('My First Test', () => {
     expect(this.user).to.equal('John Doe')
   })
 
-  // Use it partially !
+  // Use it with parsimony !
   afterEach(() => {})
 
-  // Use it partially !
+  // Use it with parsimony !
   after(() => {})
 })
 ```
