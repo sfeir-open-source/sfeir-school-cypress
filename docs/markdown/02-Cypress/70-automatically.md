@@ -74,9 +74,9 @@ cy.get('button')
     .contains('buy it!') // Check text
     .should('be.disabled') // Check status
 
-cy.get('[data-cy="buy-panel"]'])
+cy.get('[data-cy="buy-panel"]')
     .within(() => {
-        cy.get('data-cy="buy-button"]')
+        cy.get('[data-cy="buy-button"]')
             .should('be.visible')
     })
 
