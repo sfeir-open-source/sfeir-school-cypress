@@ -17,10 +17,12 @@
     "start-exercice05-solution-e2e": "nx run exercice05-solution-e2e:e2e --watch",
     "start-react-solution": "nx run react-solution:serve",
     "start-react-solution-e2e": "nx run react-solution-e2e:e2e --watch",
-    "test": "nx run react-solution-e2e:e2e"
+    "test": "nx run react-solution-e2e:e2e",
+    "db:reset": "node reset.js"
   },
   "private": true,
   "dependencies": {
+    "@auth0/auth0-react": "^1.10.2",
     "@heroicons/react": "^1.0.4",
     "@nestjs/common": "^8.2.3",
     "@nestjs/core": "^8.2.3",

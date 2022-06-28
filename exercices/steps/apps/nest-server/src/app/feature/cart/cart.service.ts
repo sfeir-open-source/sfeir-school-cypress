@@ -33,4 +33,8 @@ export class CartService {
     await this.readerFileService.writeFile(join(__dirname, 'assets/mocks', 'cart.json'), JSON.stringify(data));
     return data;
   }
+
+  async deleteBasket() {
+    await this.readerFileService.writeFile(join(__dirname, 'assets/mocks', 'cart.json'), JSON.stringify({}));
+  }
 }

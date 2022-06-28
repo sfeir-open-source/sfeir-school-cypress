@@ -1,7 +1,7 @@
 import { LoginIcon, UserCircleIcon } from '@heroicons/react/solid';
 import { useContext } from 'react';
-import { Link } from 'react-router-dom';
 import { UserContext } from '../../../contexts/user-provider';
+import { useAuth0 } from "@auth0/auth0-react";
 
 import './login-status.module.scss';
 
@@ -18,17 +18,18 @@ const iconClassname = 'w-8 h-8 mr-2';
 
 export function LoginStatus(props: LoginStatusProps) {
   const login = useContext(UserContext);
+  const { loginWithRedirect, logout, isAuthenticated } = useAuth0();
 
-  return login.user ? (
-    <button className={buttonClassName} data-cy="user-button" onClick={login?.logout}>
+  return isAuthenticated ? (
+    <button className={buttonClassName} data-cy="user-button" onClick={() => logout({ returnTo: window.location.origin })}>
       <UserCircleIcon className={iconClassname} />
-      <span>{login.user?.username}</span>
+      <span>Log out</span>
     </button>
   ) : (
-    <Link to="/signin" id="login-button" className={buttonClassName} data-cy="login-button">
+    <button id="login-button" className={buttonClassName} data-cy="login-button" onClick={() => loginWithRedirect()}>
       <LoginIcon className={iconClassname} />
       <span>Login</span>
-    </Link>
+    </button>
   );
 }
 

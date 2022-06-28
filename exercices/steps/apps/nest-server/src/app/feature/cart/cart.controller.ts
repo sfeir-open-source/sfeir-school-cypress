@@ -1,6 +1,6 @@
 import { BookCartItem, CART_ITEM_SCHEMA } from '@nest-server/app/shared/models/cart.model';
 import { INTERNAL_SERVER_SCHEMA } from '@nest-server/app/shared/models/error.model';
-import { Body, Controller, Get, HttpCode, Put } from '@nestjs/common';
+import {Body, Controller, Delete, Get, HttpCode, Put} from '@nestjs/common';
 import { ApiBody, ApiInternalServerErrorResponse, ApiOkResponse, ApiTags } from '@nestjs/swagger';
 import { AddCartItemDTO } from './add-cart-item.dto';
 import { CartMapperService } from './cart-mapper.service';
@@ -27,5 +27,10 @@ export class BasketController {
   async addToBasket(@Body() cartItem: AddCartItemDTO): Promise<BookCartItem[]> {
     const cart = await this.cartService.writeItem(cartItem);
     return this.cartMapperService.toCartItems(cart);
+  }
+
+  @Delete()
+  async deleteCart() {
+    await this.cartService.deleteBasket();
   }
 }

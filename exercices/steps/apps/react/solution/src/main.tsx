@@ -6,10 +6,16 @@ import CartProvider from './contexts/cart-provider';
 import App from './app/app';
 import UserProvider from './contexts/user-provider';
 import GenreProvider from './contexts/genre-provider';
+import { Auth0Provider } from "@auth0/auth0-react";
 
 ReactDOM.render(
   <StrictMode>
     <BrowserRouter>
+      <Auth0Provider
+        domain="dev-y3-86mxa.us.auth0.com"
+        clientId="rqHzhrH1RrSDSi6X9Pdna2X3e8YgDC9a"
+        redirectUri={window.location.origin}
+      >
       <UserProvider>
         <CartProvider>
           <GenreProvider>
@@ -17,6 +23,7 @@ ReactDOM.render(
           </GenreProvider>
         </CartProvider>
       </UserProvider>
+      </Auth0Provider>
     </BrowserRouter>
   </StrictMode>,
   document.getElementById('root')
