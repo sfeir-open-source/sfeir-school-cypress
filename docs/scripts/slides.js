@@ -1,3 +1,5 @@
+import { SfeirThemeInitializer } from '../web_modules/sfeir-theme/sfeir-theme.mjs';
+
 // One method per module
 function schoolSlides() {
   return ['00-school/00-TITLE.md', '00-school/speaker-jef.md'];
@@ -11,12 +13,10 @@ function formation() {
   return [
     //
     ...schoolSlides(), //
-    ...introSlides() //
-  ].map(slidePath => {
+    ...introSlides(), //
+  ].map((slidePath) => {
     return { path: slidePath };
   });
 }
 
-export function usedSlides() {
-  return formation();
-}
+SfeirThemeInitializer.init(formation);
