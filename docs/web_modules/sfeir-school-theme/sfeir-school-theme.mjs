@@ -11683,7 +11683,7 @@ var hY = { id: "zoom", init: function(e) {
 function SY() {
   return hY;
 }
-const oe = "web_modules/sfeir-theme/images";
+const oe = "web_modules/sfeir-school-theme/images";
 class bY {
   constructor() {
     this.path = "";
