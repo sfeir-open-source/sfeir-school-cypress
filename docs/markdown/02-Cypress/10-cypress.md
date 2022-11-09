@@ -10,4 +10,4 @@
 
 ##--##
 
-<!-- .slide: class="text-dark" data-background="./web_modules/sfeir-school-theme/images/bg-blue-1.png" -->
+<!-- .slide: data-background="./web_modules/sfeir-school-theme/images/bg-blue-1.png" -->
