@@ -1,25 +1,11 @@
-<!-- .slide: class="center" -->
+<!-- .slide: class="exercice" -->
 
-# Exercice 0 : Lançons Cypress
+# Exercice 0 : Démarrer Cypress
 
-<br/>
-
-## Commandes génériques
-
-```bash
-npx cypress open
-
-// headless
-npx cypress run
-```
+## Lab
 
 <br/>
 
-## Notre projet
+1. Lancer la commande suivante :
 
-```bash
-cd exercices/steps
-
-# Lancer l'exercice
-npm run start-exercice00-e2e
-```
+### npm run start-exercice00-e2e

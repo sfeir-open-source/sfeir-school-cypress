@@ -1,9 +1,13 @@
-<!-- .slide: class="center" -->
+<!-- .slide: class="two-column" -->
 
-# Qu'est-ce que Cypress ? 
+# Qu'est-ce que Cypress ?
 
- * Test runner
+* Test runner
 
- * Exécutant du JavaScript
+* Exécutant du JavaScript
 
- * Dans (presque) tous les navigateurs
+* Dans (presque) tous les navigateurs
+
+##--##
+
+<!-- .slide: class="text-dark" data-background="./web_modules/sfeir-school-theme/images/bg-blue-1.png" -->

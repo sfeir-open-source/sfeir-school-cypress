@@ -3,7 +3,7 @@
 # Présentation
 
 ![speaker](./assets/images/jge.jpg)
-![company](./assets/images/logo_sfeir_bleu_orange.png)
+![company](./assets/images/logo-sfeir-blanc.png)
 
 ## Jonathan Geoffroy
 

@@ -2,27 +2,19 @@
 
 # Un test runner
 
-```js
+```js [1,20|1-9,14-20|1-20]
 describe('My First Test', () => {
-  // Use it with parsimony !
   before(() => {
-    this.user = 'John Doe'
+    // Use it with parsimony !
   })
 
   beforeEach(() => {
-    this.counter = 7
+    cy.visit('/');
+    cy.resetDB();
   })
 
-  it('increments', () => {
-    this.counter++
-    expect(this.counter).to.equal(8)
-    expect(this.user).to.equal('John Doe')
-  })
-
-  it('decrements', () => {
-    this.counter--
-    expect(this.counter).to.equal(6)
-    expect(this.user).to.equal('John Doe')
+  it('add a book to the cart', () => {
+    cy.get('book-item').click();
   })
 
   // Use it with parsimony !

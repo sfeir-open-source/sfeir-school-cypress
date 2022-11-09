@@ -48,38 +48,12 @@ cy.get('[data-cy=button-bar]').find('[data-cy=play-button]')
 ```
 
 ##==##
-<!-- .slide: class="two-column-layout" -->
-
-## Dois-je tester un label ? 
-
-<br/>
-
-_Si ce label change, mon test doit-il passer rouge ?_
-
-<br/>
-
- * Oui ? => Contains
-    * (exemple: donnée venant du back-end ?)
-
- * Non ? => Get by data-cy
-    * (exemple: label d'un bouton ?)
-
-<br/>
-
-__C'est une question subjective !__
-
-##--##
-
-<img src="./assets/images/spotify-library.svg" style='position:absolute; right: 120px'/>
-
-
-##==##
 
 ## Test Runner UI
 
 <br/>
 
-<img src="./assets/images/open-selector-ui.gif" style="width:100%;"/>
+<img src="assets/images/open-selector-ui.gif" style="width:100%;"/>
 
 ##==##
 
@@ -87,13 +61,14 @@ __C'est une question subjective !__
 
 <br/>
 
-cypress.json
 
-````json
+<!-- .slide: class="with-code" -->
+
+```json
+// cypress.json
 {
   "experimentalStudio": true
 }
-````
-
-<br/>
+```
+<!-- .element: class="big-code" -->
 

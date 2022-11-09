@@ -76,7 +76,7 @@ export function Cart(props: CartProps) {
             </button>
           </>
         ) : (
-          <div data-cy="cart-panel-empty">You cart is empty</div>
+          <div data-cy="cart-panel-empty">Your cart is empty</div>
         )}
       </div>
     </div>

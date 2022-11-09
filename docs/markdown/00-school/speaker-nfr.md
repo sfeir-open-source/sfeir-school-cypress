@@ -4,7 +4,8 @@
 # Présentation
 
 ![speaker](./assets/images/nfr.jpg)
-![company](./assets/images/logo_sfeir_bleu_orange.png)
+![badge](./assets/images/gde.png)
+![company](./assets/images/logo-sfeir-blanc.png)
 
 ## Nicolas Frizzarin
 

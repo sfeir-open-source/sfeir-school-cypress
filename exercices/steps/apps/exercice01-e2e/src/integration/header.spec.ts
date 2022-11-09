@@ -1,7 +1,13 @@
-describe('Header', () => {
+describe('Exercice 01', () => {
 
-  it('should display Sfeir header', () => {
-    // Identifier le titre du header et vérifier
-    expect('Learning').to.be.null;
+  it('should navigate to cart page', () => {
+    // navigate to home page
+
+    // query the title and check its text
+
+    // query the cart button and click on it
+
+    // query the body and check its text
+
   });
 });

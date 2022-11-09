@@ -27,18 +27,35 @@ function cypress() {
     "02-Cypress/40-exercice00.md",
     "02-Cypress/50-test-runner.md",
     "02-Cypress/60-running-javascript.md",
-    "02-Cypress/70-automatically.md",
-    "02-Cypress/80-exercice01-static.md"
+    "02-Cypress/70-api.md",
+    "02-Cypress/80-good-practices.md",
+    "02-Cypress/90-exercice01-static.md",
+    "02-Cypress/100-good-tests.md"
   ]
 }
 
-function goodtest() {
+function commands() {
   return [
-    "03-Good test/00-TITLE.md",
-    "03-Good test/10-good-tests.md",
-    "03-Good test/20-breaking-test.md",
-    "03-Good test/30-query.md",
-    "03-Good test/40-exercice02-query.md",
+    "03-Commands/00-TITLE.md",
+    "03-Commands/10-introduction.md",
+    "03-Commands/20-yield.md",
+    "03-Commands/30-execution-order.md",
+    "03-Commands/40-exercice.md",
+    "03-Commands/50-custom-commands.md",
+    "03-Commands/60-commands-creation.md",
+    "03-Commands/70-exercice.md",
+    "03-Commands/80-solution.md",
+    "03-Commands/90-tips.md",
+  ]
+}
+
+function structurertests() {
+  return [
+    "04-Structurer tests/00-TITLE.md",
+    "04-Structurer tests/10-command.md",
+    "04-Structurer tests/20-command-ouverture.md",
+    "04-Structurer tests/30-differents-tests.md",
+    "04-Structurer tests/40-ouverture.md",
   ]
 }
 
@@ -53,17 +70,12 @@ function networking() {
   ]
 }
 
-function structurertests() {
+function domains() {
   return [
-    "05-Structurer tests/00-TITLE.md",
-    "05-Structurer tests/20-command.md",
-    "05-Structurer tests/30-exercice04-commands.md",
-    "05-Structurer tests/40-command-ouverture.md",
-    "05-Structurer tests/50-differents-tests.md",
-    "05-Structurer tests/60-exercice05-login.md",
-    "05-Structurer tests/70-ouverture.md",
-  ]
+      "06-Domains/00-TITLE.md",
+    ]
 }
+
 
 function more() {
   return [
@@ -94,9 +106,10 @@ function formation() {
     ...school(),
     ...intro(),
     ...cypress(),
-    ...goodtest(),
-    ...networking(),
+    ...commands(),
     ...structurertests(),
+    ...networking(),
+    ...domains(),
     ...more(),
     ...tdd(),
     ...lessonlearnt(),
