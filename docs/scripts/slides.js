@@ -61,12 +61,12 @@ function structurertests() {
 
 function networking() {
   return [
-    "04-Networking/00-TITLE.md",
-    "04-Networking/10-differents-tests.md",
-    "04-Networking/20-integration-networking.md",
-    "04-Networking/30-fixture.md",
-    "04-Networking/40-exercice03-intercept.md",
-    "04-Networking/50-ouverture.md",
+    "05-Networking/00-TITLE.md",
+    "05-Networking/10-differents-tests.md",
+    "05-Networking/20-integration-networking.md",
+    "05-Networking/30-fixture.md",
+    "05-Networking/40-exercice03-intercept.md",
+    "05-Networking/50-ouverture.md",
   ]
 }
 
