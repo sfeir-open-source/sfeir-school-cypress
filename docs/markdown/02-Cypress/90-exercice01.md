@@ -1,6 +1,6 @@
 <!-- .slide: class="exercice" -->
 
-# Exercice 1 : contenu statique
+# Exercice 1
 
 ## Lab
 

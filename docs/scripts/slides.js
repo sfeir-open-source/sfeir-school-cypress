@@ -29,7 +29,7 @@ function cypress() {
     "02-Cypress/60-running-javascript.md",
     "02-Cypress/70-api.md",
     "02-Cypress/80-good-practices.md",
-    "02-Cypress/90-exercice01-static.md",
+    "02-Cypress/90-exercice01.md",
     "02-Cypress/100-good-tests.md"
   ]
 }

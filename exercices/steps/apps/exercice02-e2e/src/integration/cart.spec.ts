@@ -4,7 +4,15 @@ describe('Cart', () => {
   });
 
   it('should add an item to the cart', () => {
-      // TACHE: cliquer sur le bouton 'add to cart' du premier livre
+      // query the list of books
+
+      // query the **first** book
+
+      // move **within** the book DOM element
+
+      // query the **add to cart** button
+
+      // click on the **add to cart** button
 
     });
 });
