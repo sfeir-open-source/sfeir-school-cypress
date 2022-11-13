@@ -1,6 +1,6 @@
 <!-- .slide: class="exercice" -->
 
-# Create a command
+# Exercice 03: Create a command
 
 ## Lab
 

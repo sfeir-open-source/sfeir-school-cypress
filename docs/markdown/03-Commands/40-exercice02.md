@@ -1,6 +1,6 @@
 <!-- .slide: class="exercice" -->
 
-# Exercice 2: Use Commands
+# Exercice 02: Use Commands
 
 ## Lab
 
