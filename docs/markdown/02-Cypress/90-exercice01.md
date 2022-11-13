@@ -1,6 +1,6 @@
 <!-- .slide: class="exercice" -->
 
-# Exercice 1
+# Exercice 01
 
 ## Lab
 
