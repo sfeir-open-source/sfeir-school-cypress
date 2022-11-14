@@ -59,6 +59,18 @@ function structurertests() {
   ]
 }
 
+function alias() {
+  return [
+    "05-alias/00-TITLE.md",
+    "05-alias/10-execution-order.md",
+    "05-alias/20-bad-examples.md",
+    "05-alias/30-reference.md",
+    "05-alias/40-usages.md",
+    "05-alias/50-exercice04.md",
+    "05-alias/60-solution.md",
+  ]
+}
+
 function networking() {
   return [
     "05-Networking/00-TITLE.md",
@@ -108,10 +120,11 @@ function formation() {
     ...cypress(),
     ...commands(),
     ...structurertests(),
+    ...alias(),
     ...networking(),
-    ...domains(),
+    // ...domains(),
     ...more(),
-    ...tdd(),
+    // ...tdd(),
     ...lessonlearnt(),
   ].map(slidePath => {
     return { path: slidePath };
