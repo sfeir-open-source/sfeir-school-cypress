@@ -14,9 +14,13 @@
         },
         "lint": {
           "executor": "@nrwl/linter:eslint",
-          "outputs": ["{options.outputFile}"],
+          "outputs": [
+            "{options.outputFile}"
+          ],
           "options": {
-            "lintFilePatterns": ["apps/exercice00-e2e/**/*.{js,ts}"]
+            "lintFilePatterns": [
+              "apps/exercice00-e2e/**/*.{js,ts}"
+            ]
           }
         }
       },
@@ -41,14 +45,20 @@
         },
         "lint": {
           "executor": "@nrwl/linter:eslint",
-          "outputs": ["{options.outputFile}"],
+          "outputs": [
+            "{options.outputFile}"
+          ],
           "options": {
-            "lintFilePatterns": ["apps/exercice01-e2e/**/*.{js,ts}"]
+            "lintFilePatterns": [
+              "apps/exercice01-e2e/**/*.{js,ts}"
+            ]
           }
         }
       },
       "tags": [],
-      "implicitDependencies": ["react-solution"]
+      "implicitDependencies": [
+        "react-solution"
+      ]
     },
     "exercice01-solution-e2e": {
       "root": "apps/exercice01-solution-e2e",
@@ -69,14 +79,20 @@
         },
         "lint": {
           "executor": "@nrwl/linter:eslint",
-          "outputs": ["{options.outputFile}"],
+          "outputs": [
+            "{options.outputFile}"
+          ],
           "options": {
-            "lintFilePatterns": ["apps/exercice01-solution-e2e/**/*.{js,ts}"]
+            "lintFilePatterns": [
+              "apps/exercice01-solution-e2e/**/*.{js,ts}"
+            ]
           }
         }
       },
       "tags": [],
-      "implicitDependencies": ["react-solution"]
+      "implicitDependencies": [
+        "react-solution"
+      ]
     },
     "exercice02-e2e": {
       "root": "apps/exercice02-e2e",
@@ -97,14 +113,20 @@
         },
         "lint": {
           "executor": "@nrwl/linter:eslint",
-          "outputs": ["{options.outputFile}"],
+          "outputs": [
+            "{options.outputFile}"
+          ],
           "options": {
-            "lintFilePatterns": ["apps/exercice02-e2e/**/*.{js,ts}"]
+            "lintFilePatterns": [
+              "apps/exercice02-e2e/**/*.{js,ts}"
+            ]
           }
         }
       },
       "tags": [],
-      "implicitDependencies": ["react-solution"]
+      "implicitDependencies": [
+        "react-solution"
+      ]
     },
     "exercice02-solution-e2e": {
       "root": "apps/exercice02-solution-e2e",
@@ -125,14 +147,20 @@
         },
         "lint": {
           "executor": "@nrwl/linter:eslint",
-          "outputs": ["{options.outputFile}"],
+          "outputs": [
+            "{options.outputFile}"
+          ],
           "options": {
-            "lintFilePatterns": ["apps/exercice02-solution-e2e/**/*.{js,ts}"]
+            "lintFilePatterns": [
+              "apps/exercice02-solution-e2e/**/*.{js,ts}"
+            ]
           }
         }
       },
       "tags": [],
-      "implicitDependencies": ["react-solution"]
+      "implicitDependencies": [
+        "react-solution"
+      ]
     },
     "exercice03-e2e": {
       "root": "apps/exercice03-e2e",
@@ -153,14 +181,20 @@
         },
         "lint": {
           "executor": "@nrwl/linter:eslint",
-          "outputs": ["{options.outputFile}"],
+          "outputs": [
+            "{options.outputFile}"
+          ],
           "options": {
-            "lintFilePatterns": ["apps/exercice03-e2e/**/*.{js,ts}"]
+            "lintFilePatterns": [
+              "apps/exercice03-e2e/**/*.{js,ts}"
+            ]
           }
         }
       },
       "tags": [],
-      "implicitDependencies": ["react-solution"]
+      "implicitDependencies": [
+        "react-solution"
+      ]
     },
     "exercice03-solution-e2e": {
       "root": "apps/exercice03-solution-e2e",
@@ -181,14 +215,20 @@
         },
         "lint": {
           "executor": "@nrwl/linter:eslint",
-          "outputs": ["{options.outputFile}"],
+          "outputs": [
+            "{options.outputFile}"
+          ],
           "options": {
-            "lintFilePatterns": ["apps/exercice03-solution-e2e/**/*.{js,ts}"]
+            "lintFilePatterns": [
+              "apps/exercice03-solution-e2e/**/*.{js,ts}"
+            ]
           }
         }
       },
       "tags": [],
-      "implicitDependencies": ["react-solution"]
+      "implicitDependencies": [
+        "react-solution"
+      ]
     },
     "exercice04-e2e": {
       "root": "apps/exercice04-e2e",
@@ -209,14 +249,20 @@
         },
         "lint": {
           "executor": "@nrwl/linter:eslint",
-          "outputs": ["{options.outputFile}"],
+          "outputs": [
+            "{options.outputFile}"
+          ],
           "options": {
-            "lintFilePatterns": ["apps/exercice04-e2e/**/*.{js,ts}"]
+            "lintFilePatterns": [
+              "apps/exercice04-e2e/**/*.{js,ts}"
+            ]
           }
         }
       },
       "tags": [],
-      "implicitDependencies": ["react-solution"]
+      "implicitDependencies": [
+        "react-solution"
+      ]
     },
     "exercice04-solution-e2e": {
       "root": "apps/exercice04-solution-e2e",
@@ -237,14 +283,20 @@
         },
         "lint": {
           "executor": "@nrwl/linter:eslint",
-          "outputs": ["{options.outputFile}"],
+          "outputs": [
+            "{options.outputFile}"
+          ],
           "options": {
-            "lintFilePatterns": ["apps/exercice04-solution-e2e/**/*.{js,ts}"]
+            "lintFilePatterns": [
+              "apps/exercice04-solution-e2e/**/*.{js,ts}"
+            ]
           }
         }
       },
       "tags": [],
-      "implicitDependencies": ["react-solution"]
+      "implicitDependencies": [
+        "react-solution"
+      ]
     },
     "exercice05-e2e": {
       "root": "apps/exercice05-e2e",
@@ -265,14 +317,20 @@
         },
         "lint": {
           "executor": "@nrwl/linter:eslint",
-          "outputs": ["{options.outputFile}"],
+          "outputs": [
+            "{options.outputFile}"
+          ],
           "options": {
-            "lintFilePatterns": ["apps/exercice05-e2e/**/*.{js,ts}"]
+            "lintFilePatterns": [
+              "apps/exercice05-e2e/**/*.{js,ts}"
+            ]
           }
         }
       },
       "tags": [],
-      "implicitDependencies": ["react-solution"]
+      "implicitDependencies": [
+        "react-solution"
+      ]
     },
     "exercice05-solution-e2e": {
       "root": "apps/exercice05-solution-e2e",
@@ -293,14 +351,20 @@
         },
         "lint": {
           "executor": "@nrwl/linter:eslint",
-          "outputs": ["{options.outputFile}"],
+          "outputs": [
+            "{options.outputFile}"
+          ],
           "options": {
-            "lintFilePatterns": ["apps/exercice05-solution-e2e/**/*.{js,ts}"]
+            "lintFilePatterns": [
+              "apps/exercice05-solution-e2e/**/*.{js,ts}"
+            ]
           }
         }
       },
       "tags": [],
-      "implicitDependencies": ["react-solution"]
+      "implicitDependencies": [
+        "react-solution"
+      ]
     },
     "nest-server": {
       "root": "apps/nest-server",
@@ -308,13 +372,19 @@
       "projectType": "application",
       "targets": {
         "build": {
-          "executor": "@nrwl/node:build",
-          "outputs": ["{options.outputPath}"],
+          "executor": "@nrwl/webpack:webpack",
+          "outputs": [
+            "{options.outputPath}"
+          ],
           "options": {
             "outputPath": "dist/apps/nest-server",
             "main": "apps/nest-server/src/main.ts",
             "tsConfig": "apps/nest-server/tsconfig.app.json",
-            "assets": ["apps/nest-server/src/assets"]
+            "assets": [
+              "apps/nest-server/src/assets"
+            ],
+            "target": "node",
+            "compiler": "tsc"
           },
           "configurations": {
             "production": {
@@ -331,23 +401,29 @@
           }
         },
         "serve": {
-          "executor": "@nrwl/node:execute",
+          "executor": "@nrwl/node:node",
           "options": {
             "buildTarget": "nest-server:build"
           }
         },
         "lint": {
           "executor": "@nrwl/linter:eslint",
-          "outputs": ["{options.outputFile}"],
+          "outputs": [
+            "{options.outputFile}"
+          ],
           "options": {
-            "lintFilePatterns": ["apps/nest-server/**/*.ts"]
+            "lintFilePatterns": [
+              "apps/nest-server/**/*.ts"
+            ]
           }
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": ["coverage/apps/nest-server"],
+          "outputs": [
+            "coverage/apps/nest-server"
+          ],
           "options": {
-            "jestConfig": "apps/nest-server/jest.config.js",
+            "jestConfig": "apps/nest-server/jest.config.ts",
             "passWithNoTests": true
           }
         }
@@ -360,8 +436,10 @@
       "projectType": "application",
       "targets": {
         "build": {
-          "executor": "@nrwl/web:build",
-          "outputs": ["{options.outputPath}"],
+          "executor": "@nrwl/webpack:webpack",
+          "outputs": [
+            "{options.outputPath}"
+          ],
           "options": {
             "outputPath": "dist/apps/react/solution",
             "index": "apps/react/solution/src/index.html",
@@ -369,10 +447,16 @@
             "main": "apps/react/solution/src/main.tsx",
             "polyfills": "apps/react/solution/src/polyfills.ts",
             "tsConfig": "apps/react/solution/tsconfig.app.json",
-            "assets": ["apps/react/solution/src/favicon.ico", "apps/react/solution/src/assets"],
-            "styles": ["apps/react/solution/src/styles.scss"],
+            "assets": [
+              "apps/react/solution/src/favicon.ico",
+              "apps/react/solution/src/assets"
+            ],
+            "styles": [
+              "apps/react/solution/src/styles.scss"
+            ],
             "scripts": [],
-            "webpackConfig": "@nrwl/react/plugins/webpack"
+            "webpackConfig": "@nrwl/react/plugins/webpack",
+            "postcssConfig": "apps/react/solution/postcss.config.js"
           },
           "configurations": {
             "production": {
@@ -400,7 +484,7 @@
           }
         },
         "serve": {
-          "executor": "@nrwl/web:dev-server",
+          "executor": "@nrwl/webpack:dev-server",
           "options": {
             "buildTarget": "react-solution:build",
             "hmr": true
@@ -409,21 +493,31 @@
             "production": {
               "buildTarget": "react-solution:build:production",
               "hmr": false
+            },
+            "development": {
+              "buildTarget": "react-solution:build:development"
             }
-          }
+          },
+          "defaultConfiguration": "development"
         },
         "lint": {
           "executor": "@nrwl/linter:eslint",
-          "outputs": ["{options.outputFile}"],
+          "outputs": [
+            "{options.outputFile}"
+          ],
           "options": {
-            "lintFilePatterns": ["apps/react/solution/**/*.{ts,tsx,js,jsx}"]
+            "lintFilePatterns": [
+              "apps/react/solution/**/*.{ts,tsx,js,jsx}"
+            ]
           }
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": ["coverage/apps/react/solution"],
+          "outputs": [
+            "coverage/apps/react/solution"
+          ],
           "options": {
-            "jestConfig": "apps/react/solution/jest.config.js",
+            "jestConfig": "apps/react/solution/jest.config.ts",
             "passWithNoTests": true
           }
         }
@@ -449,14 +543,21 @@
         },
         "lint": {
           "executor": "@nrwl/linter:eslint",
-          "outputs": ["{options.outputFile}"],
+          "outputs": [
+            "{options.outputFile}"
+          ],
           "options": {
-            "lintFilePatterns": ["apps/react/solution-e2e/**/*.{js,ts}"]
+            "lintFilePatterns": [
+              "apps/react/solution-e2e/**/*.{js,ts}"
+            ]
           }
         }
       },
       "tags": [],
-      "implicitDependencies": ["react-solution"]
+      "implicitDependencies": [
+        "react-solution"
+      ]
     }
-  }
+  },
+  "$schema": "./node_modules/nx/schemas/workspace-schema.json"
 }
