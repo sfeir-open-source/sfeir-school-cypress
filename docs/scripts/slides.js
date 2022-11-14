@@ -40,12 +40,13 @@ function commands() {
     "03-Commands/10-introduction.md",
     "03-Commands/20-yield.md",
     "03-Commands/30-execution-order.md",
-    "03-Commands/40-exercice.md",
-    "03-Commands/50-custom-commands.md",
-    "03-Commands/60-commands-creation.md",
-    "03-Commands/70-exercice.md",
-    "03-Commands/80-solution.md",
-    "03-Commands/90-tips.md",
+    "03-Commands/40-exercice02.md",
+    "03-Commands/50-solution.md",
+    "03-Commands/60-custom-commands.md",
+    "03-Commands/70-commands-creation.md",
+    "03-Commands/80-exercice03.md",
+    "03-Commands/90-solution.md",
+    "03-Commands/100-tips.md",
   ]
 }
 
@@ -63,7 +64,7 @@ function alias() {
   return [
     "05-alias/00-TITLE.md",
     "05-alias/10-execution-order.md",
-    "05-alias/20-bad-examples.md",
+    "05-alias/20-bad-example.md",
     "05-alias/30-reference.md",
     "05-alias/40-usages.md",
     "05-alias/50-exercice04.md",
@@ -77,7 +78,7 @@ function networking() {
     "05-Networking/10-differents-tests.md",
     "05-Networking/20-integration-networking.md",
     "05-Networking/30-fixture.md",
-    "05-Networking/40-exercice03-intercept.md",
+    "05-Networking/40-exercice05.md",
     "05-Networking/50-ouverture.md",
   ]
 }

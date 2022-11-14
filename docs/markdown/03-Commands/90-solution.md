@@ -4,7 +4,7 @@
 ```typescript
 declare namespace Cypress {
   interface Chainable<Subject> {
-    getById(id: string): Cypress.Chainable<Subject>;
+    getBySelectorId(id: string): Cypress.Chainable<Subject>;
   }
 }
 ```
@@ -12,7 +12,7 @@ declare namespace Cypress {
 
 <!-- .slide: class="with-code" -->
 ```typescript
-Cypress.Commands.add('getById', (id) => {
+Cypress.Commands.add('getBySelectorId', (id) => {
   cy.get(`[data-cy="${id}"]`);
 });
 ```

@@ -1,4 +1,5 @@
-<!-- .side: class="exercice" -->
+<!-- .slide: class="exercice" -->
+
 # Exercice 04: Create an alias
 
 ## Lab

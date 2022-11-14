@@ -5,5 +5,5 @@
 ## Lab
 
 
-* declare a **getById** command
+* declare a **getBySelectorId** command
 * add it to Cypress to abstract the current **get('[data-cy="selector"]')** solution

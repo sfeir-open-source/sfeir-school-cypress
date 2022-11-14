@@ -4,7 +4,7 @@
 
 ```js
 it(`should login`, () => {
-  const button = cy.get('#login-button').as('loginButton');
+  cy.get('#login-button').as('loginButton');
   cy.get('@loginButton').click();
 });
 ```
@@ -13,7 +13,7 @@ it(`should login`, () => {
 <br>
 
 * wait for a network request
-<!-- .slide: class="with-code" -->
+
 ```js
 it('should login', () => {
   cy.intercept('POST', '/signin', { status: 200 })
