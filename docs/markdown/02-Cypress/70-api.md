@@ -61,7 +61,7 @@ cy.get('header')
 
 <!-- .slide: class="with-code" -->
 ```js
-cy.get('#my-input').type('foo')
+cy.get('#my-input').click()
 
 ```
 <!-- .element: class="big-code" -->
