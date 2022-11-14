@@ -9,7 +9,7 @@
   
  * click on **cart** button
   
- * check the cart page's content (You cart is empty)
+ * check the cart page's content (Your cart is empty)
 
 
 ```bash
@@ -89,4 +89,3 @@ cy.get('button').click();
 
 ```
 <!-- .element: class="big-code" -->
-

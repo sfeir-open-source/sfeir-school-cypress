@@ -1,7 +1,8 @@
-<!-- .slide: class="center" -->
+<!-- .slide: class="exercice" -->
 
-# Exercice 3 : Mock serveur
-<br/>
+# Exercice 5 : Mock serveur
+
+## Lab
 
 * Arrêter le serveur,
 
