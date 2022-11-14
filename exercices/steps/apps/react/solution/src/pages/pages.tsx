@@ -1,4 +1,4 @@
-import { Route, Switch } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Home from './home/home';
 import './pages.module.scss';
 import Signin from './signin/signin';
@@ -11,21 +11,16 @@ export interface PagesProps {}
 
 export function Pages(props: PagesProps) {
   return (
-    <Switch>
-      <Route exact path="/">
-        <Home />
+    <Routes>
+      <Route path="/" element={<Home />}>
       </Route>
-      <Route exact path="/signin">
-        <Signin />
+      <Route path="/signin" element={<Signin />}>
       </Route>
-      <Route exact path="/genre/:genre" render={({ match }) => <Genre genreId={match.params.genre} />}></Route>
-      <Route exact path="/cart">
-        <Cart />
+      <Route path="/cart" element={ <Cart />}>
       </Route>
-      <Route exact path="/order">
-        <Order />
+      <Route path="/order" element={<Order />}>
       </Route>
-    </Switch>
+    </Routes>
   );
 }
 

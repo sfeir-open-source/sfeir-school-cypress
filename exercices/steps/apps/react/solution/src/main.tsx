@@ -1,5 +1,5 @@
 import { StrictMode } from 'react';
-import * as ReactDOM from 'react-dom';
+import * as ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import CartProvider from './contexts/cart-provider';
 
@@ -8,7 +8,11 @@ import UserProvider from './contexts/user-provider';
 import GenreProvider from './contexts/genre-provider';
 import { Auth0Provider } from "@auth0/auth0-react";
 
-ReactDOM.render(
+// Create a root.
+const container = document.getElementById('root') as HTMLElement;
+const root = ReactDOM.createRoot(container);
+
+root.render(
   <StrictMode>
     <BrowserRouter>
       <Auth0Provider
@@ -25,6 +29,5 @@ ReactDOM.render(
       </UserProvider>
       </Auth0Provider>
     </BrowserRouter>
-  </StrictMode>,
-  document.getElementById('root')
+  </StrictMode>
 );

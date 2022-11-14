@@ -1,13 +1,13 @@
 import css from './signin.module.scss';
 import { useCallback, useContext, useState } from 'react';
-import { useHistory } from 'react-router';
+import { useNavigate } from 'react-router';
 import { UserContext } from '../../contexts/user-provider';
 import { CredentialsError } from '../../api/user';
 /* eslint-disable-next-line */
 export interface SigninProps {}
 
 export function Signin(props: SigninProps) {
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const { signIn, loading } = useContext(UserContext);
 
@@ -17,7 +17,7 @@ export function Signin(props: SigninProps) {
 
   const handleSignIn = useCallback(() => {
     signIn(username, password)
-      .then(() => history.replace('/'))
+      .then(() => navigate('/'))
       .catch(err => {
         if (err instanceof CredentialsError) {
           setErrorLabel(err.message);
