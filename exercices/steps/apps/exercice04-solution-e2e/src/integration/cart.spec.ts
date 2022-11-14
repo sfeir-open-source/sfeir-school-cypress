@@ -1,6 +1,10 @@
 describe('Cart', () => {
   beforeEach(() => {
     cy.visit('/');
+
+    // Task: intercept /api/books/genres request
+    // Task: intercept /api/books/top10 request
+    // Task: intercept /api/books?** request
   });
 
   it('should add an item to the cart', () => {

@@ -12,19 +12,14 @@
 declare namespace Cypress {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars, no-unused-vars
   interface Chainable<Subject> {
+    addToCart(): Cypress.Chainable<Subject>;
     interceptHomePage(): Cypress.Chainable<Subject>;
     interceptBooksByGenre(): Cypress.Chainable<Subject>;
-    login(): Cypress.Chainable<Subject>;
   }
 }
 
-Cypress.Commands.add('login', () => {
-  const user = {
-    id: '1234',
-    name: 'John Doe',
-  };
-
-  window.localStorage.setItem('user', JSON.stringify(user));
+Cypress.Commands.add('addToCart', () => {
+  cy.get('[data-cy="add-to-cart-btn"]').click();
 });
 
 Cypress.Commands.add('interceptHomePage', () => {
