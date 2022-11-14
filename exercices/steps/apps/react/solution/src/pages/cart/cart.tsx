@@ -7,7 +7,7 @@ import { UserPaymentDTO } from '../../api/cart';
 import Address, { AddressDTO, DEFAULT_ADDRESS } from '../../components/user/address/address';
 import { UserContext } from '../../contexts/user-provider';
 import CreditCard from '../../components/user/credit-card/credit-card';
-import { useHistory } from 'react-router';
+import { useNavigate } from 'react-router';
 
 /* eslint-disable-next-line */
 export interface CartProps {}
@@ -26,7 +26,7 @@ export function Cart(props: CartProps) {
   const { cart, payCart } = useContext(CartContext);
   const { user } = useContext(UserContext);
 
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const [creditCard, setCreditCard] = useState<string>('');
   const [userForm, setUserForm] = useState<UserForm>(DEFAULT_USER);
@@ -49,8 +49,8 @@ export function Cart(props: CartProps) {
   }, [user]);
 
   const doPayCart = useCallback(() => {
-    payCart({} as UserPaymentDTO).then(() => history.push('/order'));
-  }, [payCart, history]);
+    payCart({} as UserPaymentDTO).then(() => navigate('/order'));
+  }, [payCart, navigate]);
 
   const canOrder = !!cart?.length && creditCard.length > 0 && userForm.address.address.length > 0;
 
