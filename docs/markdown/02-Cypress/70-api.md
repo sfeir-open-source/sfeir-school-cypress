@@ -117,23 +117,22 @@ cy.get('li.selected').should('have.length', 3)
 
 # Test example
 
-<pre><code class="hljs" data-line-numbers="2-4|6-10|12-14|15">
+<!-- .slide: class="with-code" -->
+```js
 cy.get('button')
     .contains('buy it!') // Check text
     .should('be.disabled') // Check status
 
 cy.get('[data-cy="buy-panel"]')
     .within(() => {
-        cy.get('[data-cy="buy-button"]')
-            .should('be.visible')
+        cy.get('[data-cy="buy-button"]').should('be.visible')
     })
 
-cy.get('.error-label')
-    .should('not.exist')
+cy.get('.error-label').should('not.exist')
 
 cy.location('pathname').should('eq', '/cart')
-
-</code></pre>
+```
+<!-- .element: class="big-code" -->
 
 ##==##
 
