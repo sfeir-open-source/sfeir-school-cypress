@@ -41,12 +41,9 @@ function commands() {
     "03-Commands/20-yield.md",
     "03-Commands/30-execution-order.md",
     "03-Commands/40-exercice02.md",
-    "03-Commands/50-solution.md",
-    "03-Commands/60-custom-commands.md",
-    "03-Commands/70-commands-creation.md",
-    "03-Commands/80-exercice03.md",
-    "03-Commands/90-solution.md",
-    "03-Commands/100-tips.md",
+    "03-Commands/50-custom-commands.md",
+    "03-Commands/60-commands-creation.md",
+    "03-Commands/70-exercice03.md",
   ]
 }
 
@@ -68,7 +65,6 @@ function alias() {
     "05-alias/30-reference.md",
     "05-alias/40-usages.md",
     "05-alias/50-exercice04.md",
-    "05-alias/60-solution.md",
   ]
 }
 
