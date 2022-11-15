@@ -12,14 +12,11 @@ export interface PagesProps {}
 export function Pages(props: PagesProps) {
   return (
     <Routes>
-      <Route path="/" element={<Home />}>
-      </Route>
-      <Route path="/signin" element={<Signin />}>
-      </Route>
-      <Route path="/cart" element={ <Cart />}>
-      </Route>
-      <Route path="/order" element={<Order />}>
-      </Route>
+      <Route path="/" element={<Home />} />
+      <Route path="/signin" element={<Signin />} />
+      <Route path="/cart" element={ <Cart />} />
+      <Route path="/order" element={<Order />} />
+      <Route path="/genre/:genre" element={<Genre />} />
     </Routes>
   );
 }
