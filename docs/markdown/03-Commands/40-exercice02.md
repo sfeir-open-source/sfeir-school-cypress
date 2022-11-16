@@ -9,6 +9,9 @@
 * query the cart button **within** the previous scope
 * click on the cart button
 
+### npm run start-exercice02-e2e
+
+
 ##==##
 
 # Solution

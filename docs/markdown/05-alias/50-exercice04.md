@@ -8,6 +8,9 @@
 * click on the cart button
 * check book title presence on cart page
 
+### npm run start-exercice04-e2e
+
+
 ##==##
 
 # Solution

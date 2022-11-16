@@ -9,3 +9,5 @@
 * Mocker les requêtes
 
 * Vérifier que les livres s'affichent correctement
+
+### npm run start-exercice05-e2e

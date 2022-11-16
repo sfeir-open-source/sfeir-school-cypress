@@ -8,6 +8,9 @@
 * declare a **getBySelectorId** command
 * add it to Cypress to abstract the current **get('[data-cy="selector"]')** solution
 
+### npm run start-exercice03-e2e
+
+
 ##==##
 
 # Solution

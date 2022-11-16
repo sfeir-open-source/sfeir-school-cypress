@@ -11,17 +11,7 @@
   
  * check the cart page's content (Your cart is empty)
 
-
-```bash
-cd exercices/steps
-
-# Lancer le serveur
-npm run start-nest-server
-
-# Lancer l'exercice
-npm run start-exercice01-e2e
-
-```
+### npm run start-exercice01-e2e
 
 
 ##==##
