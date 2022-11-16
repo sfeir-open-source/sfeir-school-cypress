@@ -26,8 +26,7 @@ cy.visit('/home') // use preconfigurated URL (ex: http://localhost:4200)
 
 <!-- .slide: class="with-code" -->
 ```js
-cy.get('.header')
-
+cy.get('.header') => <header class="header">...</header>
 ```
 <!-- .element: class="big-code" -->
 
@@ -37,8 +36,7 @@ cy.get('.header')
 
 <!-- .slide: class="with-code" -->
 ```js
-cy.get('#header')
-
+cy.get('#header') => <header id="header">...</header>
 ```
 <!-- .element: class="big-code" -->
 
@@ -48,8 +46,7 @@ cy.get('#header')
 
 <!-- .slide: class="with-code" -->
 ```js
-cy.get('header')
-
+cy.get('header') => <header>...</header>
 ```
 <!-- .element: class="big-code" -->
 
