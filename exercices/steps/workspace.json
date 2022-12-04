@@ -197,15 +197,15 @@
       "tags": [],
       "implicitDependencies": ["react-solution"]
     },
-    "exercice02-e2e": {
-      "root": "apps/exercice02-e2e",
-      "sourceRoot": "apps/exercice02-e2e/src",
+    "exercice-usage-commands": {
+      "root": "apps/exercice-usage-commands",
+      "sourceRoot": "apps/exercice-usage-commands/src",
       "projectType": "application",
       "targets": {
         "e2e": {
           "executor": "@nrwl/cypress:cypress",
           "options": {
-            "cypressConfig": "apps/exercice02-e2e/cypress.config.ts",
+            "cypressConfig": "apps/exercice-usage-commands/cypress.config.ts",
             "devServerTarget": "react-solution:serve",
             "testingType": "e2e"
           },
@@ -219,22 +219,22 @@
           "executor": "@nrwl/linter:eslint",
           "outputs": ["{options.outputFile}"],
           "options": {
-            "lintFilePatterns": ["apps/exercice02-e2e/**/*.{js,ts}"]
+            "lintFilePatterns": ["apps/exercice-usage-commands/**/*.{js,ts}"]
           }
         }
       },
       "tags": [],
       "implicitDependencies": ["react-solution"]
     },
-    "exercice02-solution-e2e": {
-      "root": "apps/exercice02-solution-e2e",
-      "sourceRoot": "apps/exercice02-solution-e2e/src",
+    "exercice-usage-commands-solution": {
+      "root": "apps/exercice-usage-commands-solution",
+      "sourceRoot": "apps/exercice-usage-commands-solution/src",
       "projectType": "application",
       "targets": {
         "e2e": {
           "executor": "@nrwl/cypress:cypress",
           "options": {
-            "cypressConfig": "apps/exercice02-solution-e2e/cypress.config.ts",
+            "cypressConfig": "apps/exercice-usage-commands-solution/cypress.config.ts",
             "devServerTarget": "react-solution:serve",
             "testingType": "e2e"
           },
@@ -248,22 +248,22 @@
           "executor": "@nrwl/linter:eslint",
           "outputs": ["{options.outputFile}"],
           "options": {
-            "lintFilePatterns": ["apps/exercice02-solution-e2e/**/*.{js,ts}"]
+            "lintFilePatterns": ["apps/exercice-usage-commands-solution/**/*.{js,ts}"]
           }
         }
       },
       "tags": [],
       "implicitDependencies": ["react-solution"]
     },
-    "exercice03-e2e": {
-      "root": "apps/exercice03-e2e",
-      "sourceRoot": "apps/exercice03-e2e/src",
+    "exercice-creation-command": {
+      "root": "apps/exercice-creation-command",
+      "sourceRoot": "apps/exercice-creation-command/src",
       "projectType": "application",
       "targets": {
         "e2e": {
           "executor": "@nrwl/cypress:cypress",
           "options": {
-            "cypressConfig": "apps/exercice03-e2e/cypress.config.ts",
+            "cypressConfig": "apps/exercice-creation-command/cypress.config.ts",
             "devServerTarget": "react-solution:serve",
             "testingType": "e2e"
           },
@@ -277,22 +277,22 @@
           "executor": "@nrwl/linter:eslint",
           "outputs": ["{options.outputFile}"],
           "options": {
-            "lintFilePatterns": ["apps/exercice03-e2e/**/*.{js,ts}"]
+            "lintFilePatterns": ["apps/exercice-creation-command/**/*.{js,ts}"]
           }
         }
       },
       "tags": [],
       "implicitDependencies": ["react-solution"]
     },
-    "exercice03-solution-e2e": {
-      "root": "apps/exercice03-solution-e2e",
-      "sourceRoot": "apps/exercice03-solution-e2e/src",
+    "exercice-creation-command-solution": {
+      "root": "apps/exercice-creation-command-solution",
+      "sourceRoot": "apps/exercice-creation-command-solution/src",
       "projectType": "application",
       "targets": {
         "e2e": {
           "executor": "@nrwl/cypress:cypress",
           "options": {
-            "cypressConfig": "apps/exercice03-solution-e2e/cypress.config.ts",
+            "cypressConfig": "apps/exercice-creation-command-solution/cypress.config.ts",
             "devServerTarget": "react-solution:serve",
             "testingType": "e2e"
           },
@@ -306,7 +306,7 @@
           "executor": "@nrwl/linter:eslint",
           "outputs": ["{options.outputFile}"],
           "options": {
-            "lintFilePatterns": ["apps/exercice03-solution-e2e/**/*.{js,ts}"]
+            "lintFilePatterns": ["apps/exercice-creation-command-solution/**/*.{js,ts}"]
           }
         }
       },

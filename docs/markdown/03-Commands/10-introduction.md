@@ -1,5 +1,5 @@
 # Commands
 
-> *get()*, *click()*... are not just functions, they are commands.
+> *get()*, *click()*... ne sont pas de simple fonctions, mais des commands.
 
 

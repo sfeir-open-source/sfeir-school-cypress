@@ -1,6 +1,6 @@
 <!-- .slide: class="exercice" -->
 
-# Exercice 02: Use Commands
+# Exercice: Explorer les commands
 
 ## Lab
 
@@ -9,7 +9,7 @@
 * query the cart button **within** the previous scope
 * click on the cart button
 
-### npm run start-exercice02-e2e
+### npm run start-exercice-usage-commands
 
 
 ##==##

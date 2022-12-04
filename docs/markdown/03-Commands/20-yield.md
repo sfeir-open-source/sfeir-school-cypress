@@ -1,6 +1,6 @@
 # Yield
 
-Some commands **yield** a context, like a DOM element, for further usage
+Certaines commandes **yield** un contexte, comme la référence d'un élément du DOM, pour un usgae ultérieur.
 
 <!-- .slide: class="with-code" -->
 

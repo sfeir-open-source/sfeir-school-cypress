@@ -7,6 +7,7 @@ describe('Cart', () => {
     cy.get('[data-cy^="book-item"]')
       .first()
       .within(() => {
+        // cy.get('[data-cy="add-to-cart-btn"]').click();
         cy.addToCart();
       });
   });
