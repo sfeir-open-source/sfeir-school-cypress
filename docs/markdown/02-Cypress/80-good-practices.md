@@ -1,4 +1,4 @@
-## Résumé
+## Quel sélecteur
 
 * ❌ DOM, class, id ...
   * Trop dépendant du code, du style, des changements
@@ -12,40 +12,41 @@
   * Parfois utile, parfois non 
 
 ##==##
+<!-- .slide: class="two-column" -->
 
 ## Selecteur pour le test
 
-Cypress propose des "marqueurs" pour les tests :
+Recommandations :
 
- * data-cy (recommandation Cypress)
+ * data-cy (Cypress)
  * data-test
- * data-testid (recommandation Testing Library)
+ * data-testid (Testing Library)
+ * par texte (Testing Library)
+
+##--##
+
+<br>
+<br>
+<br>
+
+<!-- .slide: class="with-code" -->
 
 ```html
 
-<div data-cy="button-bar">
-  <button data-cy="play-button" class="btn btn-primary rounded">
-</div>
+<button data-cy="play-button">
 
 
 ```
+<!-- .element: class="big-code" -->
 
-```html
-
-<div data-cy="button-bar">
-  <button data-cy="play-button" class="btn btn-primary rounded">
-</div>
-
-
-```
-
-
+<!-- .slide: class="with-code" -->
 ```js
 
-cy.get('[data-cy=button-bar]').find('[data-cy=play-button]')
+cy.get('[data-cy=play-button]').click();
 
 
 ```
+<!-- .element: class="big-code" -->
 
 ##==##
 

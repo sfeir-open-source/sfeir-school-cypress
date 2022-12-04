@@ -1,20 +1,20 @@
 
 # Navigation
 
-* Navigate to a complete URL
+* Naviguer vers une URI
 
 <!-- .slide: class="with-code" -->
 ```js
-cy.visit('http://localhost:4200/home') // use preconfigurated URL (ex: http://localhost:8080)
+cy.visit('http://localhost:4200/home')
 ```
 <!-- .element: class="big-code" -->
 
 <br><br>
-* Navigate with a preconfigurated **baseUrl**
+* Naviguer avec une **baseUrl** prédéfinie
 
 <!-- .slide: class="with-code" -->
 ```js
-cy.visit('/home') // use preconfigurated URL (ex: http://localhost:4200)
+cy.visit('/home') // exemple: http://localhost:4200
 ```
 <!-- .element: class="big-code" -->
 
@@ -22,7 +22,7 @@ cy.visit('/home') // use preconfigurated URL (ex: http://localhost:4200)
 
 # Queries
 
-* by class
+* par class
 
 <!-- .slide: class="with-code" -->
 ```js
@@ -32,7 +32,7 @@ cy.get('.header') => <header class="header">...</header>
 
 <br>
 
-* by id
+* par id
 
 <!-- .slide: class="with-code" -->
 ```js
@@ -42,7 +42,7 @@ cy.get('#header') => <header id="header">...</header>
 
 <br>
 
-* by tag
+* par tag
 
 <!-- .slide: class="with-code" -->
 ```js
@@ -65,7 +65,7 @@ cy.get('#my-input').click()
 
 <br>
 
-* Type
+* Saisie
 
 <!-- .slide: class="with-code" -->
 ```js
@@ -78,7 +78,7 @@ cy.get('#my-input').type('foo')
 
 ## Assertions
 
-* Content :
+* par contenu
 
 <!-- .slide: class="with-code" -->
 ```js
@@ -90,7 +90,7 @@ cy.get('#user-name').should('have.text', 'Joe Smith')
 
 <br>
 
-* Visibility
+* par visibilité
 
 <!-- .slide: class="with-code" -->
 ```js
@@ -101,7 +101,7 @@ cy.get('button#form-submit').should('be.visible')
 
 <br>
 
-* Length
+* par longueur
 
 <!-- .slide: class="with-code" -->
 ```js
@@ -112,13 +112,13 @@ cy.get('li.selected').should('have.length', 3)
 
 ##==##
 
-# Test example
+# Exemple de test
 
 <!-- .slide: class="with-code" -->
 ```js
 cy.get('button')
-    .contains('buy it!') // Check text
-    .should('be.disabled') // Check status
+    .contains('buy it!') // teste le texte du bouton
+    .should('be.disabled') // teste l'état du bouton
 
 cy.get('[data-cy="buy-panel"]')
     .within(() => {
@@ -136,8 +136,7 @@ cy.location('pathname').should('eq', '/cart')
 # RTFM
 <br/>
 
-Tout est dans [la doc](https://docs.cypress.io/) :)
+Tout est dans documentation: https://docs.cypress.io/
 
-<br/>
 
-https://docs.cypress.io/
+

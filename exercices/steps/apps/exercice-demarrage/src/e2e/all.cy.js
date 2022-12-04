@@ -1,0 +1,21 @@
+import './1-getting-started/todo.cy';
+import './2-advanced-examples/actions.cy';
+import './2-advanced-examples/aliasing.cy';
+import './2-advanced-examples/assertions.cy';
+import './2-advanced-examples/connectors.cy';
+import './2-advanced-examples/cookies.cy';
+import './2-advanced-examples/cypress_api.cy';
+import './2-advanced-examples/files.cy';
+import './2-advanced-examples/local_storage.cy';
+import './2-advanced-examples/location.cy';
+import './2-advanced-examples/misc.cy';
+import './2-advanced-examples/navigation.cy';
+import './2-advanced-examples/network_requests.cy';
+import './2-advanced-examples/querying.cy';
+import './2-advanced-examples/spies_stubs_clocks.cy';
+import './2-advanced-examples/traversal.cy';
+import './2-advanced-examples/utilities.cy';
+import './2-advanced-examples/viewport.cy';
+import './2-advanced-examples/waiting.cy';
+import './2-advanced-examples/window.cy';
+

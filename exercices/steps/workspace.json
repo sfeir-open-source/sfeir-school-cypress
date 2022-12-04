@@ -1,38 +1,16 @@
 {
   "version": 2,
   "projects": {
-    "exercice00-e2e": {
-      "root": "apps/exercice00-e2e",
-      "sourceRoot": "apps/exercice00-e2e/src",
+    "exercice-origin": {
+      "root": "apps/exercice-origin",
+      "sourceRoot": "apps/exercice-origin/src",
       "projectType": "application",
       "targets": {
         "e2e": {
           "executor": "@nrwl/cypress:cypress",
           "options": {
-            "cypressConfig": "apps/exercice00-e2e/cypress.config.ts",
-            "testingType": "e2e"
-          }
-        },
-        "lint": {
-          "executor": "@nrwl/linter:eslint",
-          "outputs": ["{options.outputFile}"],
-          "options": {
-            "lintFilePatterns": ["apps/exercice00-e2e/**/*.{js,ts}"]
-          }
-        }
-      },
-      "tags": []
-    },
-    "exercice01-e2e": {
-      "root": "apps/exercice01-e2e",
-      "sourceRoot": "apps/exercice01-e2e/src",
-      "projectType": "application",
-      "targets": {
-        "e2e": {
-          "executor": "@nrwl/cypress:cypress",
-          "options": {
-            "cypressConfig": "apps/exercice01-e2e/cypress.config.ts",
-            "devServerTarget": "react-solution:serve",
+            "cypressConfig": "apps/exercice-origin/cypress.config.ts",
+            "devServerTarget": "react-solution:serve:development",
             "testingType": "e2e"
           },
           "configurations": {
@@ -45,22 +23,131 @@
           "executor": "@nrwl/linter:eslint",
           "outputs": ["{options.outputFile}"],
           "options": {
-            "lintFilePatterns": ["apps/exercice01-e2e/**/*.{js,ts}"]
+            "lintFilePatterns": ["apps/exercice-origin/**/*.{js,ts}"]
           }
         }
       },
       "tags": [],
       "implicitDependencies": ["react-solution"]
     },
-    "exercice01-solution-e2e": {
-      "root": "apps/exercice01-solution-e2e",
-      "sourceRoot": "apps/exercice01-solution-e2e/src",
+    "exercice-origin-solution": {
+      "root": "apps/exercice-origin-solution",
+      "sourceRoot": "apps/exercice-origin-solution/src",
       "projectType": "application",
       "targets": {
         "e2e": {
           "executor": "@nrwl/cypress:cypress",
           "options": {
-            "cypressConfig": "apps/exercice01-solution-e2e/cypress.config.ts",
+            "cypressConfig": "apps/exercice-origin-solution/cypress.config.ts",
+            "devServerTarget": "react-solution:serve:development",
+            "testingType": "e2e"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "react-solution:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["apps/exercice-origin-solution/**/*.{js,ts}"]
+          }
+        }
+      },
+      "tags": [],
+      "implicitDependencies": ["react-solution"]
+    },
+    "exercice-page-object": {
+      "root": "apps/exercice-page-object",
+      "sourceRoot": "apps/exercice-page-object/src",
+      "projectType": "application",
+      "targets": {
+        "e2e": {
+          "executor": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/exercice-page-object/cypress.config.ts",
+            "devServerTarget": "react-solution:serve:development",
+            "testingType": "e2e"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "react-solution:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["apps/exercice-page-object/**/*.{js,ts}"]
+          }
+        }
+      },
+      "tags": [],
+      "implicitDependencies": ["react-solution"]
+    },
+    "exercice-page-object-solution": {
+      "root": "apps/exercice-page-object-solution",
+      "sourceRoot": "apps/exercice-page-object-solution/src",
+      "projectType": "application",
+      "targets": {
+        "e2e": {
+          "executor": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/exercice-page-object-solution/cypress.config.ts",
+            "devServerTarget": "react-solution:serve:development",
+            "testingType": "e2e"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "react-solution:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["apps/exercice-page-object-solution/**/*.{js,ts}"]
+          }
+        }
+      },
+      "tags": [],
+      "implicitDependencies": ["react-solution"]
+    },
+    "exercice-demarrage": {
+      "root": "apps/exercice-demarrage",
+      "sourceRoot": "apps/exercice-demarrage/src",
+      "projectType": "application",
+      "targets": {
+        "e2e": {
+          "executor": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/exercice-demarrage/cypress.config.ts",
+            "testingType": "e2e"
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["apps/exercice-demarrage/**/*.{js,ts}"]
+          }
+        }
+      },
+      "tags": []
+    },
+    "exercice-premiers-pas": {
+      "root": "apps/exercice-premiers-pas",
+      "sourceRoot": "apps/exercice-premiers-pas/src",
+      "projectType": "application",
+      "targets": {
+        "e2e": {
+          "executor": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/exercice-premiers-pas/cypress.config.ts",
             "devServerTarget": "react-solution:serve",
             "testingType": "e2e"
           },
@@ -74,7 +161,36 @@
           "executor": "@nrwl/linter:eslint",
           "outputs": ["{options.outputFile}"],
           "options": {
-            "lintFilePatterns": ["apps/exercice01-solution-e2e/**/*.{js,ts}"]
+            "lintFilePatterns": ["apps/exercice-premiers-pas/**/*.{js,ts}"]
+          }
+        }
+      },
+      "tags": [],
+      "implicitDependencies": ["react-solution"]
+    },
+    "exercice-premiers-pas-solution": {
+      "root": "apps/exercice-premiers-pas-solution",
+      "sourceRoot": "apps/exercice-premiers-pas-solution/src",
+      "projectType": "application",
+      "targets": {
+        "e2e": {
+          "executor": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/exercice-premiers-pas-solution/cypress.config.ts",
+            "devServerTarget": "react-solution:serve",
+            "testingType": "e2e"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "react-solution:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["apps/exercice-premiers-pas-solution/**/*.{js,ts}"]
           }
         }
       },

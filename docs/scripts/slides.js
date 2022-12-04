@@ -2,95 +2,120 @@ import { SfeirThemeInitializer } from '../web_modules/sfeir-school-theme/sfeir-s
 
 // One method per module
 function school() {
+  const root = "00-School";
   return [
-    "00-school/00-TITLE.md",
-    "00-school/speaker-jge.md",
-    "00-school/speaker-nfr.md",
-    "00-school/speaker-ggr.md",
+    `${root}/00-TITLE.md`,
+    `${root}/speaker-jge.md`,
+    `${root}/speaker-nfr.md`,
+    `${root}/speaker-ggr.md`,
   ]
 }
 
-function intro() {
+function introduction() {
+  const root = "01-Introduction";
   return [
-    "01-intro/00-TITLE.md",
-    "01-intro/10-why.md",
-    "01-intro/20-how.md",
+    `${root}/00-TITLE.md`,
+    `${root}/10-why.md`,
+    `${root}/20-how.md`,
   ]
 }
 
 function cypress() {
+  const root = "02-Cypress";
   return [
-    "02-Cypress/00-TITLE.md",
-    "02-Cypress/10-cypress.md",
-    "02-Cypress/20-installation.md",
-    "02-Cypress/30-nx.md",
-    "02-Cypress/40-exercice00.md",
-    "02-Cypress/50-test-runner.md",
-    "02-Cypress/60-running-javascript.md",
-    "02-Cypress/70-api.md",
-    "02-Cypress/80-good-practices.md",
-    "02-Cypress/90-exercice01.md",
-    "02-Cypress/100-good-tests.md"
+    `${root}/00-TITLE.md`,
+    `${root}/10-cypress.md`,
+    `${root}/20-installation.md`,
+    `${root}/30-nx.md`,
+    `${root}/40-exercice-demarrage.md`,
+    `${root}/50-test-runner.md`,
+    `${root}/60-running-javascript.md`,
+    `${root}/70-api.md`,
+    `${root}/80-good-practices.md`,
+    `${root}/90-exercice-premiers-pas.md`,
+    `${root}/100-good-tests.md`,
   ]
 }
 
 function commands() {
+  const root = "03-Commands";
   return [
-    "03-Commands/00-TITLE.md",
-    "03-Commands/10-introduction.md",
-    "03-Commands/20-yield.md",
-    "03-Commands/30-execution-order.md",
-    "03-Commands/40-exercice02.md",
-    "03-Commands/50-custom-commands.md",
-    "03-Commands/60-commands-creation.md",
-    "03-Commands/70-exercice03.md",
+    `${root}/00-TITLE.md`,
+    `${root}/10-introduction.md`,
+    `${root}/20-yield.md`,
+    `${root}/30-execution-order.md`,
+    `${root}/40-exercice02.md`,
+    `${root}/50-custom-commands.md`,
+    `${root}/60-commands-creation.md`,
+    `${root}/70-exercice03.md`,
   ]
 }
 
-function structurertests() {
+function structurerTests() {
+  const root = "04-Structurer-tests";
   return [
-    "04-Structurer tests/00-TITLE.md",
-    "04-Structurer tests/10-command.md",
-    "04-Structurer tests/20-command-ouverture.md",
-    "04-Structurer tests/30-differents-tests.md",
-    "04-Structurer tests/40-ouverture.md",
+    `${root}/00-TITLE.md`,
+    `${root}/10-command.md`,
+    `${root}/20-command-ouverture.md`,
+    `${root}/30-differents-tests.md`,
+    `${root}/40-ouverture.md`,
   ]
 }
 
 function alias() {
+  const root = "05-Alias";
   return [
-    "05-alias/00-TITLE.md",
-    "05-alias/10-execution-order.md",
-    "05-alias/20-bad-example.md",
-    "05-alias/30-reference.md",
-    "05-alias/40-usages.md",
-    "05-alias/50-exercice04.md",
+    `${root}/00-TITLE.md`,
+    `${root}/10-execution-order.md`,
+    `${root}/20-bad-example.md`,
+    `${root}/30-reference.md`,
+    `${root}/40-usages.md`,
+    `${root}/50-exercice04.md`,
   ]
 }
 
 function networking() {
+  const root = "05-Networking";
   return [
-    "05-Networking/00-TITLE.md",
-    "05-Networking/10-differents-tests.md",
-    "05-Networking/20-integration-networking.md",
-    "05-Networking/30-fixture.md",
-    "05-Networking/40-exercice05.md",
-    "05-Networking/50-ouverture.md",
+    `${root}/00-TITLE.md`,
+    `${root}/10-differents-tests.md`,
+    `${root}/20-integration-networking.md`,
+    `${root}/30-fixture.md`,
+    `${root}/40-exercice05.md`,
+    `${root}/50-ouverture.md`,
+    `${root}/00-TITLE.md`,
+    `${root}/00-TITLE.md`,
   ]
 }
 
-function domains() {
+function origin() {
+  const root = "06-Origin";
   return [
-      "06-Domains/00-TITLE.md",
+    `${root}/00-TITLE.md`,
+    `${root}/10-introduction.md`,
+    `${root}/20-iframe-context.md`,
+    `${root}/30-auth-example.md`,
+    `${root}/40-exercice-origin.md`,
     ]
+}
+
+function componentTesting() {
+  const root = "07-Component-testing";
+  return [
+    `${root}/00-TITLE.md`,
+    `${root}/10-introduction.md`,
+    `${root}/20-configuration.md`,
+    `${root}/30-exercice-component-testing.md`,
+  ]
 }
 
 
 function more() {
+  const root = "08-More";
   return [
-    "06-More/00-TITLE.md",
-    "06-More/10-more-functionalities.md",
-    "06-More/20-limitations.md",
+    `${root}/00-TITLE.md`,
+    `${root}/10-more-functionalities.md`,
+    `${root}/20-limitations.md`,
   ]
 }
 
@@ -102,27 +127,40 @@ function tdd() {
   ]
 }
 
-function lessonlearnt() {
+function continuousIntegration() {
+  const root = "09-Continuous-integration";
   return [
-    "08-lesson-learnt/00-TITLE.md",
-    "08-lesson-learnt/10-lesson-learnt.md",
-    "08-lesson-learnt/20-end.md",
+    `${root}/00-TITLE.md`,
+    `${root}/10-what-is-ci.md`,
+    `${root}/20-configuration.md`,
+    `${root}/30-exercice-07.md`,
+  ]
+}
+
+function lessonsLearnt() {
+  const root = "10-Lessons-learnt";
+  return [
+    `${root}/00-TITLE.md`,
+    `${root}/10-lesson-learnt.md`,
+    `${root}/20-end.md`,
   ]
 }
 
 function formation() {
   return [
     ...school(),
-    ...intro(),
+    ...introduction(),
     ...cypress(),
     ...commands(),
-    ...structurertests(),
+    ...structurerTests(),
     ...alias(),
     ...networking(),
-    // ...domains(),
+    ...origin(),
+    ...componentTesting(),
     ...more(),
+    ...continuousIntegration(),
     // ...tdd(),
-    ...lessonlearnt(),
+    ...lessonsLearnt(),
   ].map(slidePath => {
     return { path: slidePath };
   });

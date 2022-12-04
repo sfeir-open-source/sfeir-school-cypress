@@ -1,12 +1,12 @@
 <!-- .slide: class="two-column" -->
 
-# Qu'est-ce que Cypress ?
+# Browser origin
 
 * Test runner
 
 * Exécutant du JavaScript
 
-* Dans [presque](https://docs.cypress.io/guides/guides/launching-browsers#WebKit-Experimental) tous les navigateurs
+* Dans (presque) tous les navigateurs
 
 ##--##
 
