@@ -44,10 +44,10 @@ function commands() {
     `${root}/10-introduction.md`,
     `${root}/20-yield.md`,
     `${root}/30-execution-order.md`,
-    `${root}/40-exercice02.md`,
+    `${root}/40-exercice-usage-commands.md`,
     `${root}/50-custom-commands.md`,
     `${root}/60-commands-creation.md`,
-    `${root}/70-exercice03.md`,
+    `${root}/70-exercice-creation-command.md`,
   ]
 }
 
@@ -59,6 +59,8 @@ function structurerTests() {
     `${root}/20-command-ouverture.md`,
     `${root}/30-differents-tests.md`,
     `${root}/40-ouverture.md`,
+    `${root}/50-page-object.md`,
+    `${root}/60-exercice-page-object.md`,
   ]
 }
 
@@ -70,7 +72,7 @@ function alias() {
     `${root}/20-bad-example.md`,
     `${root}/30-reference.md`,
     `${root}/40-usages.md`,
-    `${root}/50-exercice04.md`,
+    `${root}/50-exercice-alias.md`,
   ]
 }
 
@@ -81,10 +83,8 @@ function networking() {
     `${root}/10-differents-tests.md`,
     `${root}/20-integration-networking.md`,
     `${root}/30-fixture.md`,
-    `${root}/40-exercice05.md`,
+    `${root}/40-exercice-networking.md`,
     `${root}/50-ouverture.md`,
-    `${root}/00-TITLE.md`,
-    `${root}/00-TITLE.md`,
   ]
 }
 
@@ -92,10 +92,8 @@ function origin() {
   const root = "06-Origin";
   return [
     `${root}/00-TITLE.md`,
-    `${root}/10-introduction.md`,
-    `${root}/20-iframe-context.md`,
-    `${root}/30-auth-example.md`,
-    `${root}/40-exercice-origin.md`,
+    `${root}/10-iframe-context.md`,
+    `${root}/20-exercice-origin.md`,
     ]
 }
 
@@ -156,9 +154,9 @@ function formation() {
     ...alias(),
     ...networking(),
     ...origin(),
-    ...componentTesting(),
+    // ...componentTesting(),
     ...more(),
-    ...continuousIntegration(),
+    // ...continuousIntegration(),
     // ...tdd(),
     ...lessonsLearnt(),
   ].map(slidePath => {

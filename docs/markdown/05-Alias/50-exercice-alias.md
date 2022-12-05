@@ -1,6 +1,6 @@
 <!-- .slide: class="exercice" -->
 
-# Exercice 04: Create an alias
+# Exercice: Créer un alias
 
 ## Lab
 
@@ -8,7 +8,7 @@
 * click on the cart button
 * check book title presence on cart page
 
-### npm run start-exercice04-e2e
+### npm run start-exercice-alias
 
 
 ##==##

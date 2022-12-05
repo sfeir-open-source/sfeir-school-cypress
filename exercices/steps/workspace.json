@@ -313,15 +313,15 @@
       "tags": [],
       "implicitDependencies": ["react-solution"]
     },
-    "exercice04-e2e": {
-      "root": "apps/exercice04-e2e",
-      "sourceRoot": "apps/exercice04-e2e/src",
+    "exercice-alias": {
+      "root": "apps/exercice-alias",
+      "sourceRoot": "apps/exercice-alias/src",
       "projectType": "application",
       "targets": {
         "e2e": {
           "executor": "@nrwl/cypress:cypress",
           "options": {
-            "cypressConfig": "apps/exercice04-e2e/cypress.config.ts",
+            "cypressConfig": "apps/exercice-alias/cypress.config.ts",
             "devServerTarget": "react-solution:serve",
             "testingType": "e2e"
           },
@@ -335,22 +335,22 @@
           "executor": "@nrwl/linter:eslint",
           "outputs": ["{options.outputFile}"],
           "options": {
-            "lintFilePatterns": ["apps/exercice04-e2e/**/*.{js,ts}"]
+            "lintFilePatterns": ["apps/exercice-alias/**/*.{js,ts}"]
           }
         }
       },
       "tags": [],
       "implicitDependencies": ["react-solution"]
     },
-    "exercice04-solution-e2e": {
-      "root": "apps/exercice04-solution-e2e",
-      "sourceRoot": "apps/exercice04-solution-e2e/src",
+    "exercice-alias-solution": {
+      "root": "apps/exercice-alias-solution",
+      "sourceRoot": "apps/exercice-alias-solution/src",
       "projectType": "application",
       "targets": {
         "e2e": {
           "executor": "@nrwl/cypress:cypress",
           "options": {
-            "cypressConfig": "apps/exercice04-solution-e2e/cypress.config.ts",
+            "cypressConfig": "apps/exercice-alias-solution/cypress.config.ts",
             "devServerTarget": "react-solution:serve",
             "testingType": "e2e"
           },
@@ -364,22 +364,22 @@
           "executor": "@nrwl/linter:eslint",
           "outputs": ["{options.outputFile}"],
           "options": {
-            "lintFilePatterns": ["apps/exercice04-solution-e2e/**/*.{js,ts}"]
+            "lintFilePatterns": ["apps/exercice-alias-solution/**/*.{js,ts}"]
           }
         }
       },
       "tags": [],
       "implicitDependencies": ["react-solution"]
     },
-    "exercice05-e2e": {
-      "root": "apps/exercice05-e2e",
-      "sourceRoot": "apps/exercice05-e2e/src",
+    "exercice-networking": {
+      "root": "apps/exercice-networking",
+      "sourceRoot": "apps/exercice-networking/src",
       "projectType": "application",
       "targets": {
         "e2e": {
           "executor": "@nrwl/cypress:cypress",
           "options": {
-            "cypressConfig": "apps/exercice05-e2e/cypress.config.ts",
+            "cypressConfig": "apps/exercice-networking/cypress.config.ts",
             "devServerTarget": "react-solution:serve",
             "testingType": "e2e"
           },
@@ -393,22 +393,22 @@
           "executor": "@nrwl/linter:eslint",
           "outputs": ["{options.outputFile}"],
           "options": {
-            "lintFilePatterns": ["apps/exercice05-e2e/**/*.{js,ts}"]
+            "lintFilePatterns": ["apps/exercice-networking/**/*.{js,ts}"]
           }
         }
       },
       "tags": [],
       "implicitDependencies": ["react-solution"]
     },
-    "exercice05-solution-e2e": {
-      "root": "apps/exercice05-solution-e2e",
-      "sourceRoot": "apps/exercice05-solution-e2e/src",
+    "exercice-networking-solution": {
+      "root": "apps/exercice-networking-solution",
+      "sourceRoot": "apps/exercice-networking-solution/src",
       "projectType": "application",
       "targets": {
         "e2e": {
           "executor": "@nrwl/cypress:cypress",
           "options": {
-            "cypressConfig": "apps/exercice05-solution-e2e/cypress.config.ts",
+            "cypressConfig": "apps/exercice-networking-solution/cypress.config.ts",
             "devServerTarget": "react-solution:serve",
             "testingType": "e2e"
           },
@@ -422,7 +422,7 @@
           "executor": "@nrwl/linter:eslint",
           "outputs": ["{options.outputFile}"],
           "options": {
-            "lintFilePatterns": ["apps/exercice05-solution-e2e/**/*.{js,ts}"]
+            "lintFilePatterns": ["apps/exercice-networking-solution/**/*.{js,ts}"]
           }
         }
       },

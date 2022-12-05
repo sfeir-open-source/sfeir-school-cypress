@@ -21,7 +21,7 @@ export function LoginStatus(props: LoginStatusProps) {
   const { loginWithRedirect, logout, isAuthenticated } = useAuth0();
 
   return isAuthenticated ? (
-    <button className={buttonClassName} data-cy="user-button" onClick={() => logout({ returnTo: window.location.origin })}>
+    <button className={buttonClassName} data-cy="logout-button" onClick={() => logout({ returnTo: window.location.origin })}>
       <UserCircleIcon className={iconClassname} />
       <span>Log out</span>
     </button>

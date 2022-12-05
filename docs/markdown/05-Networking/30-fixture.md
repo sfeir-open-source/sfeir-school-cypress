@@ -15,6 +15,7 @@ Fixture : fausse donnée
 # Fixture
 <br/>
 
+<!-- .slide: class="with-code" -->
 ```js
 
 // charge le fichier users.json
@@ -24,8 +25,8 @@ cy.fixture('logo.png').then((logo) => {
   // load data from logo.png
 })
 
-
 ```
+<!-- .element: class="big-code" -->
 
 Credits : [Official Cypress.io documentation](https://docs.cypress.io/api/commands/fixture#Syntax)
 
@@ -34,42 +35,29 @@ Credits : [Official Cypress.io documentation](https://docs.cypress.io/api/comman
 
 # Intercept
 
-Intercept : fausse réponse
-
-
+<!-- .slide: class="with-code" -->
 ```js
-
 cy.intercept('/users/**')
 
 cy.intercept('GET', '/users*')
 
-
 cy.intercept('POST', '/users*', {
   statusCode: 201,
-  body: {
-    name: 'Peter Pan',
-  },
+  body: {name: 'Peter Pan'},
 })
 
-cy.intercept('/users*', (req) => {
-  /* do something with request and/or response */
-})
+cy.intercept('/users*', (req) => /* do something with request and/or response */ )
 
 ```
-
-Credits : [Official Cypress.io documentation](https://docs.cypress.io/api/commands/intercept#Usage)
+<!-- .element: class="big-code" -->
 
 ##==##
 
 # Tester sa requête
 
- * Spy c'est bien 
- 
- * Mock c'est mieux 
-   * Test des paramètres envoyés
 
+<!-- .slide: class="with-code" -->
 ```js
-
 cy.intercept('POST', '/signin', { status: 200 })
   .as("signIn")
 
@@ -80,12 +68,12 @@ cy.wait("@signIn")
 
   // Vérifie les paramètres envoyés
   .its('request.body.password').should('eq', 'Passw0rd')
-
   // Vérifie la réponse (utile en cas de `intercept` complexe)
   .its('response.status').should('eq', 200)
 
 
 ```
+<!-- .element: class="big-code" -->
 
 ##==##
 
@@ -98,9 +86,11 @@ Fixtures & Intercept fonctionnent ensemble !
 
  * Intercept : réponse = fixture
 
+<!-- .slide: class="with-code" -->
 ```js
 
 cy.intercept('/users', { fixture: 'users.json' })
 
 
 ```
+<!-- .element: class="big-code" -->

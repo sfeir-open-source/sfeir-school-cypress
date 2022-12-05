@@ -1,6 +1,6 @@
 <!-- .slide: class="exercice" -->
 
-# Exercice 03: Créer un Page Object
+# Exercice: Créer un Page Object
 
 ## Lab
 
@@ -34,7 +34,6 @@ export class CartPage {
   }
 }
 ```
-<!-- .element: class="big-code" -->
 
 <!-- .slide: class="with-code" -->
 ```typescript
@@ -43,4 +42,3 @@ it('should add an item to the cart', () => {
   cartPage.add();
 });
 ```
-<!-- .element: class="big-code" -->

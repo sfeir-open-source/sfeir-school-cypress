@@ -4,10 +4,6 @@ Privilégier les hooks **before** et **beforeEach** pour initialiser le contexte
 
 ##==##
 
-# Longueur des tests
-
-##==##
-
 # Structurer ses tests
 
  * Par fonctionnalité ? 
@@ -24,7 +20,7 @@ __Celà dépend de vous__ (et/ou du projet)
 
 ##==##
 
-# Un bon test #2
+# Un bon test
 
 Test == Code
 ➔ Bonnes pratiques !
@@ -39,36 +35,3 @@ Test == Code
 
 Login : pour __plusieurs__ pages
 ➔ Réutiliser "login"
-
-##==##
-
-# Commands
-
- * fonctions simple
-
- * Attaché à 'cy'
-
-
-```js
-
-// commands.js
-Cypress.Commands.add('login', (username) => {
-  localStorage.setItem({
-    username
-  })
-})
-
-
-```
-
-<br/>
-
-```js
-
-// N'importe quel test
-beforeEach(() => {
-  cy.login("Username")
-})
-
-
-```

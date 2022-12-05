@@ -33,6 +33,7 @@
 
 ## Cypress peut scroller.
 
+<!-- .slide: class="with-code" -->
 ```js
 
 cy.scrollTo(x, y)
@@ -41,6 +42,7 @@ cy.get('.sidebar').scrollTo('bottom')
 
 
 ```
+<!-- .element: class="big-code" -->
 
 Crédits: [official documentation](https://docs.cypress.io/api/commands/scrollto)
 
@@ -49,13 +51,15 @@ Crédits: [official documentation](https://docs.cypress.io/api/commands/scrollto
 # Screenshots
 
 ## Cypress photographie votre application !
-  
+
+<!-- .slide: class="with-code" -->
 ```js
 
 cy.screenshot([filename])
 
 
 ```
+<!-- .element: class="big-code" -->
 
 Cypress prend aussi des vidéos
 

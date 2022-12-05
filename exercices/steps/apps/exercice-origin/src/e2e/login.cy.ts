@@ -6,9 +6,11 @@ describe('Login', () => {
   it('should log in the user', () => {
     // click on the login button
 
-    // fill the username field
+    // change the origin: https://dev-y3-86mxa.us.auth0.com/
 
-    // fill the password field
+    // fill the username field: grignon.g@sfeir.com
+
+    // fill the password field: SchoolCypress28?
 
     // click on the login button
 
