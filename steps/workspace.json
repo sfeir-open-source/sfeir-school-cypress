@@ -1,0 +1,598 @@
+{
+  "version": 2,
+  "projects": {
+    "origin": {
+      "root": "apps/origin",
+      "sourceRoot": "apps/origin/src",
+      "projectType": "application",
+      "targets": {
+        "e2e": {
+          "executor": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/origin/cypress.config.ts",
+            "devServerTarget": "react-solution:serve:development",
+            "testingType": "e2e"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "react-solution:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["apps/origin/**/*.{js,ts}"]
+          }
+        }
+      },
+      "tags": [],
+      "implicitDependencies": ["react-solution"]
+    },
+    "origin-solution": {
+      "root": "apps/origin-solution",
+      "sourceRoot": "apps/origin-solution/src",
+      "projectType": "application",
+      "targets": {
+        "e2e": {
+          "executor": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/origin-solution/cypress.config.ts",
+            "devServerTarget": "react-solution:serve:development",
+            "testingType": "e2e"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "react-solution:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["apps/origin-solution/**/*.{js,ts}"]
+          }
+        }
+      },
+      "tags": [],
+      "implicitDependencies": ["react-solution"]
+    },
+    "demarrage": {
+      "root": "apps/01-demarrage",
+      "sourceRoot": "apps/01-demarrage/src",
+      "projectType": "application",
+      "targets": {
+        "e2e": {
+          "executor": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/01-demarrage/cypress.config.ts",
+            "testingType": "e2e"
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["apps/01-demarrage/**/*.{js,ts}"]
+          }
+        }
+      },
+      "tags": []
+    },
+    "premiers-pas": {
+      "root": "apps/02-premiers-pas",
+      "sourceRoot": "apps/02-premiers-pas/src",
+      "projectType": "application",
+      "targets": {
+        "e2e": {
+          "executor": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/02-premiers-pas/cypress.config.ts",
+            "devServerTarget": "react-solution:serve",
+            "testingType": "e2e"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "react-solution:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["apps/02-premiers-pas/**/*.{js,ts}"]
+          }
+        }
+      },
+      "tags": [],
+      "implicitDependencies": ["react-solution"]
+    },
+    "premiers-pas-solution": {
+      "root": "apps/02-premiers-pas-solution",
+      "sourceRoot": "apps/02-premiers-pas-solution/src",
+      "projectType": "application",
+      "targets": {
+        "e2e": {
+          "executor": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/02-premiers-pas-solution/cypress.config.ts",
+            "devServerTarget": "react-solution:serve",
+            "testingType": "e2e"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "react-solution:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["apps/02-premiers-pas-solution/**/*.{js,ts}"]
+          }
+        }
+      },
+      "tags": [],
+      "implicitDependencies": ["react-solution"]
+    },
+    "usage-commands": {
+      "root": "apps/03-usage-commands",
+      "sourceRoot": "apps/03-usage-commands/src",
+      "projectType": "application",
+      "targets": {
+        "e2e": {
+          "executor": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/03-usage-commands/cypress.config.ts",
+            "devServerTarget": "react-solution:serve",
+            "testingType": "e2e"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "react-solution:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["apps/03-usage-commands/**/*.{js,ts}"]
+          }
+        }
+      },
+      "tags": [],
+      "implicitDependencies": ["react-solution"]
+    },
+    "usage-commands-solution": {
+      "root": "apps/03-usage-commands-solution",
+      "sourceRoot": "apps/03-usage-commands-solution/src",
+      "projectType": "application",
+      "targets": {
+        "e2e": {
+          "executor": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/03-usage-commands-solution/cypress.config.ts",
+            "devServerTarget": "react-solution:serve",
+            "testingType": "e2e"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "react-solution:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["apps/03-usage-commands-solution/**/*.{js,ts}"]
+          }
+        }
+      },
+      "tags": [],
+      "implicitDependencies": ["react-solution"]
+    },
+    "creation-command": {
+      "root": "apps/04-creation-command",
+      "sourceRoot": "apps/04-creation-command/src",
+      "projectType": "application",
+      "targets": {
+        "e2e": {
+          "executor": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/04-creation-command/cypress.config.ts",
+            "devServerTarget": "react-solution:serve",
+            "testingType": "e2e"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "react-solution:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["apps/04-creation-command/**/*.{js,ts}"]
+          }
+        }
+      },
+      "tags": [],
+      "implicitDependencies": ["react-solution"]
+    },
+    "creation-command-solution": {
+      "root": "apps/04-creation-command-solution",
+      "sourceRoot": "apps/04-creation-command-solution/src",
+      "projectType": "application",
+      "targets": {
+        "e2e": {
+          "executor": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/04-creation-command-solution/cypress.config.ts",
+            "devServerTarget": "react-solution:serve",
+            "testingType": "e2e"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "react-solution:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["apps/04-creation-command-solution/**/*.{js,ts}"]
+          }
+        }
+      },
+      "tags": [],
+      "implicitDependencies": ["react-solution"]
+    },
+    "alias": {
+      "root": "apps/05-alias",
+      "sourceRoot": "apps/05-alias/src",
+      "projectType": "application",
+      "targets": {
+        "e2e": {
+          "executor": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/05-alias/cypress.config.ts",
+            "devServerTarget": "react-solution:serve",
+            "testingType": "e2e"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "react-solution:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["apps/05-alias/**/*.{js,ts}"]
+          }
+        }
+      },
+      "tags": [],
+      "implicitDependencies": ["react-solution"]
+    },
+    "alias-solution": {
+      "root": "apps/05-alias-solution",
+      "sourceRoot": "apps/05-alias-solution/src",
+      "projectType": "application",
+      "targets": {
+        "e2e": {
+          "executor": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/05-alias-solution/cypress.config.ts",
+            "devServerTarget": "react-solution:serve",
+            "testingType": "e2e"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "react-solution:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["apps/05-alias-solution/**/*.{js,ts}"]
+          }
+        }
+      },
+      "tags": [],
+      "implicitDependencies": ["react-solution"]
+    },
+    "networking": {
+      "root": "apps/06-networking",
+      "sourceRoot": "apps/06-networking/src",
+      "projectType": "application",
+      "targets": {
+        "e2e": {
+          "executor": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/06-networking/cypress.config.ts",
+            "devServerTarget": "react-solution:serve",
+            "testingType": "e2e"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "react-solution:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["apps/06-networking/**/*.{js,ts}"]
+          }
+        }
+      },
+      "tags": [],
+      "implicitDependencies": ["react-solution"]
+    },
+    "networking-solution": {
+      "root": "apps/06-networking-solution",
+      "sourceRoot": "apps/06-networking-solution/src",
+      "projectType": "application",
+      "targets": {
+        "e2e": {
+          "executor": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/06-networking-solution/cypress.config.ts",
+            "devServerTarget": "react-solution:serve",
+            "testingType": "e2e"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "react-solution:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["apps/06-networking-solution/**/*.{js,ts}"]
+          }
+        }
+      },
+      "tags": [],
+      "implicitDependencies": ["react-solution"]
+    },
+    "page-object": {
+      "root": "apps/08-page-object",
+      "sourceRoot": "apps/08-page-object/src",
+      "projectType": "application",
+      "targets": {
+        "e2e": {
+          "executor": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/08-page-object/cypress.config.ts",
+            "devServerTarget": "react-solution:serve:development",
+            "testingType": "e2e"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "react-solution:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["apps/08-page-object/**/*.{js,ts}"]
+          }
+        }
+      },
+      "tags": [],
+      "implicitDependencies": ["react-solution"]
+    },
+    "page-object-solution": {
+      "root": "apps/08-page-object-solution",
+      "sourceRoot": "apps/08-page-object-solution/src",
+      "projectType": "application",
+      "targets": {
+        "e2e": {
+          "executor": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/08-page-object-solution/cypress.config.ts",
+            "devServerTarget": "react-solution:serve:development",
+            "testingType": "e2e"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "react-solution:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["apps/08-page-object-solution/**/*.{js,ts}"]
+          }
+        }
+      },
+      "tags": [],
+      "implicitDependencies": ["react-solution"]
+    },
+    "nest-server": {
+      "root": "apps/nest-server",
+      "sourceRoot": "apps/nest-server/src",
+      "projectType": "application",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/webpack:webpack",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/apps/nest-server",
+            "main": "apps/nest-server/src/main.ts",
+            "tsConfig": "apps/nest-server/tsconfig.app.json",
+            "assets": ["apps/nest-server/src/assets"],
+            "target": "node",
+            "compiler": "tsc"
+          },
+          "configurations": {
+            "production": {
+              "optimization": true,
+              "extractLicenses": true,
+              "inspect": false,
+              "fileReplacements": [
+                {
+                  "replace": "apps/nest-server/src/environments/environment.ts",
+                  "with": "apps/nest-server/src/environments/environment.prod.ts"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nrwl/node:node",
+          "options": {
+            "buildTarget": "nest-server:build"
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["apps/nest-server/**/*.ts"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/apps/nest-server"],
+          "options": {
+            "jestConfig": "apps/nest-server/jest.config.ts",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "tags": []
+    },
+    "react-solution": {
+      "root": "apps/react/solution",
+      "sourceRoot": "apps/react/solution/src",
+      "projectType": "application",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/webpack:webpack",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/apps/react/solution",
+            "index": "apps/react/solution/src/index.html",
+            "baseHref": "/",
+            "main": "apps/react/solution/src/main.tsx",
+            "polyfills": "apps/react/solution/src/polyfills.ts",
+            "tsConfig": "apps/react/solution/tsconfig.app.json",
+            "assets": ["apps/react/solution/src/favicon.ico", "apps/react/solution/src/assets"],
+            "styles": ["apps/react/solution/src/styles.scss"],
+            "scripts": [],
+            "webpackConfig": "@nrwl/react/plugins/webpack",
+            "postcssConfig": "apps/react/solution/postcss.config.js"
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "apps/react/solution/src/environments/environment.ts",
+                  "with": "apps/react/solution/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nrwl/webpack:dev-server",
+          "options": {
+            "buildTarget": "react-solution:build",
+            "hmr": true
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "react-solution:build:production",
+              "hmr": false
+            },
+            "development": {
+              "buildTarget": "react-solution:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["apps/react/solution/**/*.{ts,tsx,js,jsx}"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/apps/react/solution"],
+          "options": {
+            "jestConfig": "apps/react/solution/jest.config.ts",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "tags": []
+    },
+    "react-solution-e2e": {
+      "root": "apps/react/solution-e2e",
+      "sourceRoot": "apps/react/solution-e2e/src",
+      "projectType": "application",
+      "targets": {
+        "e2e": {
+          "executor": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/react/solution-e2e/cypress.config.ts",
+            "devServerTarget": "react-solution:serve",
+            "testingType": "e2e"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "react-solution:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["apps/react/solution-e2e/**/*.{js,ts}"]
+          }
+        }
+      },
+      "tags": [],
+      "implicitDependencies": ["react-solution"]
+    }
+  },
+  "$schema": "./node_modules/nx/schemas/workspace-schema.json"
+}
