@@ -5,9 +5,10 @@ function school() {
   const root = "00-School";
   return [
     `${root}/00-TITLE.md`,
-    `${root}/speaker-jge.md`,
-    `${root}/speaker-nfr.md`,
+    // `${root}/speaker-jge.md`,
+    // `${root}/speaker-nfr.md`,
     `${root}/speaker-ggr.md`,
+    `${root}/speaker-pena-a.md`,
   ]
 }
 
@@ -29,11 +30,11 @@ function cypress() {
     `${root}/30-nx.md`,
     `${root}/40-exercice-demarrage.md`,
     `${root}/50-test-runner.md`,
-    `${root}/60-running-javascript.md`,
+    // `${root}/60-running-javascript.md`,
     `${root}/70-api.md`,
     `${root}/80-good-practices.md`,
     `${root}/90-exercice-premiers-pas.md`,
-    `${root}/100-good-tests.md`,
+    // `${root}/100-good-tests.md`,
   ]
 }
 
@@ -55,10 +56,10 @@ function structurerTests() {
   const root = "04-Structurer-tests";
   return [
     `${root}/00-TITLE.md`,
-    `${root}/10-command.md`,
-    `${root}/20-command-ouverture.md`,
-    `${root}/30-differents-tests.md`,
-    `${root}/40-ouverture.md`,
+    // `${root}/10-command.md`,
+    // `${root}/20-command-ouverture.md`,
+    // `${root}/30-differents-tests.md`,
+    // `${root}/40-ouverture.md`,
     `${root}/50-page-object.md`,
     `${root}/60-exercice-page-object.md`,
   ]
@@ -80,11 +81,11 @@ function networking() {
   const root = "05-Networking";
   return [
     `${root}/00-TITLE.md`,
-    `${root}/10-differents-tests.md`,
+    // `${root}/10-differents-tests.md`,
     `${root}/20-integration-networking.md`,
     `${root}/30-fixture.md`,
     `${root}/40-exercice-networking.md`,
-    `${root}/50-ouverture.md`,
+    // `${root}/50-ouverture.md`,
   ]
 }
 
@@ -150,10 +151,10 @@ function formation() {
     ...introduction(),
     ...cypress(),
     ...commands(),
-    ...structurerTests(),
     ...alias(),
     ...networking(),
     ...origin(),
+    ...structurerTests(),
     // ...componentTesting(),
     ...more(),
     // ...continuousIntegration(),

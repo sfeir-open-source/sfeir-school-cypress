@@ -55,21 +55,3 @@ cy.get('[data-cy=play-button]').click();
 <br/>
 
 <img src="assets/images/open-selector-ui.gif" style="width:100%;"/>
-
-##==##
-
-## Cypress Studio
-
-<br/>
-
-
-<!-- .slide: class="with-code" -->
-
-```json
-// cypress.json
-{
-  "experimentalStudio": true
-}
-```
-<!-- .element: class="big-code" -->
-
