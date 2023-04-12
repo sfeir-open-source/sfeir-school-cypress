@@ -2,14 +2,14 @@
   "version": 2,
   "projects": {
     "origin": {
-      "root": "apps/origin",
-      "sourceRoot": "apps/origin/src",
+      "root": "apps/07-origin",
+      "sourceRoot": "apps/07-origin/src",
       "projectType": "application",
       "targets": {
         "e2e": {
           "executor": "@nrwl/cypress:cypress",
           "options": {
-            "cypressConfig": "apps/origin/cypress.config.ts",
+            "cypressConfig": "apps/07-origin/cypress.config.ts",
             "devServerTarget": "react-solution:serve:development",
             "testingType": "e2e"
           },
@@ -23,7 +23,7 @@
           "executor": "@nrwl/linter:eslint",
           "outputs": ["{options.outputFile}"],
           "options": {
-            "lintFilePatterns": ["apps/origin/**/*.{js,ts}"]
+            "lintFilePatterns": ["apps/07-origin/**/*.{js,ts}"]
           }
         }
       },
@@ -31,14 +31,14 @@
       "implicitDependencies": ["react-solution"]
     },
     "origin-solution": {
-      "root": "apps/origin-solution",
-      "sourceRoot": "apps/origin-solution/src",
+      "root": "apps/07-origin-solution",
+      "sourceRoot": "apps/07-origin-solution/src",
       "projectType": "application",
       "targets": {
         "e2e": {
           "executor": "@nrwl/cypress:cypress",
           "options": {
-            "cypressConfig": "apps/origin-solution/cypress.config.ts",
+            "cypressConfig": "apps/07-origin-solution/cypress.config.ts",
             "devServerTarget": "react-solution:serve:development",
             "testingType": "e2e"
           },
@@ -52,7 +52,7 @@
           "executor": "@nrwl/linter:eslint",
           "outputs": ["{options.outputFile}"],
           "options": {
-            "lintFilePatterns": ["apps/origin-solution/**/*.{js,ts}"]
+            "lintFilePatterns": ["apps/07-origin-solution/**/*.{js,ts}"]
           }
         }
       },
